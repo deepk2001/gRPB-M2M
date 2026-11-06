@@ -1,0 +1,20 @@
+[project]
+name = "grpb-examples"
+version = "0.1.0"
+description = "Sample apps for gRPB-M2M: temperature sensors, hub and fan controller (Pi or simulated)"
+requires-python = ">=3.11"
+dependencies = ["grpb-m2m"]
+
+[project.optional-dependencies]
+# Real Raspberry Pi hardware (GPIO relay/LED). Not needed for the simulator.
+pi = ["gpiozero>=2.0", "lgpio>=0.2"]
+
+[tool.uv.sources]
+grpb-m2m = { path = "..", editable = true }
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["grpb_examples*"]

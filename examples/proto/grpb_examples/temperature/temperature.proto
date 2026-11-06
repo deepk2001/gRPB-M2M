@@ -1,0 +1,39 @@
+// Plain gRPC demo contract: temperature sensors report readings, a hub keeps the latest
+// per sensor and pushes every new reading to watchers (e.g. a fan controller).
+//
+// The same generated code runs over gRPC (HTTP/2) or over MQTT with gRPB-M2M; only the
+// channel and the server object differ. Integers are 32-bit on purpose (see context.md).
+syntax = "proto3";
+
+package grpb.demo;
+
+service TemperatureService {
+  // Unary: a sensor sends one reading and gets an acknowledgement.
+  rpc ReportReading(Reading) returns (ReportAck);
+
+  // Unary: latest reading of one sensor. NOT_FOUND if the sensor never reported.
+  rpc GetLatest(GetLatestRequest) returns (Reading);
+
+  // Server streaming: every new reading (optionally for one sensor) as it arrives.
+  rpc WatchReadings(WatchRequest) returns (stream Reading);
+}
+
+message Reading {
+  string sensor_id = 1;
+  float celsius = 2;
+  uint32 timestamp = 3;  // Unix seconds, set by the sensor
+  uint32 seq = 4;        // per-sensor counter, to spot gaps
+}
+
+message ReportAck {
+  uint32 seq = 1;          // echoes Reading.seq
+  uint32 total_stored = 2; // readings the hub has received from this sensor
+}
+
+message GetLatestRequest {
+  string sensor_id = 1;
+}
+
+message WatchRequest {
+  string sensor_id = 1;  // empty = all sensors
+}

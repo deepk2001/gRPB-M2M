@@ -1,0 +1,31 @@
+// gRPB-M2M wire format: one Frame per MQTT message.
+//
+// Topics (TS-0010 style, with the "pb" serialization segment):
+//   requests and cancels   <prefix>/req/<client-id>/<server-id>/pb
+//   responses and streams  <prefix>/resp/<client-id>/<server-id>/pb
+//   presence (Last Will)   <prefix>/presence/<endpoint-id>   "online" / "offline"
+//
+// Calls are matched by (client-id from the topic, call_id), like oneM2M's rqi.
+syntax = "proto3";
+
+package grpb.wire;
+
+message Frame {
+  enum Kind {
+    KIND_UNSPECIFIED = 0;
+    REQUEST = 1;         // client -> server: start a call
+    RESPONSE = 2;        // server -> client: unary result or error
+    STREAM_MESSAGE = 3;  // server -> client: one item of a server stream
+    STREAM_END = 4;      // server -> client: end of a server stream, with status
+    CANCEL = 5;          // client -> server: stop the call
+  }
+
+  Kind kind = 1;
+  uint32 call_id = 2;               // unique per client; echoed in every reply
+  fixed32 method_id = 3;            // REQUEST: CRC-32 of "/package.Service/Method"
+  bytes payload = 4;                // the serialized request or response message
+  uint32 code = 5;                  // RESPONSE, STREAM_END: grpc.StatusCode value, 0 = OK
+  string details = 6;               // error text when code != 0
+  uint32 timeout_ms = 7;            // REQUEST: client deadline, 0 = none
+  map<string, string> metadata = 8; // REQUEST: invocation metadata
+}

@@ -1,0 +1,38 @@
+[project]
+name = "grpb-m2m"
+version = "0.1.0"
+description = "Run generated gRPC stubs and servicers over MQTT with Protobuf encoding (oneM2M-ready)"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Team Nittany Nerds" }]
+keywords = ["grpc", "protobuf", "mqtt", "iot", "onem2m", "raspberry-pi"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet",
+    "Topic :: System :: Networking",
+]
+dependencies = [
+    "grpcio>=1.66",
+    "protobuf>=7.35",  # grpb/wire_pb2.py is generated with protoc 7.35+
+    "paho-mqtt>=2.0",
+]
+
+[project.optional-dependencies]
+# Needed only to generate stubs from your own .proto files.
+codegen = ["grpcio-tools>=1.66"]
+
+[dependency-groups]
+dev = ["pytest>=8", "grpcio-tools>=1.66", "build>=1.2"]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["grpb", "grpb.*"]
+
+[tool.setuptools.package-data]
+grpb = ["py.typed", "*.pyi"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "examples/tests"]
