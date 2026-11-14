@@ -1,0 +1,147 @@
+diff --git a/acmecse/etc/RequestUtils.py b/acmecse/etc/RequestUtils.py
+index 1065bc6..7f4d9c8 100644
+--- a/acmecse/etc/RequestUtils.py
++++ b/acmecse/etc/RequestUtils.py
+@@ -25,6 +25,7 @@ from ..etc.ResponseStatusCodes import ResponseStatusCode
+ from ..etc.Types import ReqResp
+ from ..etc.Constants import RuntimeConstants as RC
+ from .IDUtils import uniqueRI
++from . import ProtoCodec
+ 
+ # TODO request -> singleton
+ 
+@@ -40,6 +41,8 @@ def serializeData(data:JSON, ct:ContentSerializationType) -> Optional[str|bytes|
+ 	"""
+ 	if ct == ContentSerializationType.PLAIN:
+ 		return data
++	if ct == ContentSerializationType.PROTOBUF:
++		return ProtoCodec.encode(data)
+ 	encoder = json if ct == ContentSerializationType.JSON else cbor2 if ct == ContentSerializationType.CBOR else None
+ 	if not encoder:
+ 		return None
+@@ -65,6 +68,8 @@ def deserializeData(data:bytes, ct:ContentSerializationType) -> Optional[JSON]:
+ 			return cast(JSON, json.loads(TextTools.removeCommentsFromJSON(data.decode('utf-8'))))
+ 		case ContentSerializationType.CBOR:
+ 			return cast(JSON, cbor2.loads(data))
++		case ContentSerializationType.PROTOBUF:
++			return cast(JSON, ProtoCodec.decode(data))
+ 		case _:
+ 			return None
+ 
+diff --git a/acmecse/etc/Types.py b/acmecse/etc/Types.py
+index a89b833..36dfb4f 100644
+--- a/acmecse/etc/Types.py
++++ b/acmecse/etc/Types.py
+@@ -1240,6 +1240,8 @@ class ContentSerializationType(ACMEIntEnum):
+ 	"""	Plain text. """
+ 	UNKNOWN				= auto()
+ 	"""	Unknown. """
++	PROTOBUF			= auto()
++	"""	Protobuf (gRPB-M2M proposal: application/vnd.onem2m-res+protobuf). """
+ 
+ 	def toHttpContentType(self) -> str:
+ 		"""	Return the http mime header for an enum value.
+@@ -1254,6 +1256,8 @@ class ContentSerializationType(ACMEIntEnum):
+ 				return 'application/cbor'
+ 			case self.XML:	
+ 				return 'application/xml'
++			case self.PROTOBUF:
++				return 'application/vnd.onem2m-res+protobuf'
+ 			case _:
+ 				return None
+ 
+@@ -1288,6 +1292,8 @@ class ContentSerializationType(ACMEIntEnum):
+ 				return 'cbor'
+ 			case self.XML:
+ 				return 'xml'
++			case self.PROTOBUF:
++				return 'pb'
+ 			case _:
+ 				return None
+ 
+@@ -1315,6 +1321,8 @@ class ContentSerializationType(ACMEIntEnum):
+ 				return cls.CBOR
+ 			case 'xml' |  'application/xml' | 'application/vnd.onem2m-res+xml':
+ 				return cls.XML
++			case 'pb' | 'protobuf' | 'application/protobuf' | 'application/x-protobuf' | 'application/vnd.onem2m-res+protobuf':
++				return cls.PROTOBUF
+ 			case _:
+ 				return cls.UNKNOWN
+ 	
+@@ -1329,7 +1337,8 @@ class ContentSerializationType(ACMEIntEnum):
+ 		return [ 'application/json',
+ 				 'application/vnd.onem2m-res+json', 
+ 				 'application/cbor',
+-				 'application/vnd.onem2m-res+cbor' ]
++				 'application/vnd.onem2m-res+cbor',
++				 'application/vnd.onem2m-res+protobuf' ]
+ 
+ 
+ 	@classmethod
+@@ -1393,7 +1402,7 @@ class ContentSerializationType(ACMEIntEnum):
+ 			Return:
+ 				A list of supported media types for content serialization.
+ 		"""
+-		return [ cls.JSON.toSimple(), cls.CBOR.toSimple() ]
++		return [ cls.JSON.toSimple(), cls.CBOR.toSimple(), cls.PROTOBUF.toSimple() ]
+ 
+ 
+ 	def __eq__(self, other:object) -> bool:
+diff --git a/acmecse/plugins/bindings/MQTTClient.py b/acmecse/plugins/bindings/MQTTClient.py
+index 1fb9a2e..b705908 100644
+--- a/acmecse/plugins/bindings/MQTTClient.py
++++ b/acmecse/plugins/bindings/MQTTClient.py
+@@ -551,14 +551,14 @@ class MQTTClient(object):
+ 		# Build the topic
+ 		if not len(topic) or topic == '/':
+ 			# Miguel's proposal
+-			# topic = f'/oneM2M/req/{idToMQTT(RC.cseCsi)}/{idToMQTT(toSPRelative(req.request.to if req.request.to else req.request.originator))}/{req.request.ct.name.lower()}'
++			# topic = f'/oneM2M/req/{idToMQTT(RC.cseCsi)}/{idToMQTT(toSPRelative(req.request.to if req.request.to else req.request.originator))}/{req.request.ct.toSimple()}'
+ 			#topic = f'/oneM2M/req/{idToMQTT(RC.cseCsi)}/{idToMQTT(toSPRelative(originator))}/{ct.name.lower()}'
+-			# topic = f'/oneM2M/req/{idToMQTT(RC.cseCsi)}/{idToMQTT(csiFromSPRelative(req.request.to))}/{req.request.ct.name.lower()}'
+-			topic = f'/oneM2M/req/{idToMQTT(RC.cseCsi)}/{idToMQTT(getIdFromOriginator(req.request.to))}/{req.request.ct.name.lower()}'
++			# topic = f'/oneM2M/req/{idToMQTT(RC.cseCsi)}/{idToMQTT(csiFromSPRelative(req.request.to))}/{req.request.ct.toSimple()}'
++			topic = f'/oneM2M/req/{idToMQTT(RC.cseCsi)}/{idToMQTT(getIdFromOriginator(req.request.to))}/{req.request.ct.toSimple()}'
+ 		elif topic.startswith('///'):
+-			topic = f'/oneM2M/req/{idToMQTT(RC.cseCsi)}/{idToMQTT(topicSplit[3])}/{req.request.ct.name.lower()}'		# TODO Investigate whether this needs to be SP-Relative as well
++			topic = f'/oneM2M/req/{idToMQTT(RC.cseCsi)}/{idToMQTT(topicSplit[3])}/{req.request.ct.toSimple()}'		# TODO Investigate whether this needs to be SP-Relative as well
+ 		elif topic.startswith('//'):
+-			topic = f'/oneM2M/req/{idToMQTT(RC.cseCsi)}/{idToMQTT(topicSplit[2])}/{req.request.ct.name.lower()}'		# TODO Investigate whether this needs to be SP-Relative as well
++			topic = f'/oneM2M/req/{idToMQTT(RC.cseCsi)}/{idToMQTT(topicSplit[2])}/{req.request.ct.toSimple()}'		# TODO Investigate whether this needs to be SP-Relative as well
+ 		elif not topic.startswith('/oneM2M/') and len(topic) > 0 and topic[0] == '/':	# remove leading "/" if not /oneM2M
+ 			topic = topic[1:]
+ 		else:
+@@ -694,7 +694,7 @@ def logRequest(reqResult:Result,
+ 
+ 	body   = ''
+ 	if reqResult.request:
+-		if reqResult.request.ct == ContentSerializationType.CBOR:
++		if reqResult.request.ct in (ContentSerializationType.CBOR, ContentSerializationType.PROTOBUF):
+ 			if isResponse and reqResult.request.originalData:
+ 				body = f'\nBody: \n{TextTools.toHex(reqResult.request.originalData)}\n=>\n{str(reqResult.request.originalRequest)}'
+ 			else:
+diff --git a/requirements.txt b/requirements.txt
+index d77c67f..2922b5a 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -55,6 +55,8 @@ mdurl==0.1.2
+ numpy==2.3.2
+     # via shapely
+ paho-mqtt==2.1.0
++protobuf>=7.35
++    # via gRPB-M2M Protobuf serialization
+     # via acmecse (setup.py)
+ pfzy==0.3.4
+     # via inquirerpy
+diff --git a/setup.py b/setup.py
+index 8c0bb5b..883f5e8 100644
+--- a/setup.py
++++ b/setup.py
+@@ -51,6 +51,7 @@ setup(
+ 		'isodate',
+ 		'kazoo',
+ 		'paho-mqtt>=2.0.0',
++		'protobuf>=7.35',	# gRPB-M2M Protobuf serialization
+ 		'plotext',
+ 		'psycopg2-binary',
+ 		'pyperclip',

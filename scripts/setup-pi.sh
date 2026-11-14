@@ -12,7 +12,7 @@ sudo apt-get install -y python3-venv python3-dev python3-gpiozero python3-lgpio 
 echo "==> Creating .venv (with system site-packages, so gpiozero is visible)"
 python3 -m venv --system-site-packages .venv
 .venv/bin/pip install --upgrade pip
-.venv/bin/pip install -e . -e ./examples
+.venv/bin/pip install -e ".[cbor]" -e ./examples   # cbor: so benchmarks can compare all three formats
 
 cat <<'EOF'
 ==> Done.
@@ -27,4 +27,6 @@ Point the Pi at the laptop (broker + hub run there), then:
   make hal                      # sensor/relay backend check
   make sensor ARGS="--id pi1"   # report readings to the hub over MQTT
   make fan                      # or drive the relay from the hub's stream
+  make bench ARGS="codec --label pi"           # size + CPU per format on this Pi
+  make bench ARGS="e2e --label pi-wifi"        # full oneM2M path over Wi-Fi (laptop runs broker + cse)
 EOF

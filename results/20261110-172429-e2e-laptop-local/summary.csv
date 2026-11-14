@@ -1,0 +1,7 @@
+op,format,n,errors,req_bytes,resp_bytes,notify_bytes,exchange_wire_bytes,wire_vs_json,rtt_median_ms,rtt_p95_ms,rtt_p99_ms,rtt_mean_ms,notify_median_ms,notify_p95_ms,notifications_missing
+create_cin,json,300,0,262.7,493.5,559.5,1457.7,1.0,1.11,1.38,1.63,1.14,1.38,1.65,0
+create_cin,cbor,300,0,211.7,363.9,407.9,1125.6,0.772,1.12,1.35,1.53,1.12,1.43,1.73,0
+create_cin,pb,300,0,170.7,242.4,266.4,809.5,0.555,1.14,1.38,1.55,1.14,1.41,1.71,0
+retrieve_la,json,300,0,101,493.5,,689.5,1.0,1.09,1.38,1.46,1.14,,,
+retrieve_la,cbor,300,0,83,363.9,,540.9,0.785,1.14,1.45,1.6,1.19,,,
+retrieve_la,pb,300,0,65,242.4,,393.4,0.571,1.15,1.46,1.6,1.19,,,

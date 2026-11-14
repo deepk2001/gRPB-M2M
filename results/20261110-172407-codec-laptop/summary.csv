@@ -1,0 +1,4 @@
+format,primitives,total_bytes,size_vs_json,median_encode_us,median_decode_us
+json,11,2501,1.0,1.6,1.28
+cbor,11,1891,0.756,2.33,1.44
+pb,11,1085,0.434,3.63,3.84

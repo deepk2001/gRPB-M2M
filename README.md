@@ -5,8 +5,9 @@ devices such as the Raspberry Pi. You keep the typed `.proto` contract and the c
 `grpcio-tools` generates. Only the channel and the server object change, so the same
 application code runs over plain gRPC (HTTP/2) or over an MQTT broker.
 
-The next step, oneM2M integration (ACME CSE with a Protobuf binding), is planned; see
-[context.md](context.md).
+It also brings Protobuf to **oneM2M**: `grpb.onem2m` encodes oneM2M primitives in Protobuf,
+and a small patch teaches the ACME CSE a new `pb` serialization next to JSON and CBOR. See
+[context.md](context.md) for the design.
 
 ## Install
 
@@ -89,20 +90,64 @@ with a `pb` format segment:
 - **Expiry:** requests carry an MQTT 5 message expiry, so the broker never delivers a stale
   request. This needs no clock sync between devices.
 
+## oneM2M with Protobuf (ACME)
+
+[proto/grpb/onem2m/onem2m.proto](proto/grpb/onem2m/onem2m.proto) models the common primitive
+parameters and the AE, container, content instance, subscription and notification resources
+as typed fields. Anything it doesn't model travels losslessly as compact JSON in an `ext`
+field, so `decode(encode(p)) == p` for every primitive. The proposed media type is
+`application/vnd.onem2m-res+protobuf`, which is our proposal, not an official oneM2M type.
+
+```python
+from grpb.onem2m.client import Onem2mClient      # JSON, CBOR (pip install "grpb-m2m[cbor]") or Protobuf
+
+with Onem2mClient("Csensor1", serialization="pb", host="broker.local") as c:
+    c.request(1, "cse-in", ty=2, pc={"m2m:ae": {"rn": "sensor1", "api": "Nsensor", "rr": True, "srv": ["5"],
+                                              "poa": [c.poa], "csz": [c.media_type]}})
+    c.request(1, "cse-in/sensor1", ty=3, pc={"m2m:cnt": {"rn": "temp"}})
+    r = c.request(1, "cse-in/sensor1/temp", ty=4, pc={"m2m:cin": {"con": "23.5"}})
+```
+
+Registering with `csz` set to the Protobuf media type makes ACME send that AE's notifications in
+Protobuf too. HTTP/JSON clients keep reading the same resources unchanged.
+
+**The ACME patch** ([patches/acme-protobuf.patch](patches/acme-protobuf.patch), about 25 lines)
+adds the `PROTOBUF` serialization, the `pb` MQTT topic segment and the media type, and calls the
+shared codec. [scripts/patch-acme.sh](scripts/patch-acme.sh) applies it to ACME 2026.05.1 and
+copies the codec in (`make setup` runs it; `make acme-patch` reruns it). A test fails if the two
+copies of the codec ever differ.
+
+## Collecting evidence: Protobuf vs JSON vs CBOR
+
+```sh
+make bench ARGS="codec --label laptop"           # size + CPU per format, real ACME primitives, no network
+make cse ARGS="--headless --log-level warn"      # (with make broker) quiet logs: debug hex-dumps binary formats
+make bench ARGS="e2e --n 300 --label laptop"     # device -> broker -> ACME -> device, formats interleaved
+make bench ARGS="report results/* --out results/REPORT.md"
+```
+
+Each run writes `results/<time>-<kind>-<label>/` with `samples.csv` (every measurement),
+`summary.csv`, `summary.md` and `env.json` (machine, versions, broker, arguments). Add `--no-save`
+to only print the summary, e.g. for a quick check: `make bench ARGS="e2e --n 20 --no-save"`. Run the same
+commands on a Pi (`GRPB_BROKER_HOST=<laptop>`) to measure over Wi-Fi and on constrained CPUs.
+
 ## This repository
 
 ```
 grpb/                  the library (what pip installs)
-proto/grpb/wire.proto  the wire format
-tests/                 library tests, against a private Mosquitto
+proto/grpb/wire.proto  the gRPC-over-MQTT wire format
+proto/grpb/onem2m/     oneM2M primitives in Protobuf (codec in grpb/onem2m/)
+patches/               the ACME Protobuf patch
+results/               benchmark runs (raw samples + summaries)
+tests/                 library, codec and ACME tests, against a private Mosquitto and ACME
 examples/              grpb-examples package: sample apps and the Pi hardware layer
   grpb_examples/hal.py             DS18B20 + GPIO relay on a Pi, simulated elsewhere
   grpb_examples/temperature/       hub, sensor, fan; run over --transport mqtt|grpc
   proto/                           the sample apps' .proto files
   tests/                           the sample app over both transports
-tools/                 sniff.py (frames on the wire), m1_smoke.py (oneM2M JSON check)
+tools/                 bench.py (evidence), sniff.py (frames on the wire), m1_smoke.py (oneM2M JSON check)
 config/, scripts/      broker and ACME config; setup and run scripts
-vendor/acme            ACME CSE 2026.05.1 (cloned by setup, patched for Protobuf later)
+vendor/acme            ACME CSE 2026.05.1 (cloned and patched by setup)
 ```
 
 ### Laptop setup
@@ -111,7 +156,7 @@ Needs `git`, [`uv`](https://docs.astral.sh/uv/), and Homebrew (macOS) or apt (Li
 
 ```sh
 make setup      # ACME, Mosquitto, .venv (Python 3.13) with library + examples + dev tools
-make test       # 25 tests; starts its own broker
+make test       # 69 tests; starts its own broker and ACME
 make build      # dist/grpb_m2m-0.1.0-py3-none-any.whl and .tar.gz
 ```
 

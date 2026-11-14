@@ -3,7 +3,7 @@ PY := .venv/bin/python
 T ?= mqtt
 APP := grpb_examples.temperature
 
-.PHONY: setup setup-pi broker cse smoke hal proto test build sniff hub sensor fan
+.PHONY: setup setup-pi broker cse smoke hal proto acme-patch test build sniff bench hub sensor fan
 
 setup:        ## laptop: clone ACME, install Mosquitto, create .venv with library + examples
 	scripts/setup-dev.sh
@@ -15,7 +15,7 @@ broker:       ## run Mosquitto (foreground)
 	scripts/run-broker.sh
 
 cse:          ## run ACME CSE (foreground)
-	scripts/run-cse.sh
+	scripts/run-cse.sh $(ARGS)
 
 smoke:        ## M1: oneM2M JSON over MQTT round trip + HTTP read-back (needs broker + cse)
 	$(PY) tools/m1_smoke.py
@@ -26,11 +26,17 @@ hal:          ## check the sensor/relay backend (real Pi or simulator)
 proto:        ## regenerate Python code from proto/ and examples/proto/
 	PY=$(PY) scripts/gen-proto.sh
 
+acme-patch:   ## (re)apply the Protobuf patch to vendor/acme and sync the codec
+	scripts/patch-acme.sh
+
 test:         ## library + sample-app tests (starts its own broker)
 	$(PY) -m pytest -q
 
 build:        ## build the pip package into dist/
 	uv build --out-dir dist .
+
+bench:        ## evidence: make bench ARGS="codec" | ARGS="e2e --n 300 --label laptop" | ARGS="report results/*"
+	$(PY) tools/bench.py $(ARGS)
 
 sniff:        ## show gRPB-M2M frames on the broker; Ctrl-C prints a size summary
 	$(PY) tools/sniff.py $(ARGS)

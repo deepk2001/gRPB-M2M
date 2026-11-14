@@ -11,6 +11,8 @@ if [[ ! -d vendor/acme ]]; then
   git clone -q --depth 1 --branch "$ACME_TAG" https://github.com/ankraft/ACME-oneM2M-CSE.git vendor/acme
 fi
 
+scripts/patch-acme.sh
+
 if ! command -v mosquitto >/dev/null && [[ ! -x /opt/homebrew/opt/mosquitto/sbin/mosquitto && ! -x /usr/local/opt/mosquitto/sbin/mosquitto ]]; then
   echo "==> Installing Mosquitto"
   if command -v brew >/dev/null; then

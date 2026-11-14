@@ -20,6 +20,8 @@ dependencies = [
 [project.optional-dependencies]
 # Needed only to generate stubs from your own .proto files.
 codegen = ["grpcio-tools>=1.66"]
+# CBOR serialization for grpb.onem2m (JSON and Protobuf need nothing extra).
+cbor = ["cbor2>=5.6"]
 
 [dependency-groups]
 dev = ["pytest>=8", "grpcio-tools>=1.66", "build>=1.2"]

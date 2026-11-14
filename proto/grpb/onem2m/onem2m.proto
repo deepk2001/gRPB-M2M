@@ -1,0 +1,126 @@
+// oneM2M request/response primitives in Protobuf, for the "pb" MQTT serialization.
+// Proposed media type: application/vnd.onem2m-res+protobuf (a proposal, not an official type).
+//
+// Field names are oneM2M short names. Attributes the schema does not model (or values of an
+// unexpected type) travel losslessly as compact JSON in the `ext` field of the same object,
+// so decoding always reproduces the original dictionary.
+//
+// Timestamps (ct, lt, et, ot, rqet) in ACME's "YYYYMMDDTHHMMSS,ffffff" form are sent as
+// microseconds since the Unix epoch; any other timestamp string goes in `ext` unchanged.
+syntax = "proto3";
+
+package onem2m;
+
+message Primitive {
+  optional uint32 op = 1;     // operation: 1 create, 2 retrieve, 3 update, 4 delete, 5 notify
+  optional string to = 2;
+  optional string fr = 3;
+  optional string rqi = 4;
+  optional uint32 ty = 5;
+  optional string rvi = 6;
+  optional uint32 rsc = 7;
+  optional int64 ot = 8;      // originating timestamp
+  optional int64 rqet = 9;    // request expiration timestamp
+  optional uint32 drt = 10;   // desired identifier result type
+  optional uint32 rcn = 11;   // result content
+  bytes ext = 15;             // other primitive parameters, JSON
+
+  // pc: the primitive content, one "m2m:..." wrapper
+  oneof pc {
+    AE ae = 16;               // m2m:ae
+    Container cnt = 17;       // m2m:cnt
+    ContentInstance cin = 18; // m2m:cin
+    Subscription sub = 19;    // m2m:sub
+    Notification sgn = 20;    // m2m:sgn
+    string dbg = 21;          // m2m:dbg
+    bytes pc_json = 22;       // any other content, JSON
+  }
+}
+
+message AE {
+  optional string rn = 1;
+  optional string ri = 2;
+  optional string pi = 3;
+  optional uint32 ty = 4;
+  optional int64 ct = 5;
+  optional int64 lt = 6;
+  optional int64 et = 7;
+  repeated string lbl = 8;
+  repeated string acpi = 9;
+  optional string api = 10;
+  optional string aei = 11;
+  optional bool rr = 12;
+  repeated string srv = 13;
+  repeated string poa = 14;
+  bytes ext = 15;
+  repeated string csz = 16;
+}
+
+message Container {
+  optional string rn = 1;
+  optional string ri = 2;
+  optional string pi = 3;
+  optional uint32 ty = 4;
+  optional int64 ct = 5;
+  optional int64 lt = 6;
+  optional int64 et = 7;
+  repeated string lbl = 8;
+  repeated string acpi = 9;
+  optional uint32 st = 10;
+  optional uint32 mni = 11;
+  optional uint32 mbs = 12;
+  optional uint32 cni = 13;
+  optional uint32 cbs = 14;
+  bytes ext = 15;
+  optional uint32 mia = 16;
+  optional string cr = 17;
+}
+
+message ContentInstance {
+  optional string rn = 1;
+  optional string ri = 2;
+  optional string pi = 3;
+  optional uint32 ty = 4;
+  optional int64 ct = 5;
+  optional int64 lt = 6;
+  optional int64 et = 7;
+  repeated string lbl = 8;
+  optional string cnf = 9;
+  optional string con = 10;   // string content; any other JSON value goes in ext
+  optional uint32 cs = 11;
+  optional uint32 st = 12;
+  optional string cr = 13;
+  bytes ext = 15;
+}
+
+message Subscription {
+  optional string rn = 1;
+  optional string ri = 2;
+  optional string pi = 3;
+  optional uint32 ty = 4;
+  optional int64 ct = 5;
+  optional int64 lt = 6;
+  optional int64 et = 7;
+  repeated string lbl = 8;
+  repeated string acpi = 9;
+  repeated string nu = 10;
+  repeated uint32 net = 11;   // enc.net when enc has no other keys; otherwise enc goes in ext
+  optional uint32 nct = 12;
+  optional string cr = 13;
+  optional uint32 exc = 14;
+  bytes ext = 15;
+}
+
+message Notification {
+  optional uint32 net = 1;    // nev.net
+  oneof rep {                 // nev.rep
+    AE ae = 2;
+    Container cnt = 3;
+    ContentInstance cin = 4;
+    Subscription sub = 5;
+  }
+  optional string sur = 6;
+  optional bool vrq = 7;
+  optional string cr = 8;
+  bytes ext = 15;             // other sgn attributes, and nev when it can't be modeled
+}
