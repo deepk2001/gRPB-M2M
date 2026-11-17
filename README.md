@@ -7,7 +7,7 @@ application code runs over plain gRPC (HTTP/2) or over an MQTT broker.
 
 It also brings Protobuf to **oneM2M**: `grpb.onem2m` encodes oneM2M primitives in Protobuf,
 and a small patch teaches the ACME CSE a new `pb` serialization next to JSON and CBOR. See
-[context.md](context.md) for the design.
+[context.md](https://github.com/deepk2001/gRPB-M2M/blob/main/context.md) for the design.
 
 ## Install
 
@@ -74,7 +74,7 @@ Errors are raised as `grpc.RpcError` with the usual `code()` and `details()`.
 
 ### How it works
 
-Each call is a small Protobuf `Frame` ([proto/grpb/wire.proto](proto/grpb/wire.proto))
+Each call is a small Protobuf `Frame` ([proto/grpb/wire.proto](https://github.com/deepk2001/gRPB-M2M/blob/main/proto/grpb/wire.proto))
 carrying a call ID, a 4-byte method ID (CRC-32 of the method name), the serialized
 message, a status code and a timeout. The topics follow oneM2M's MQTT binding (TS-0010),
 with a `pb` format segment:
@@ -98,7 +98,7 @@ with a `pb` format segment:
 
 ## oneM2M with Protobuf (ACME)
 
-[proto/grpb/onem2m/onem2m.proto](proto/grpb/onem2m/onem2m.proto) models the common primitive
+[proto/grpb/onem2m/onem2m.proto](https://github.com/deepk2001/gRPB-M2M/blob/main/proto/grpb/onem2m/onem2m.proto) models the common primitive
 parameters and the AE, container, content instance, subscription and notification resources
 as typed fields. Anything it doesn't model travels losslessly as compact JSON in an `ext`
 field, so `decode(encode(p)) == p` for every primitive. The proposed media type is
@@ -117,9 +117,9 @@ with Onem2mClient("Csensor1", serialization="pb", host="broker.local") as c:
 Registering with `csz` set to the Protobuf media type makes ACME send that AE's notifications in
 Protobuf too. HTTP/JSON clients keep reading the same resources unchanged.
 
-**The ACME patch** ([patches/acme-protobuf.patch](patches/acme-protobuf.patch), about 25 lines)
+**The ACME patch** ([patches/acme-protobuf.patch](https://github.com/deepk2001/gRPB-M2M/blob/main/patches/acme-protobuf.patch), about 25 lines)
 adds the `PROTOBUF` serialization, the `pb` MQTT topic segment and the media type, and calls the
-shared codec. [scripts/patch-acme.sh](scripts/patch-acme.sh) applies it to ACME 2026.05.1 and
+shared codec. [scripts/patch-acme.sh](https://github.com/deepk2001/gRPB-M2M/blob/main/scripts/patch-acme.sh) applies it to ACME 2026.05.1 and
 copies the codec in (`make setup` runs it; `make acme-patch` reruns it). A test fails if the two
 copies of the codec ever differ.
 
@@ -139,7 +139,7 @@ commands on a Pi (`GRPB_BROKER_HOST=<laptop>`) to measure over Wi-Fi and on cons
 
 ## Simulations: three apps, many nodes, one Pi
 
-[docs/SIMULATIONS.md](docs/SIMULATIONS.md) describes three mock applications that run many simulated
+[docs/SIMULATIONS.md](https://github.com/deepk2001/gRPB-M2M/blob/main/docs/SIMULATIONS.md) describes three mock applications that run many simulated
 nodes on one Raspberry Pi and record a data point for every claim:
 
 | App | Shows | Compares |
@@ -234,3 +234,7 @@ With no sensor attached, or with `GRPB_SIM=1`, the Pi uses the simulator.
 
 The demo broker allows anonymous connections and ACME's access checks are off. Use them
 only on a trusted network.
+
+## License
+
+Apache License 2.0, see [LICENSE](https://github.com/deepk2001/gRPB-M2M/blob/main/LICENSE).

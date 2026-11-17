@@ -8,3 +8,6 @@ dist/
 build/
 .pytest_cache/
 .safeswitch/
+tools/report/node_modules/
+tools/report/data.json
+tools/report/package-lock.json

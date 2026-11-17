@@ -1,0 +1,6 @@
+{
+  "name": "grpb-report",
+  "private": true,
+  "description": "Builds docs/gRPB-M2M-Benefits-Report.docx from an evidence folder (make report EV=results/...)",
+  "dependencies": { "docx": "^9.0.0" }
+}

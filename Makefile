@@ -7,7 +7,7 @@ SIM := $(PY) -m grpb_examples.sim
 S ?= farmnet
 
 .PHONY: setup setup-pi broker cse smoke hal proto acme-patch test build sniff bench hub sensor fan \
-        sim sweep plot dashboard evidence
+        sim sweep plot dashboard evidence report
 
 setup:        ## laptop: clone ACME, install Mosquitto, create .venv with library + examples
 	scripts/setup-dev.sh
@@ -70,3 +70,8 @@ dashboard:    ## FarmNet dashboard (HTTP/JSON view of the CSE) on port 8090
 
 evidence:     ## the full evidence matrix (all apps, formats, transports, networks) + charts; QUICK=1 for a dry run
 	scripts/run-evidence.sh
+
+report:       ## benefits report (.docx) from an evidence folder: make report EV=results/<time>-evidence-<label>
+	[ -d tools/report/node_modules ] || (cd tools/report && npm install --silent)
+	$(PY) tools/report/extract.py $(EV) tools/report/data.json
+	node tools/report/build.js tools/report/data.json docs/gRPB-M2M-Benefits-Report.docx

@@ -4,18 +4,34 @@ version = "0.1.0"
 description = "Run generated gRPC stubs and servicers over MQTT with Protobuf encoding (oneM2M-ready)"
 readme = "README.md"
 requires-python = ">=3.11"
-authors = [{ name = "Team Nittany Nerds" }]
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "Team Nittany Nerds (Penn State)" }]
 keywords = ["grpc", "protobuf", "mqtt", "iot", "onem2m", "raspberry-pi"]
 classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: Internet",
     "Topic :: System :: Networking",
+    "Topic :: Software Development :: Libraries",
+    "Typing :: Typed",
 ]
 dependencies = [
     "grpcio>=1.66",
     "protobuf>=7.35",  # grpb/wire_pb2.py is generated with protoc 7.35+
     "paho-mqtt>=2.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/deepk2001/gRPB-M2M"
+Documentation = "https://github.com/deepk2001/gRPB-M2M#readme"
+Repository = "https://github.com/deepk2001/gRPB-M2M"
+Issues = "https://github.com/deepk2001/gRPB-M2M/issues"
 
 [project.optional-dependencies]
 # Needed only to generate stubs from your own .proto files.
@@ -27,7 +43,7 @@ cbor = ["cbor2>=5.6"]
 dev = ["pytest>=8", "grpcio-tools>=1.66", "build>=1.2"]
 
 [build-system]
-requires = ["setuptools>=69"]
+requires = ["setuptools>=77"]   # SPDX license expressions (PEP 639)
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
