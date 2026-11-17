@@ -1,0 +1,28 @@
+{
+  "app": "farmnet",
+  "vary": {
+    "format": [
+      "json",
+      "cbor",
+      "pb"
+    ],
+    "nodes": [
+      "10",
+      "50"
+    ],
+    "netem": [
+      "lan"
+    ]
+  },
+  "fixed": [
+    "--interval",
+    "5",
+    "--duration",
+    "10",
+    "--warmup",
+    "10"
+  ],
+  "repeat": 1,
+  "host": "Deeps-MacBook-Air.local",
+  "started": "2026-11-17T14:27:32"
+}

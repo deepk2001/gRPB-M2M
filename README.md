@@ -63,6 +63,9 @@ Errors are raised as `grpc.RpcError` with the usual `code()` and `details()`.
 | Client and bidirectional streaming | not yet (raises `UNIMPLEMENTED`) |
 | Status codes, `context.abort()`, handler exceptions → `UNKNOWN` | yes |
 | Deadlines (`timeout=`), `context.time_remaining()` | yes |
+| Stale requests (arriving after the client's deadline) refused, not executed | yes (`clock_skew_ms=500`; needs roughly synced clocks, `None` disables) |
+| Traffic counters: `channel.stats()`, `server.stats()` | exact MQTT bytes and messages per connection |
+| MQTT 5 topic aliases, both directions | yes, on by default (`topic_aliases=False` turns off); about 40 B saved per message |
 | Invocation metadata | yes (no initial/trailing metadata) |
 | `wait_for_ready=True` | waits for the server to come online |
 | Cancellation (`call.cancel()`, closed channel, crashed device) | reaches the server; `add_callback` runs |
@@ -87,6 +90,9 @@ with a `pb` format segment:
   with `wait_for_ready=True`.
 - **Dead clients:** a device that crashes or loses power triggers its Last Will, and the
   server cancels its open streams.
+- **Topic aliases:** after the first message on a topic, client and broker replace the topic string
+  with a 2-byte number (MQTT 5), in both directions. Aliases are reset on every reconnect. Mosquitto
+  allows 10 per client by default; `config/mosquitto.conf` raises that to 1000 for servers with many clients.
 - **Expiry:** requests carry an MQTT 5 message expiry, so the broker never delivers a stale
   request. This needs no clock sync between devices.
 
@@ -131,6 +137,24 @@ Each run writes `results/<time>-<kind>-<label>/` with `samples.csv` (every measu
 to only print the summary, e.g. for a quick check: `make bench ARGS="e2e --n 20 --no-save"`. Run the same
 commands on a Pi (`GRPB_BROKER_HOST=<laptop>`) to measure over Wi-Fi and on constrained CPUs.
 
+## Simulations: three apps, many nodes, one Pi
+
+[docs/SIMULATIONS.md](docs/SIMULATIONS.md) describes three mock applications that run many simulated
+nodes on one Raspberry Pi and record a data point for every claim:
+
+| App | Shows | Compares |
+|---|---|---|
+| **FarmNet**: sensor fleet through oneM2M | bytes per reading, fleet MB/day, CSE load, JSON interop | Protobuf vs CBOR vs JSON |
+| **PulseWatch**: high-rate streams to several viewers | throughput, delivery, delay | gRPB-M2M vs gRPC/HTTP/2 vs JSON over MQTT |
+| **SafeSwitch**: commands while actuators crash or freeze | fail-fast time, controller blocking, stale commands | gRPB-M2M vs gRPC/HTTP/2 vs JSON over MQTT |
+
+```sh
+make sim S=farmnet ARGS="--nodes 50 --format pb"     # one run (needs make broker + make cse)
+make sim S=safeswitch ARGS="--transport json --scenario freeze"
+make dashboard                                        # FarmNet data read back over HTTP/JSON, port 8090
+make evidence                                         # every app x format x transport x network, then charts
+```
+
 ## This repository
 
 ```
@@ -140,13 +164,14 @@ proto/grpb/onem2m/     oneM2M primitives in Protobuf (codec in grpb/onem2m/)
 patches/               the ACME Protobuf patch
 results/               benchmark runs (raw samples + summaries)
 tests/                 library, codec and ACME tests, against a private Mosquitto and ACME
-examples/              grpb-examples package: sample apps and the Pi hardware layer
+examples/              grpb-examples package: sample apps, simulations and the Pi hardware layer
   grpb_examples/hal.py             DS18B20 + GPIO relay on a Pi, simulated elsewhere
   grpb_examples/temperature/       hub, sensor, fan; run over --transport mqtt|grpc
+  grpb_examples/sim/               FarmNet, PulseWatch, SafeSwitch, sweeps, charts, dashboard
   proto/                           the sample apps' .proto files
-  tests/                           the sample app over both transports
+  tests/                           the sample app over both transports; the simulations
 tools/                 bench.py (evidence), sniff.py (frames on the wire), m1_smoke.py (oneM2M JSON check)
-config/, scripts/      broker and ACME config; setup and run scripts
+config/, scripts/      broker and ACME config; setup, run and evidence scripts (run-evidence.sh)
 vendor/acme            ACME CSE 2026.05.1 (cloned and patched by setup)
 ```
 
@@ -156,7 +181,7 @@ Needs `git`, [`uv`](https://docs.astral.sh/uv/), and Homebrew (macOS) or apt (Li
 
 ```sh
 make setup      # ACME, Mosquitto, .venv (Python 3.13) with library + examples + dev tools
-make test       # 69 tests; starts its own broker and ACME
+make test       # 77 tests; starts its own broker and ACME
 make build      # dist/grpb_m2m-0.1.0-py3-none-any.whl and .tar.gz
 ```
 

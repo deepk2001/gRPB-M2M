@@ -75,7 +75,7 @@ class Onem2mClient:
 
     def __init__(self, originator: str, *, serialization: str = "pb", host: str = "127.0.0.1",
                  port: int = 1883, cse_id: str = "id-in", topic_prefix: str = "", timeout: float = 10.0,
-                 on_notify: Callable[[Notification], None] | None = None) -> None:
+                 on_notify: Callable[[Notification], None] | None = None, topic_aliases: bool = True) -> None:
         if "/" in originator:
             raise ValueError("originator must not contain '/' (encode SP-relative IDs first)")
         self.originator, self.serialization, self.cse_id = originator, serialization, cse_id
@@ -91,7 +91,8 @@ class Onem2mClient:
         self._pending: dict[str, tuple[threading.Event, list]] = {}
         self._lock = threading.Lock()
         self._ep = Endpoint(f"{originator}-{uuid.uuid4().hex[:6]}", host, port,
-                            subscriptions=[self._resp, self._notify_req], on_message=self._on_message)
+                            subscriptions=[self._resp, self._notify_req], on_message=self._on_message,
+                            topic_aliases=topic_aliases)
 
     @property
     def poa(self) -> str:
@@ -112,6 +113,10 @@ class Onem2mClient:
 
     def __exit__(self, *exc: object) -> None:
         self.close()
+
+    def stats(self) -> dict[str, int]:
+        """MQTT messages and bytes this client has sent and received (see Endpoint.stats)."""
+        return self._ep.stats()
 
     def request(self, op: int, to: str, *, ty: int | None = None, pc: Any = None,
                 timeout: float | None = None, **params: Any) -> Response:

@@ -7,3 +7,4 @@ vendor/
 dist/
 build/
 .pytest_cache/
+.safeswitch/

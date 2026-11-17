@@ -1,0 +1,23 @@
+// SafeSwitch: a building controller commands actuators (valves, door locks). Each actuator is a server.
+syntax = "proto3";
+
+package grpb.sim.safeswitch;
+
+service Actuator {
+  // Apply a command. The controller gives up after its deadline; executing it later is "stale".
+  rpc Apply(Command) returns (State);
+}
+
+message Command {
+  string actuator_id = 1;
+  uint32 seq = 2;
+  uint64 issued_us = 3;         // wall clock at the controller, microseconds
+  bool on = 4;                  // open/close, lock/unlock
+}
+
+message State {
+  string actuator_id = 1;
+  uint32 seq = 2;
+  bool on = 3;
+  uint64 applied_us = 4;
+}

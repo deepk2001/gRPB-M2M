@@ -1,0 +1,33 @@
+{
+  "app": "safeswitch",
+  "vary": {
+    "transport": [
+      "grpb",
+      "grpc",
+      "json"
+    ],
+    "scenario": [
+      "crash",
+      "freeze",
+      "none"
+    ],
+    "netem": [
+      "lan"
+    ]
+  },
+  "fixed": [
+    "--actuators",
+    "20",
+    "--groups",
+    "4",
+    "--duration",
+    "45",
+    "--fail-at",
+    "10",
+    "--outage",
+    "15"
+  ],
+  "repeat": 1,
+  "host": "Deeps-MacBook-Air.local",
+  "started": "2026-11-17T15:00:50"
+}

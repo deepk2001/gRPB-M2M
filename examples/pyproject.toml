@@ -1,13 +1,15 @@
 [project]
 name = "grpb-examples"
 version = "0.1.0"
-description = "Sample apps for gRPB-M2M: temperature sensors, hub and fan controller (Pi or simulated)"
+description = "Sample apps and simulations for gRPB-M2M: temperature demo, FarmNet, PulseWatch, SafeSwitch"
 requires-python = ">=3.11"
-dependencies = ["grpb-m2m"]
+dependencies = ["grpb-m2m[cbor]", "psutil>=5.9"]
 
 [project.optional-dependencies]
 # Real Raspberry Pi hardware (GPIO relay/LED). Not needed for the simulator.
 pi = ["gpiozero>=2.0", "lgpio>=0.2"]
+# Charts from simulation results (python -m grpb_examples.sim plot ...).
+plot = ["matplotlib>=3.8"]
 
 [tool.uv.sources]
 grpb-m2m = { path = "..", editable = true }

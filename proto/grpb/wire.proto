@@ -28,4 +28,7 @@ message Frame {
   string details = 6;               // error text when code != 0
   uint32 timeout_ms = 7;            // REQUEST: client deadline, 0 = none
   map<string, string> metadata = 8; // REQUEST: invocation metadata
+  // REQUEST: the same deadline as Unix time in ms (sender's clock), 0 = none. Lets a server refuse a
+  // request that reaches it after the client gave up, e.g. one buffered while the device was cut off.
+  uint64 deadline_unix_ms = 9;
 }

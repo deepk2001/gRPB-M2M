@@ -272,3 +272,112 @@ def test_rejects_ids_with_topic_characters():
         grpb.MqttChannel("a/b")
     with pytest.raises(ValueError):
         grpb.MqttServer("hub+")
+
+
+def test_stale_request_is_refused_not_executed(broker):
+    """A request reaching the server after the client's absolute deadline (e.g. buffered while the
+    device was cut off) is answered DEADLINE_EXCEEDED and never executed."""
+    import paho.mqtt.client as mqtt
+    from paho.mqtt.enums import CallbackAPIVersion
+
+    from grpb import topics
+    from grpb.wire_pb2 import Frame
+
+    ran = threading.Event()
+    sid = uid("srv")
+    server = grpb.MqttServer(sid, broker.host, broker.port)
+    server.add_generic_rpc_handlers((grpc.method_handlers_generic_handler(SERVICE, {
+        "Act": grpc.unary_unary_rpc_method_handler(lambda req, ctx: ran.set() or b"done")}),))
+    server.start()
+    assert server.wait_ready(5)
+
+    client_id, replies = uid("raw"), []
+    got = threading.Event()
+    c = mqtt.Client(CallbackAPIVersion.VERSION2, client_id=client_id, protocol=mqtt.MQTTv5)
+    c.on_message = lambda cl, u, m: (replies.append(Frame.FromString(m.payload)), got.set())
+    c.connect(broker.host, broker.port)
+    c.subscribe(topics.response(topics.DEFAULT_PREFIX, client_id, sid), qos=1)
+    c.loop_start()
+    try:
+        time.sleep(0.3)
+        stale = Frame(kind=Frame.REQUEST, call_id=1, method_id=topics.method_id(method("Act")), payload=b"x",
+                      timeout_ms=2000, deadline_unix_ms=int(time.time() * 1000) - 5000)
+        c.publish(topics.request(topics.DEFAULT_PREFIX, client_id, sid), stale.SerializeToString(), qos=1)
+        assert got.wait(5)
+        assert replies[0].code == grpc.StatusCode.DEADLINE_EXCEEDED.value[0]
+        assert not ran.wait(0.5) and server.stale_refused == 1
+
+        # The same call with a live deadline runs normally.
+        got.clear()
+        fresh = Frame(kind=Frame.REQUEST, call_id=2, method_id=topics.method_id(method("Act")), payload=b"x",
+                      timeout_ms=2000, deadline_unix_ms=int(time.time() * 1000) + 2000)
+        c.publish(topics.request(topics.DEFAULT_PREFIX, client_id, sid), fresh.SerializeToString(), qos=1)
+        assert got.wait(5) and ran.wait(1)
+        assert replies[-1].code == 0 and replies[-1].payload == b"done"
+    finally:
+        c.loop_stop()
+        c.disconnect()
+        server.stop(0).wait(5)
+
+
+def test_stats_count_mqtt_bytes(rig):
+    server, channel, _ = rig
+    before = channel.stats()
+    assert channel.unary_unary(method("Echo"))(b"hello", timeout=5) == b"hello"
+    after = channel.stats()
+    assert after["msgs_out"] - before["msgs_out"] == 1   # the request
+    assert after["msgs_in"] - before["msgs_in"] >= 1     # the response (+ maybe the retained presence)
+    assert after["bytes_out"] - before["bytes_out"] > len(b"hello") + 20
+
+
+def test_topic_aliases_shrink_repeat_messages(rig):
+    """MQTT 5 topic aliases: after the first request, the topic string is replaced by a 2-byte alias."""
+    _, channel, _ = rig
+    echo = channel.unary_unary(method("Echo"))
+    sizes = []
+    for _ in range(3):
+        before = channel.stats()["bytes_out"]
+        assert echo(b"x", timeout=5) == b"x"
+        sizes.append(channel.stats()["bytes_out"] - before)
+    topic_len = len(f"grpb/req/{channel.client_id}/{channel.server_id}/pb")
+    assert sizes[1] == sizes[2] and sizes[0] - sizes[1] >= topic_len - 3
+
+
+def test_calls_survive_broker_restart_with_aliases(tmp_path):
+    """Aliases belong to one connection; after the broker restarts, both sides must reset them."""
+    import subprocess
+
+    from conftest import _find_mosquitto, _free_port
+    exe = _find_mosquitto()
+    if exe is None:
+        pytest.skip("mosquitto not installed")
+    port = _free_port()
+    conf = tmp_path / "m.conf"
+    conf.write_text(f"listener {port} 127.0.0.1\nmax_topic_alias 1000\nallow_anonymous true\npersistence false\n")
+
+    def start():
+        p = subprocess.Popen([exe, "-c", str(conf)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        time.sleep(0.5)
+        return p
+
+    broker = start()
+    sid = uid("srv")
+    server = grpb.MqttServer(sid, "127.0.0.1", port, keepalive=5)
+    server.add_generic_rpc_handlers((grpc.method_handlers_generic_handler(SERVICE, {
+        "Echo": grpc.unary_unary_rpc_method_handler(lambda req, ctx: req)}),))
+    server.start()
+    channel = grpb.MqttChannel(sid, "127.0.0.1", port)
+    echo = channel.unary_unary(method("Echo"))
+    try:
+        for _ in range(3):
+            assert echo(b"before", timeout=5, wait_for_ready=True) == b"before"
+        broker.terminate()
+        broker.wait(5)
+        broker = start()
+        for _ in range(3):   # reconnect (1-10 s back-off), then aliases are re-established
+            assert echo(b"after", timeout=20, wait_for_ready=True) == b"after"
+    finally:
+        channel.close()
+        server.stop(0).wait(5)
+        broker.terminate()
+        broker.wait(5)

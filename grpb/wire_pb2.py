@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0fgrpb/wire.proto\x12\tgrpb.wire\"\xe0\x02\n\x05\x46rame\x12#\n\x04kind\x18\x01 \x01(\x0e\x32\x15.grpb.wire.Frame.Kind\x12\x0f\n\x07\x63\x61ll_id\x18\x02 \x01(\r\x12\x11\n\tmethod_id\x18\x03 \x01(\x07\x12\x0f\n\x07payload\x18\x04 \x01(\x0c\x12\x0c\n\x04\x63ode\x18\x05 \x01(\r\x12\x0f\n\x07\x64\x65tails\x18\x06 \x01(\t\x12\x12\n\ntimeout_ms\x18\x07 \x01(\r\x12\x30\n\x08metadata\x18\x08 \x03(\x0b\x32\x1e.grpb.wire.Frame.MetadataEntry\x1a/\n\rMetadataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"g\n\x04Kind\x12\x14\n\x10KIND_UNSPECIFIED\x10\x00\x12\x0b\n\x07REQUEST\x10\x01\x12\x0c\n\x08RESPONSE\x10\x02\x12\x12\n\x0eSTREAM_MESSAGE\x10\x03\x12\x0e\n\nSTREAM_END\x10\x04\x12\n\n\x06\x43\x41NCEL\x10\x05\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0fgrpb/wire.proto\x12\tgrpb.wire\"\xfa\x02\n\x05\x46rame\x12#\n\x04kind\x18\x01 \x01(\x0e\x32\x15.grpb.wire.Frame.Kind\x12\x0f\n\x07\x63\x61ll_id\x18\x02 \x01(\r\x12\x11\n\tmethod_id\x18\x03 \x01(\x07\x12\x0f\n\x07payload\x18\x04 \x01(\x0c\x12\x0c\n\x04\x63ode\x18\x05 \x01(\r\x12\x0f\n\x07\x64\x65tails\x18\x06 \x01(\t\x12\x12\n\ntimeout_ms\x18\x07 \x01(\r\x12\x30\n\x08metadata\x18\x08 \x03(\x0b\x32\x1e.grpb.wire.Frame.MetadataEntry\x12\x18\n\x10\x64\x65\x61\x64line_unix_ms\x18\t \x01(\x04\x1a/\n\rMetadataEntry\x12\x0b\n\x03key\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t:\x02\x38\x01\"g\n\x04Kind\x12\x14\n\x10KIND_UNSPECIFIED\x10\x00\x12\x0b\n\x07REQUEST\x10\x01\x12\x0c\n\x08RESPONSE\x10\x02\x12\x12\n\x0eSTREAM_MESSAGE\x10\x03\x12\x0e\n\nSTREAM_END\x10\x04\x12\n\n\x06\x43\x41NCEL\x10\x05\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -34,9 +34,9 @@ if not _descriptor._USE_C_DESCRIPTORS:
   _globals['_FRAME_METADATAENTRY']._loaded_options = None
   _globals['_FRAME_METADATAENTRY']._serialized_options = b'8\001'
   _globals['_FRAME']._serialized_start=31
-  _globals['_FRAME']._serialized_end=383
-  _globals['_FRAME_METADATAENTRY']._serialized_start=231
-  _globals['_FRAME_METADATAENTRY']._serialized_end=278
-  _globals['_FRAME_KIND']._serialized_start=280
-  _globals['_FRAME_KIND']._serialized_end=383
+  _globals['_FRAME']._serialized_end=409
+  _globals['_FRAME_METADATAENTRY']._serialized_start=257
+  _globals['_FRAME_METADATAENTRY']._serialized_end=304
+  _globals['_FRAME_KIND']._serialized_start=306
+  _globals['_FRAME_KIND']._serialized_end=409
 # @@protoc_insertion_point(module_scope)

@@ -1,0 +1,27 @@
+// PulseWatch: wearables / vibration sensors stream samples at high rate; several viewers watch live.
+syntax = "proto3";
+
+package grpb.sim.pulse;
+
+service Pulse {
+  // Unary: one sample from a node, acknowledged by the hub.
+  rpc Publish(Sample) returns (Ack);
+  // Server streaming: every sample the hub receives (optionally from one node) as it arrives.
+  rpc Watch(WatchRequest) returns (stream Sample);
+}
+
+message Sample {
+  string node_id = 1;
+  uint32 seq = 2;               // per-node counter: viewers use it to count gaps
+  uint64 sent_us = 3;           // wall clock at the node, microseconds (all nodes share one Pi clock)
+  repeated float accel = 4;     // x, y, z in g
+  float heart_rate = 5;         // beats per minute
+}
+
+message Ack {
+  uint32 seq = 1;
+}
+
+message WatchRequest {
+  string node_id = 1;           // empty = all nodes
+}

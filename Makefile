@@ -2,8 +2,12 @@ PY := .venv/bin/python
 # Transport for the sample app: mqtt (gRPB-M2M) or grpc (plain gRPC over HTTP/2).
 T ?= mqtt
 APP := grpb_examples.temperature
+SIM := $(PY) -m grpb_examples.sim
+# Simulation for make sim / make sweep: farmnet, pulse or safeswitch.
+S ?= farmnet
 
-.PHONY: setup setup-pi broker cse smoke hal proto acme-patch test build sniff bench hub sensor fan
+.PHONY: setup setup-pi broker cse smoke hal proto acme-patch test build sniff bench hub sensor fan \
+        sim sweep plot dashboard evidence
 
 setup:        ## laptop: clone ACME, install Mosquitto, create .venv with library + examples
 	scripts/setup-dev.sh
@@ -50,3 +54,19 @@ sensor:       ## sensor, e.g. make sensor ARGS="--id s1 --seed 1"
 
 fan:          ## fan controller, e.g. make fan ARGS="--sensor s1 --on 26 --off 24"
 	$(PY) -m $(APP).fan --transport $(T) $(ARGS)
+
+# --- Simulations: many nodes on one machine, data points for every claim (docs/SIMULATIONS.md). ---
+sim:          ## one run, e.g. make sim S=farmnet ARGS="--nodes 50 --format pb" | S=pulse | S=safeswitch
+	$(SIM) $(S) $(ARGS)
+
+sweep:        ## grid of runs, e.g. make sweep S=farmnet ARGS="--vary format=json,cbor,pb -- --duration 30"
+	$(SIM) sweep $(S) $(ARGS)
+
+plot:         ## charts from results, e.g. make plot ARGS="results/<sweep>"
+	$(SIM) plot $(ARGS)
+
+dashboard:    ## FarmNet dashboard (HTTP/JSON view of the CSE) on port 8090
+	$(SIM) dashboard $(ARGS)
+
+evidence:     ## the full evidence matrix (all apps, formats, transports, networks) + charts; QUICK=1 for a dry run
+	scripts/run-evidence.sh

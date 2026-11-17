@@ -8,7 +8,7 @@ from typing import ClassVar as _ClassVar, Optional as _Optional, Union as _Union
 DESCRIPTOR: _descriptor.FileDescriptor
 
 class Frame(_message.Message):
-    __slots__ = ("kind", "call_id", "method_id", "payload", "code", "details", "timeout_ms", "metadata")
+    __slots__ = ("kind", "call_id", "method_id", "payload", "code", "details", "timeout_ms", "metadata", "deadline_unix_ms")
     class Kind(int, metaclass=_enum_type_wrapper.EnumTypeWrapper):
         __slots__ = ()
         KIND_UNSPECIFIED: _ClassVar[Frame.Kind]
@@ -38,6 +38,7 @@ class Frame(_message.Message):
     DETAILS_FIELD_NUMBER: _ClassVar[int]
     TIMEOUT_MS_FIELD_NUMBER: _ClassVar[int]
     METADATA_FIELD_NUMBER: _ClassVar[int]
+    DEADLINE_UNIX_MS_FIELD_NUMBER: _ClassVar[int]
     kind: Frame.Kind
     call_id: int
     method_id: int
@@ -46,4 +47,5 @@ class Frame(_message.Message):
     details: str
     timeout_ms: int
     metadata: _containers.ScalarMap[str, str]
-    def __init__(self, kind: _Optional[_Union[Frame.Kind, str]] = ..., call_id: _Optional[int] = ..., method_id: _Optional[int] = ..., payload: _Optional[bytes] = ..., code: _Optional[int] = ..., details: _Optional[str] = ..., timeout_ms: _Optional[int] = ..., metadata: _Optional[_Mapping[str, str]] = ...) -> None: ...
+    deadline_unix_ms: int
+    def __init__(self, kind: _Optional[_Union[Frame.Kind, str]] = ..., call_id: _Optional[int] = ..., method_id: _Optional[int] = ..., payload: _Optional[bytes] = ..., code: _Optional[int] = ..., details: _Optional[str] = ..., timeout_ms: _Optional[int] = ..., metadata: _Optional[_Mapping[str, str]] = ..., deadline_unix_ms: _Optional[int] = ...) -> None: ...

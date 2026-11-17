@@ -38,7 +38,7 @@ def broker(tmp_path_factory: pytest.TempPathFactory):
         pytest.skip("mosquitto not installed")
     port = _free_port()
     conf = tmp_path_factory.mktemp("mosquitto") / "test.conf"
-    conf.write_text(f"listener {port} 127.0.0.1\nallow_anonymous true\npersistence false\n")
+    conf.write_text(f"listener {port} 127.0.0.1\nmax_topic_alias 1000\nallow_anonymous true\npersistence false\n")
     proc = subprocess.Popen([exe, "-c", str(conf)], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     deadline = time.monotonic() + 5
     while True:

@@ -131,7 +131,9 @@ class MqttServer:
     """
 
     def __init__(self, server_id: str, host: str = "127.0.0.1", port: int = 1883, *,
-                 prefix: str = topics.DEFAULT_PREFIX, max_workers: int = 32, keepalive: int = 15) -> None:
+                 prefix: str = topics.DEFAULT_PREFIX, max_workers: int = 32, keepalive: int = 15,
+                 clock_skew_ms: int | None = 500,
+                 topic_aliases: bool = True) -> None:
         self.server_id = topics.check_id("server_id", server_id)
         self._prefix = prefix
         self._presence_topic = topics.presence(prefix, server_id)
@@ -142,6 +144,10 @@ class MqttServer:
         self._pool = futures.ThreadPoolExecutor(max_workers=max_workers, thread_name_prefix=f"grpb-{server_id}")
         self._stopping = False
         self._stopped = threading.Event()
+        # Refuse requests that arrive more than this long after the client's absolute deadline
+        # (None: never). Assumes clocks agree to within this tolerance, e.g. via NTP.
+        self._clock_skew_ms = clock_skew_ms
+        self.stale_refused = 0
 
         self._ep = Endpoint(
             f"grpb-server-{server_id}", host, port,
@@ -150,6 +156,7 @@ class MqttServer:
             will=(self._presence_topic, b"offline", True),
             on_ready=lambda: self._ep.publish(self._presence_topic, b"online", retain=True),
             keepalive=keepalive,
+            topic_aliases=topic_aliases,
         )
 
     # --- grpc.Server interface used by generated add_*_to_server() ------------------------
@@ -173,6 +180,11 @@ class MqttServer:
     def start(self) -> None:
         """Connect to the broker and start serving. Returns immediately; reconnects on its own."""
         self._ep.start()
+
+    def stats(self) -> dict[str, int]:
+        """MQTT messages and bytes this server has sent and received (see Endpoint.stats), plus
+        stale_refused: requests refused because they arrived after the client's deadline."""
+        return {**self._ep.stats(), "stale_refused": self.stale_refused}
 
     def wait_ready(self, timeout: float | None = None) -> bool:
         """Block until connected and subscribed (True), or until timeout (False)."""
@@ -226,6 +238,17 @@ class MqttServer:
                 self._reply(client_id, Frame(kind=Frame.RESPONSE, call_id=frame.call_id,
                                              code=grpc.StatusCode.UNAVAILABLE.value[0], details="server is stopping"))
                 return
+            if (frame.deadline_unix_ms and self._clock_skew_ms is not None
+                    and time.time() * 1000 > frame.deadline_unix_ms + self._clock_skew_ms):
+                # The client has already given up (e.g. this sat in a buffer while we were cut off):
+                # executing it now would act on a stale command.
+                self.stale_refused += 1
+                log.info("refused call %s/%d: arrived %.0f ms after its deadline", client_id, frame.call_id,
+                         time.time() * 1000 - frame.deadline_unix_ms)
+                self._reply(client_id, Frame(kind=Frame.RESPONSE, call_id=frame.call_id,
+                                             code=grpc.StatusCode.DEADLINE_EXCEEDED.value[0],
+                                             details="request arrived after its deadline; not executed"))
+                return
             ctx = _Context(client_id, frame)
             with self._lock:
                 self._active[(client_id, frame.call_id)] = ctx
@@ -264,6 +287,8 @@ class MqttServer:
                 end(grpc.StatusCode.UNIMPLEMENTED, f"unknown method id {frame.method_id:#010x}")
                 return
             name, handler = found
+            if ctx._cancelled.is_set():
+                return  # cancelled (or the client vanished) before we got to it: don't execute
             if handler.request_streaming:
                 end(grpc.StatusCode.UNIMPLEMENTED, f"{name}: client-streaming calls are not supported over MQTT yet")
                 return

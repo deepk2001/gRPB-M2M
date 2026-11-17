@@ -85,7 +85,8 @@ class MqttChannel:
 
     def __init__(self, server_id: str, host: str = "127.0.0.1", port: int = 1883, *,
                  client_id: str | None = None, prefix: str = topics.DEFAULT_PREFIX,
-                 keepalive: int = 15, presence_grace: float = 1.0) -> None:
+                 keepalive: int = 15, presence_grace: float = 1.0,
+                 topic_aliases: bool = True) -> None:
         self.server_id = topics.check_id("server_id", server_id)
         self.client_id = topics.check_id("client_id", client_id or f"grpb-{uuid.uuid4().hex[:10]}")
         self._prefix = prefix
@@ -109,8 +110,13 @@ class MqttChannel:
             will=(topics.presence(prefix, self.client_id), b"offline", False),
             on_ready=self._on_ready,
             keepalive=keepalive,
+            topic_aliases=topic_aliases,
         )
         self._ep.start()
+
+    def stats(self) -> dict[str, int]:
+        """MQTT messages and bytes this channel has sent and received (see Endpoint.stats)."""
+        return self._ep.stats()
 
     @classmethod
     def from_url(cls, url: str, **kwargs: Any) -> MqttChannel:
@@ -215,6 +221,7 @@ class MqttChannel:
             self._calls[call_id] = pending
         frame = Frame(kind=Frame.REQUEST, call_id=call_id, method_id=topics.method_id(method), payload=payload,
                       timeout_ms=int(timeout * 1000) if timeout is not None else 0,
+                      deadline_unix_ms=int((time.time() + timeout) * 1000) if timeout is not None else 0,
                       metadata=dict(metadata or ()))
         self._ep.publish(self._req_topic, frame.SerializeToString(),
                          expiry_s=math.ceil(timeout) if timeout is not None else None)
