@@ -1,0 +1,6 @@
+t,wall_us,event,transport,scenario,group,actuators
+-2.994,1795123209426571,start,json,crash,,
+0.0,1795123212420847,measuring,,,,
+5.008,1795123217428472,crash,,,0,5
+11.001,1795123223421532,restored,,,0,
+20.025,1795123232445235,stopped,,,,

@@ -1,0 +1,2 @@
+app,transport,scenario,actuators,affected,netem,deadline_s,keepalive_s,outage_s,period_s,commands,ok_ratio,latency_p50_ms,latency_p95_ms,executions,stale_executions,stale_max_late_s,executed_but_reported_failed,duplicate_executions,system_cpu_mean,sim_cpu_mean,broker_cpu_mean,cse_cpu_mean
+safeswitch,grpb,none,20,0,wifi,2.0,5,0,0.5,1800,1.0,59.195,65.947,1920,0,0,0,0,6.5,13.9,1.6,1.4

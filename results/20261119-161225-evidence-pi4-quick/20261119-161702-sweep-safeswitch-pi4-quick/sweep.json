@@ -1,0 +1,33 @@
+{
+  "app": "safeswitch",
+  "vary": {
+    "transport": [
+      "grpb",
+      "grpc",
+      "json"
+    ],
+    "scenario": [
+      "crash",
+      "freeze",
+      "none"
+    ],
+    "netem": [
+      "lan"
+    ]
+  },
+  "fixed": [
+    "--actuators",
+    "20",
+    "--groups",
+    "4",
+    "--duration",
+    "20",
+    "--fail-at",
+    "5",
+    "--outage",
+    "6"
+  ],
+  "repeat": 1,
+  "host": "DeepKotecha-01",
+  "started": "2026-11-19T16:17:02"
+}

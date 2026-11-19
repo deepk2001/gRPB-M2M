@@ -1,0 +1,32 @@
+{
+  "app": "farmnet",
+  "vary": {
+    "format": [
+      "json",
+      "cbor",
+      "pb"
+    ],
+    "nodes": [
+      "10",
+      "50",
+      "200"
+    ],
+    "netem": [
+      "lan",
+      "wifi",
+      "4g",
+      "constrained"
+    ]
+  },
+  "fixed": [
+    "--interval",
+    "5",
+    "--duration",
+    "60",
+    "--warmup",
+    "10"
+  ],
+  "repeat": 1,
+  "host": "DeepKotecha-01",
+  "started": "2026-11-19T16:22:28"
+}

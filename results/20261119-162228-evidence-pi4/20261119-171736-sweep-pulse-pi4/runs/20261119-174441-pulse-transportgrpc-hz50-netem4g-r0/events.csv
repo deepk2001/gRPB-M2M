@@ -1,0 +1,4 @@
+t,wall_us,event,transport,nodes,hz,viewers
+-4.997,1795128214429007,start,grpc,10,50.0,3
+0.001,1795128219426212,measuring,,,,
+61.233,1795128280658329,stopped,,,,

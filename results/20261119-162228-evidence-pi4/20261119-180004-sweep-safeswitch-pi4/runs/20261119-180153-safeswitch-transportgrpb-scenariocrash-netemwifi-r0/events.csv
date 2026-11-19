@@ -1,0 +1,6 @@
+t,wall_us,event,transport,scenario,group,actuators
+-2.996,1795129263405445,start,grpb,crash,,
+0.0,1795129266401121,measuring,,,,
+10.008,1795129276408704,crash,,,0,5
+25.001,1795129291401886,restored,,,0,
+45.246,1795129311647042,stopped,,,,

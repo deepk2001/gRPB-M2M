@@ -1,0 +1,30 @@
+{
+  "app": "pulse",
+  "vary": {
+    "transport": [
+      "grpb",
+      "grpc",
+      "json"
+    ],
+    "hz": [
+      "10",
+      "40"
+    ],
+    "netem": [
+      "lan"
+    ]
+  },
+  "fixed": [
+    "--nodes",
+    "10",
+    "--viewers",
+    "3",
+    "--duration",
+    "10",
+    "--warmup",
+    "5"
+  ],
+  "repeat": 1,
+  "host": "DeepKotecha-01",
+  "started": "2026-11-19T16:15:00"
+}

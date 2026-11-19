@@ -1,0 +1,2 @@
+app,transport,nodes,hz,viewers,netem,flap,duration_s,offered_per_s,published,achieved_per_s,publish_errors,publish_rtt_p50_ms,publish_rtt_p95_ms,delivered,delivery_ratio,missing,delay_p50_ms,delay_p95_ms,delay_p99_ms,delay_max_ms,sample_pb_B,sample_json_B,device_link_B_per_sample,viewer_B_per_sample,loopback_B_per_sample_all_hops,recovery_ms,sched_lag_p95_ms,system_cpu_mean,sim_cpu_mean,broker_cpu_mean,cse_cpu_mean
+pulse,json,10,20.0,3,lan,,60.1,200.0,12010,200.0,0,3.829,7.449,36030,1.0,0,2.938,8.957,14.356,65.0,37,107,134.9,134.9,1434.2,,8.425,23.0,83.7,6.9,2.3

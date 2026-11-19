@@ -1,0 +1,6 @@
+t,wall_us,event,transport,scenario,group,actuators
+-2.996,1795123055492587,start,grpb,freeze,,
+0.0,1795123058488486,measuring,,,,
+5.0,1795123063488528,freeze,,,0,5
+11.0,1795123069488547,restored,,,0,
+20.025,1795123078513393,stopped,,,,

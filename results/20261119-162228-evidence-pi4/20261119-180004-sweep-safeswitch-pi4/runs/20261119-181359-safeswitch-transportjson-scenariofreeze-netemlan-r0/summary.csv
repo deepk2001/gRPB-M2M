@@ -1,0 +1,2 @@
+app,transport,scenario,actuators,affected,netem,deadline_s,keepalive_s,outage_s,period_s,commands,ok_ratio,latency_p50_ms,latency_p95_ms,outage_commands,outage_failed,outage_fast_fail,outage_timed_out,controller_blocked_s,first_error_ms,fails_fast_after_ms,recovery_ms,executions,stale_executions,stale_max_late_s,executed_but_reported_failed,duplicate_executions,system_cpu_mean,sim_cpu_mean,broker_cpu_mean,cse_cpu_mean
+safeswitch,json,freeze,20,5,lan,2.0,5,15.0,0.5,1680,0.9786,24.83,73.106,40,36,0,36,72.0,2249.72,never,1112.845,1810,45,15.95,46,10,2.7,10.4,1.2,1.1

@@ -1,0 +1,1244 @@
+t,node,seq,tag,sched_lag_ms,rsc,ok,rtt_ms,req_payload_B,resp_payload_B,notify_ms,error
+0.066,187,3,n187s3,0.35,2001,1,8026.85,241,472,8024.326,
+0.065,81,3,n81s3,0.26,2001,1,8030.052,240,471,8067.177,
+0.092,3,3,n3s3,0.34,2001,1,8086.808,239,470,8128.474,
+0.071,57,3,n57s3,0.27,2001,1,8108.084,239,470,8105.25,
+0.12,121,3,n121s3,0.31,2001,1,8093.252,241,472,8100.962,
+0.148,173,3,n173s3,0.26,2001,1,8129.809,241,472,8122.626,
+0.181,149,3,n149s3,0.22,2001,1,8136.486,241,472,8134.873,
+0.202,37,3,n37s3,0.37,2001,1,8159.783,240,471,8158.322,
+0.21,62,3,n62s3,0.24,2001,1,8208.778,240,471,8204.529,
+0.211,80,3,n80s3,0.3,2001,1,8247.007,240,471,8245.537,
+0.328,87,3,n87s3,0.25,2001,1,8173.378,240,471,8171.881,
+0.339,177,3,n177s3,0.27,2001,1,8207.464,241,472,8205.716,
+0.347,163,3,n163s3,0.31,2001,1,8243.13,241,472,8241.278,
+0.372,38,3,n38s3,0.27,2001,1,8288.367,240,471,8286.528,
+0.374,125,3,n125s3,0.59,2001,1,8290.365,241,472,8330.796,
+0.38,123,3,n123s3,0.29,2001,1,8392.947,241,472,8390.266,
+0.395,126,3,n126s3,0.25,2001,1,8473.353,241,472,8421.71,
+0.406,135,3,n135s3,0.29,2001,1,8465.574,241,472,8467.764,
+0.417,48,3,n48s3,0.29,2001,1,8525.301,240,471,8522.314,
+0.423,102,3,n102s3,0.27,2001,1,8563.635,241,472,8561.821,
+0.427,20,3,n20s3,0.28,2001,1,8594.352,240,471,8601.125,
+0.468,59,3,n59s3,0.39,2001,1,8578.87,240,471,8561.361,
+0.513,78,3,n78s3,0.27,2001,1,8573.011,240,471,8574.154,
+0.525,70,3,n70s3,0.32,2001,1,8655.517,239,470,8653.697,
+0.527,36,3,n36s3,0.24,2001,1,8655.622,240,471,8700.839,
+0.556,142,3,n142s3,0.28,2001,1,8675.206,241,472,8673.295,
+0.571,91,3,n91s3,0.29,2001,1,8683.678,240,471,8701.369,
+0.585,60,3,n60s3,0.38,2001,1,8736.712,240,471,8735.036,
+0.588,66,3,n66s3,0.52,2001,1,8786.857,240,471,8775.984,
+0.653,180,3,n180s3,0.3,2001,1,8757.067,241,472,8755.243,
+0.683,34,3,n34s3,0.32,2001,1,8771.493,240,471,8769.699,
+0.719,179,3,n179s3,0.36,2001,1,8793.532,241,472,8791.201,
+0.731,147,3,n147s3,0.33,2001,1,8823.698,241,472,8821.504,
+0.791,132,3,n132s3,0.29,2001,1,8807.274,241,472,8805.334,
+0.814,159,3,n159s3,0.26,2001,1,8804.367,241,472,8826.634,
+0.847,67,3,n67s3,0.2,2001,1,8846.897,240,471,8844.223,
+0.852,21,3,n21s3,0.25,2001,1,8885.299,240,471,8884.056,
+0.887,137,3,n137s3,0.35,2001,1,8908.442,241,472,8906.577,
+0.915,157,3,n157s3,0.29,2001,1,8883.226,241,472,8921.704,
+1.006,4,3,n4s3,0.3,2001,1,8864.818,239,470,8831.631,
+1.067,9,3,n9s3,0.32,2001,1,8893.116,239,470,8886.58,
+1.069,23,3,n23s3,0.24,2001,1,8929.051,240,471,8927.241,
+1.09,92,3,n92s3,0.28,2001,1,8952.008,240,471,8950.093,
+1.126,47,3,n47s3,0.3,2001,1,8932.219,240,471,8958.042,
+1.155,197,3,n197s3,0.27,2001,1,8984.627,240,471,8983.008,
+1.177,18,3,n18s3,0.24,2001,1,9005.488,240,471,9003.663,
+1.208,63,3,n63s3,0.31,2001,1,9017.874,240,471,9060.44,
+1.196,186,3,n186s3,0.29,2001,1,9031.428,241,472,9028.236,
+1.218,68,3,n68s3,0.27,2001,1,9049.545,239,470,9051.985,
+1.244,194,3,n194s3,0.14,2001,1,9071.58,241,472,9069.763,
+1.298,122,3,n122s3,0.13,2001,1,9107.033,241,472,9103.689,
+1.299,120,3,n120s3,0.13,2001,1,9107.716,241,472,9144.886,
+1.373,101,3,n101s3,0.12,2001,1,9086.772,241,472,9071.971,
+1.375,76,3,n76s3,0.11,2001,1,9151.719,240,471,9146.977,
+1.452,162,3,n162s3,0.13,2001,1,9147.592,241,472,9112.061,
+1.455,98,3,n98s3,0.11,2001,1,9147.102,240,471,9153.653,
+1.545,172,3,n172s3,0.11,2001,1,9120.936,241,472,9119.222,
+1.59,181,3,n181s3,0.11,2001,1,9143.541,241,472,9117.834,
+1.634,49,3,n49s3,0.12,2001,1,9119.681,240,471,9118.011,
+1.678,54,3,n54s3,0.13,2001,1,9119.419,240,471,9117.739,
+1.722,103,3,n103s3,0.11,2001,1,9122.966,241,472,9121.374,
+1.771,29,3,n29s3,0.18,2001,1,9134.975,240,471,9132.16,
+1.773,128,3,n128s3,0.13,2001,1,9211.243,241,472,9175.546,
+1.858,75,3,n75s3,0.11,2001,1,9127.312,240,471,9137.917,
+1.907,145,3,n145s3,0.13,2001,1,9154.198,240,471,9151.154,
+1.908,83,3,n83s3,0.12,2001,1,9194.076,240,471,9192.271,
+1.939,115,3,n115s3,0.11,2001,1,9210.014,241,472,9209.03,
+2.004,110,3,n110s3,0.11,2001,1,9172.86,241,472,9191.896,
+2.011,100,3,n100s3,0.13,2001,1,9230.549,241,472,9232.616,
+2.05,86,3,n86s3,0.13,2001,1,9245.693,240,471,9243.911,
+2.094,112,3,n112s3,0.11,2001,1,9247.655,241,472,9245.817,
+2.176,150,3,n150s3,0.13,2001,1,9209.66,241,472,9207.97,
+2.186,141,3,n141s3,0.13,2001,1,9247.61,241,472,9245.845,
+2.252,0,3,n0s3,0.13,2001,1,9254.705,239,470,9251.805,
+2.294,5,3,n5s3,0.13,2001,1,9214.64,239,470,9253.778,
+2.338,111,3,n111s3,0.12,2001,1,9255.797,241,472,9254.021,
+2.387,8,3,n8s3,0.13,2001,1,9268.212,239,470,9266.481,
+2.388,116,3,n116s3,0.14,2001,1,9268.514,241,472,9308.105,
+2.474,28,3,n28s3,0.14,2001,1,9267.645,240,471,9265.808,
+2.476,42,3,n42s3,0.14,2001,1,9310.019,240,471,9308.389,
+2.606,13,3,n13s3,0.1,2001,1,9247.619,240,471,9289.878,
+2.562,171,3,n171s3,0.11,2001,1,9292.381,241,472,9289.234,
+2.65,178,3,n178s3,0.13,2001,1,9291.501,241,472,9289.815,
+2.694,27,3,n27s3,0.12,2001,1,9292.074,240,471,9289.995,
+2.759,45,3,n45s3,0.11,2001,1,9294.772,240,471,9292.16,
+2.761,72,3,n72s3,0.11,2001,1,9337.232,240,471,9335.363,
+2.846,109,3,n109s3,0.11,2001,1,9295.595,241,472,9293.9,
+2.913,170,3,n170s3,0.1,2001,1,9273.613,241,472,9271.697,
+2.934,183,3,n183s3,0.12,2001,1,9298.549,240,471,9296.692,
+2.978,184,3,n184s3,0.14,2001,1,9327.193,241,472,9325.378,
+3.04,198,3,n198s3,0.16,2001,1,9267.986,241,472,9308.386,
+3.042,175,3,n175s3,0.11,2001,1,9352.442,241,472,9350.589,
+3.126,65,3,n65s3,0.13,2001,1,9312.128,240,471,9310.07,
+3.17,158,3,n158s3,0.11,2001,1,9331.268,241,472,9329.537,
+3.21,191,3,n191s3,0.11,2001,1,9292.915,241,472,9334.476,
+3.221,105,3,n105s3,0.13,2001,1,9369.34,241,472,9367.561,
+3.295,85,3,n85s3,0.12,2001,1,9339.337,239,470,9337.454,
+3.298,169,3,n169s3,0.12,2001,1,9379.913,241,472,9378.237,
+3.391,53,3,n53s3,0.18,2001,1,9330.621,240,471,9328.894,
+3.474,196,3,n196s3,0.16,2001,1,9301.162,241,472,9296.191,
+3.475,77,3,n77s3,0.15,2001,1,9338.509,239,470,9336.792,
+3.563,16,3,n16s3,0.18,2001,1,9294.917,240,471,9293.114,
+3.669,130,3,n130s3,0.18,2001,1,9237.153,241,472,9235.382,
+3.714,195,3,n195s3,0.1,2001,1,9246.461,241,472,9238.823,
+3.758,133,3,n133s3,0.12,2001,1,9248.213,241,472,9246.649,
+3.802,189,3,n189s3,0.13,2001,1,9262.846,240,471,9261.026,
+3.846,143,3,n143s3,0.11,2001,1,9278.143,241,472,9271.579,
+3.89,188,3,n188s3,0.11,2001,1,9287.111,241,472,9279.588,
+3.95,99,3,n99s3,0.12,2001,1,9276.77,240,471,9269.169,
+3.994,95,3,n95s3,0.12,2001,1,9300.401,239,470,9297.756,
+4.017,167,3,n167s3,0.13,2001,1,9321.527,241,472,9319.678,
+4.082,117,3,n117s3,0.13,2001,1,9257.019,241,472,9297.883,
+4.12,35,3,n35s3,0.11,2001,1,9264.982,239,470,9261.369,
+4.127,166,3,n166s3,0.13,2001,1,9307.665,241,472,9297.538,
+4.172,124,3,n124s3,0.27,2001,1,9315.029,241,472,9313.254,
+4.236,51,3,n51s3,0.14,2001,1,9293.605,239,470,9291.909,
+4.297,199,3,n199s3,0.12,2001,1,9276.712,241,472,9274.812,
+4.347,46,3,n46s3,0.11,2001,1,9291.512,240,471,9284.484,
+4.391,176,3,n176s3,0.13,2001,1,9313.245,241,472,9310.689,
+4.392,118,3,n118s3,0.12,2001,1,9313.947,241,472,9352.293,
+4.482,119,3,n119s3,0.12,2001,1,9325.714,241,472,9323.958,
+4.484,84,3,n84s3,0.17,2001,1,9366.499,240,471,9364.539,
+4.527,25,3,n25s3,0.12,2001,1,9367.868,240,471,9365.264,
+4.614,31,3,n31s3,0.11,2001,1,9343.957,240,471,9340.734,
+4.659,185,3,n185s3,0.1,2001,1,9382.259,241,472,9379.578,
+4.66,43,3,n43s3,0.11,2001,1,9448.555,239,470,9446.228,
+4.746,93,3,n93s3,0.13,2001,1,9444.28,240,471,9440.763,
+4.79,127,3,n127s3,0.12,2001,1,9452.243,241,472,9450.712,
+4.834,107,3,n107s3,0.13,2001,1,9457.177,241,472,9450.037,
+4.878,174,3,n174s3,0.11,2001,1,9464.806,241,472,9449.981,
+4.938,79,3,n79s3,0.11,2001,1,9456.312,240,471,9454.563,
+4.982,190,3,n190s3,0.11,2001,1,9465.664,241,472,9464.043,
+5.031,97,3,n97s3,0.12,2001,1,9459.121,240,471,9457.331,
+5.032,106,3,n106s3,0.15,2001,1,9506.491,241,472,9504.769,
+5.118,58,3,n58s3,0.1,2001,1,9488.285,240,471,9485.958,
+5.149,161,3,n161s3,0.13,2001,1,9501.49,241,472,9499.691,
+5.21,10,3,n10s3,0.11,2001,1,9488.41,239,470,9486.698,
+5.219,15,3,n15s3,0.13,2001,1,9523.222,240,471,9521.574,
+5.29,96,3,n96s3,0.11,2001,1,9497.596,240,471,9495.339,
+5.335,192,3,n192s3,0.15,2001,1,9497.994,241,472,9496.173,
+5.379,156,3,n156s3,0.16,2001,1,9535.267,241,472,9533.336,
+5.405,160,3,n160s3,0.1,2001,1,9511.1,241,472,9551.142,
+5.47,19,3,n19s3,0.11,2001,1,9531.713,240,471,9530.039,
+5.518,193,3,n193s3,0.14,2001,1,9527.622,241,472,9525.948,
+5.571,69,3,n69s3,0.11,2001,1,9506.458,240,471,9517.162,
+5.614,155,3,n155s3,0.12,2001,1,9519.506,241,472,9517.89,
+5.658,24,3,n24s3,0.12,2001,1,9523.268,240,471,9521.237,
+5.703,138,3,n138s3,0.13,2001,1,9525.788,241,472,9521.321,
+5.746,7,3,n7s3,0.12,2001,1,9527.161,239,470,9523.359,
+5.79,44,3,n44s3,0.12,2001,1,9546.422,240,471,9544.837,
+5.872,55,3,n55s3,0.11,2001,1,9510.416,240,471,9508.737,
+5.919,40,3,n40s3,0.13,2001,1,9507.252,240,471,9505.374,
+5.986,129,3,n129s3,0.11,2001,1,9519.852,241,472,9516.438,
+5.987,134,3,n134s3,0.12,2001,1,9558.633,241,472,9556.865,
+6.074,152,3,n152s3,0.11,2001,1,9529.637,241,472,9527.787,
+6.078,165,3,n165s3,0.11,2001,1,9527.383,241,472,9566.455,
+6.166,140,3,n140s3,0.12,2001,1,9523.886,241,472,9522.103,
+6.284,56,3,n56s3,0.13,2001,1,9449.595,240,471,9447.793,
+6.288,41,3,n41s3,0.13,2001,1,9489.923,240,471,9488.054,
+6.291,182,3,n182s3,0.11,2001,1,9531.7,241,472,9529.575,
+6.292,11,3,n11s3,0.1,2001,1,9574.257,240,471,9572.41,
+6.374,26,3,n26s3,0.14,2001,1,9539.535,240,471,9537.914,
+6.422,154,3,n154s3,0.12,2001,1,9535.998,241,472,9534.198,
+6.466,113,3,n113s3,0.17,2001,1,9536.205,241,472,9534.305,
+6.471,168,3,n168s3,0.12,2001,1,9575.421,241,472,9573.44,
+6.558,131,3,n131s3,0.13,2001,1,9534.348,241,472,9532.124,
+6.596,39,3,n39s3,0.11,2001,1,9556.505,240,471,9536.751,
+6.603,30,3,n30s3,0.12,2001,1,9636.065,240,471,9634.416,
+6.644,1,3,n1s3,0.13,2001,1,9597.705,239,470,9639.794,
+6.726,14,3,n14s3,0.12,2001,1,9605.172,240,471,9603.325,
+6.728,61,3,n61s3,0.12,2001,1,9605.744,240,471,9644.623,
+6.825,33,3,n33s3,0.13,2001,1,9593.562,240,471,9591.737,
+6.867,50,3,n50s3,0.08,2001,1,9594.88,240,471,9593.075,
+6.867,114,3,n114s3,0.11,2001,1,9639.823,241,472,9637.685,
+6.897,146,3,n146s3,0.13,2001,1,9652.883,240,471,9651.165,
+6.951,2,3,n2s3,0.12,2001,1,9649.533,239,470,9647.779,
+7.03,151,3,n151s3,0.14,2001,1,9623.28,241,472,9616.109,
+7.032,74,3,n74s3,0.13,2001,1,9665.644,240,471,9664.064,
+7.12,22,3,n22s3,0.14,2001,1,9622.186,240,471,9620.697,
+7.119,153,3,n153s3,0.13,2001,1,9667.131,241,472,9665.516,
+7.127,71,3,n71s3,0.13,2001,1,9706.63,240,471,9704.826,
+7.169,148,3,n148s3,0.13,2001,1,9714.5,241,472,9712.691,
+7.254,88,3,n88s3,0.13,2001,1,9687.458,240,471,9675.072,
+7.303,144,3,n144s3,0.13,2001,1,9705.159,241,472,9703.348,
+7.305,52,3,n52s3,0.13,2001,1,9744.885,240,471,9743.091,
+7.39,12,3,n12s3,0.12,2001,1,9703.758,240,471,9701.945,
+7.434,108,3,n108s3,0.13,2001,1,9703.841,241,472,9702.299,
+7.483,136,3,n136s3,0.12,2001,1,9727.876,241,472,9725.987,
+7.511,32,3,n32s3,0.13,2001,1,9742.992,240,471,9741.777,
+7.586,164,3,n164s3,0.13,2001,1,9720.312,241,472,9713.962,
+7.626,73,3,n73s3,0.13,2001,1,9719.909,240,471,9717.901,
+7.672,90,3,n90s3,0.13,2001,1,9741.29,240,471,9716.033,
+7.673,89,3,n89s3,0.13,2001,1,9762.697,240,471,9758.801,
+7.733,94,3,n94s3,0.11,2001,1,9747.194,240,471,9745.556,
+7.769,82,3,n82s3,0.11,2001,1,9757.901,240,471,9751.24,
+7.851,17,3,n17s3,0.13,2001,1,9730.823,240,471,9728.969,
+7.894,104,3,n104s3,0.11,2001,1,9734.697,241,472,9732.839,
+7.939,6,3,n6s3,0.1,2001,1,9735.577,239,470,9733.7,
+7.991,139,3,n139s3,0.13,2001,1,9749.532,241,472,9747.646,
+7.993,64,3,n64s3,0.13,2001,1,9748.723,240,471,9787.341,
+8.093,187,4,n187s4,0.12,2001,1,9729.527,241,472,9688.258,
+8.096,81,4,n81s4,0.15,2001,1,9741.998,240,471,9732.893,
+8.179,57,4,n57s4,0.08,2001,1,9727.018,240,471,9716.936,
+8.179,3,4,n3s4,0.11,2001,1,9762.939,239,470,9761.407,
+8.214,121,4,n121s4,0.13,2001,1,9773.081,241,472,9770.974,
+8.278,173,4,n173s4,0.14,2001,1,9774.928,240,471,9772.8,
+8.318,149,4,n149s4,0.11,2001,1,9783.348,241,472,9781.479,
+8.362,37,4,n37s4,0.11,2001,1,9791.661,240,471,9789.925,
+8.419,62,4,n62s4,0.14,2001,1,9810.922,240,471,9808.79,
+8.458,80,4,n80s4,0.14,2001,1,9773.889,240,471,9814.506,
+8.502,87,4,n87s4,0.11,2001,1,9815.953,239,470,9771.921,
+8.546,177,4,n177s4,0.12,2001,1,9834.664,241,472,9780.896,
+8.59,163,4,n163s4,0.13,2001,1,9840.14,241,472,9792.584,
+8.661,38,4,n38s4,0.14,2001,1,9844.342,240,471,9771.473,
+8.665,125,4,n125s4,0.11,2001,1,9844.235,241,472,9843.248,
+8.774,123,4,n123s4,0.18,2001,1,9789.719,241,472,9788.063,
+8.869,126,4,n126s4,0.18,2001,1,9783.552,240,471,9781.121,
+8.872,135,4,n135s4,0.18,2001,1,9821.357,241,472,9819.962,
+8.942,48,4,n48s4,0.15,2001,1,9795.552,240,471,9793.969,
+8.986,102,4,n102s4,0.12,2001,1,9819.736,241,472,9818.006,
+9.022,20,4,n20s4,0.14,2001,1,9786.346,240,471,9826.425,
+9.047,59,4,n59s4,0.13,2001,1,9846.797,240,471,9845.073,
+9.086,78,4,n78s4,0.12,2001,1,9858.291,239,470,9850.062,
+9.181,70,4,n70s4,0.12,2001,1,9804.872,240,471,9803.211,
+9.183,36,4,n36s4,0.11,2001,1,9855.77,240,471,9844.896,
+9.232,142,4,n142s4,0.14,2001,1,9859.6,241,472,9851.947,
+9.255,91,4,n91s4,0.11,2001,1,9875.304,240,471,9873.43,
+9.322,60,4,n60s4,0.12,2001,1,9851.715,239,470,9850.004,
+9.376,66,4,n66s4,0.12,2001,1,9853.421,240,471,9849.305,
+9.41,180,4,n180s4,0.13,2001,1,9888.986,241,472,9883.218,
+9.454,34,4,n34s4,0.12,2001,1,9965.457,240,471,9968.017,
+9.513,179,4,n179s4,0.13,2001,1,9953.701,241,472,9951.703,
+9.555,147,4,n147s4,0.14,2001,1,9921.618,241,472,9953.374,
+9.599,132,4,n132s4,0.13,2001,1,9955.644,241,472,9953.636,
+9.618,159,4,n159s4,0.12,2001,1,9937.278,241,472,9977.985,
+9.695,67,4,n67s4,0.12,2001,1,9947.496,240,471,9945.73,
+9.738,21,4,n21s4,0.13,2001,1,9948.071,240,471,9946.352,
+9.798,157,4,n157s4,0.12,2001,1,9943.136,241,472,9986.23,
+9.796,137,4,n137s4,0.14,2001,1,9946.854,241,472,9943.273,
+9.871,4,4,n4s4,0.13,2001,1,9945.023,239,470,9957.449,
+9.961,9,4,n9s4,0.12,2001,1,9902.543,239,470,9868.613,
+9.998,23,4,n23s4,0.12,2001,1,9912.211,240,471,9910.483,
+10.043,92,4,n92s4,0.15,2001,1,9935.546,240,471,9932.546,
+10.059,47,4,n47s4,0.14,2001,1,9966.564,240,471,9965.591,
+10.14,197,4,n197s4,0.1,2001,1,9918.792,240,471,9928.039,
+10.182,18,4,n18s4,0.13,2001,1,9931.204,240,471,9929.744,
+10.226,63,4,n63s4,0.13,2001,1,9931.431,240,471,9929.81,
+10.228,186,4,n186s4,0.18,2001,1,9982.11,240,471,9972.459,
+10.268,68,4,n68s4,0.18,2001,1,9982.238,240,471,9980.448,
+10.316,194,4,n194s4,0.14,2001,1,9986.837,241,472,9985.199,
+10.405,122,4,n122s4,0.12,2001,1,9940.581,241,472,9938.9,
+10.407,120,4,n120s4,0.12,2001,1,9992.962,241,472,9981.028,
+10.46,101,4,n101s4,0.11,2001,1,9997.484,241,472,9991.168,
+10.527,76,4,n76s4,0.13,2001,1,9978.882,240,471,9977.184,
+10.6,162,4,n162s4,0.12,2001,1,9985.2,241,472,9982.135,
+10.602,98,4,n98s4,0.13,,0,,,,10022.169,no response to rqi=8a2cd55cabbb within 10.0s (is the CSE running with 'json' ena
+10.666,172,4,n172s4,0.11,,0,,,,10002.063,no response to rqi=656a8f8bdb6a within 10.0s (is the CSE running with 'json' ena
+10.734,181,4,n181s4,0.11,2001,1,9993.509,241,472,9986.605,
+10.754,49,4,n49s4,0.11,,0,,,,10022.667,no response to rqi=47a084b6e4ae within 10.0s (is the CSE running with 'json' ena
+10.798,54,4,n54s4,0.1,,0,,,,10030.884,no response to rqi=1c0fda6ef01b within 10.0s (is the CSE running with 'json' ena
+10.845,103,4,n103s4,0.11,,0,,,,10033.315,no response to rqi=06ad5ce9188b within 10.0s (is the CSE running with 'json' ena
+10.906,29,4,n29s4,0.11,,0,,,,10014.298,no response to rqi=c7c9187ceb92 within 10.0s (is the CSE running with 'json' ena
+10.984,128,4,n128s4,0.11,,0,,,,10019.133,no response to rqi=1444d75941b5 within 10.0s (is the CSE running with 'json' ena
+10.986,75,4,n75s4,0.13,,0,,,,10062.285,no response to rqi=269fd5788490 within 10.0s (is the CSE running with 'json' ena
+11.061,145,4,n145s4,0.13,,0,,,,10031.007,no response to rqi=75b5df95041e within 10.0s (is the CSE running with 'json' ena
+11.102,83,4,n83s4,0.13,,0,,,,10033.854,no response to rqi=c698c8ed2e9c within 10.0s (is the CSE running with 'json' ena
+11.15,115,4,n115s4,0.11,,0,,,,10062.694,no response to rqi=062b549a5e56 within 10.0s (is the CSE running with 'json' ena
+11.178,110,4,n110s4,0.12,,0,,,,10078.777,no response to rqi=e07f82642220 within 10.0s (is the CSE running with 'json' ena
+11.242,100,4,n100s4,0.12,,0,,,,10058.167,no response to rqi=6ef95f04fca1 within 10.0s (is the CSE running with 'json' ena
+11.296,86,4,n86s4,0.14,,0,,,,10048.433,no response to rqi=b2423714083e within 10.0s (is the CSE running with 'json' ena
+11.342,112,4,n112s4,0.12,,0,,,,10046.021,no response to rqi=2a99f764556f within 10.0s (is the CSE running with 'json' ena
+11.386,150,4,n150s4,0.12,,0,,,,10051.406,no response to rqi=1be2050f8ced within 10.0s (is the CSE running with 'json' ena
+11.434,141,4,n141s4,0.1,,0,,,,10055.976,no response to rqi=e570870c8838 within 10.0s (is the CSE running with 'json' ena
+11.507,0,4,n0s4,0.12,,0,,,,10024.806,no response to rqi=5cdd896896d5 within 10.0s (is the CSE running with 'json' ena
+11.509,5,4,n5s4,0.13,,0,,,,10066.783,no response to rqi=9859d43b1841 within 10.0s (is the CSE running with 'json' ena
+11.594,111,4,n111s4,0.13,,0,,,,10037.005,no response to rqi=430069e4c15b within 10.0s (is the CSE running with 'json' ena
+11.655,8,4,n8s4,0.13,,0,,,,10056.833,no response to rqi=025fafa9fdc0 within 10.0s (is the CSE running with 'json' ena
+11.657,116,4,n116s4,0.12,,0,,,,10099.31,no response to rqi=2ded7b8ba7af within 10.0s (is the CSE running with 'json' ena
+11.742,28,4,n28s4,0.14,,0,,,,10057.826,no response to rqi=98b5137bc893 within 10.0s (is the CSE running with 'json' ena
+11.786,42,4,n42s4,0.13,,0,,,,10062.071,no response to rqi=9f7f6d4cdb44 within 10.0s (is the CSE running with 'json' ena
+11.854,13,4,n13s4,0.13,,0,,,,10060.753,no response to rqi=e2eab06fe5e5 within 10.0s (is the CSE running with 'json' ena
+11.855,171,4,n171s4,0.12,,0,,,,10105.236,no response to rqi=dfb05c356728 within 10.0s (is the CSE running with 'json' ena
+11.942,178,4,n178s4,0.12,,0,,,,10062.018,no response to rqi=304beb9158c5 within 10.0s (is the CSE running with 'json' ena
+11.987,27,4,n27s4,0.12,,0,,,,10061.506,no response to rqi=9073a460ed5d within 10.0s (is the CSE running with 'json' ena
+12.054,45,4,n45s4,0.12,,0,,,,10038.333,no response to rqi=bc7206f5f193 within 10.0s (is the CSE running with 'json' ena
+12.098,72,4,n72s4,0.13,,0,,,,10037.766,no response to rqi=7f61ab248716 within 10.0s (is the CSE running with 'json' ena
+12.142,109,4,n109s4,0.11,,0,,,,10042.148,no response to rqi=2b24a39da047 within 10.0s (is the CSE running with 'json' ena
+12.186,170,4,n170s4,0.13,,0,,,,10043.068,no response to rqi=96ba8770e91b within 10.0s (is the CSE running with 'json' ena
+12.233,183,4,n183s4,0.11,,0,,,,10050.997,no response to rqi=05e0fcc03327 within 10.0s (is the CSE running with 'json' ena
+12.306,184,4,n184s4,0.14,,0,,,,10058.662,no response to rqi=8ad9b45bada1 within 10.0s (is the CSE running with 'json' ena
+12.308,198,4,n198s4,0.13,,0,,,,10100.135,no response to rqi=bdd656e069f7 within 10.0s (is the CSE running with 'json' ena
+12.394,175,4,n175s4,0.13,,0,,,,10057.844,no response to rqi=fb841f90638e within 10.0s (is the CSE running with 'json' ena
+12.439,65,4,n65s4,0.15,,0,,,,10057.457,no response to rqi=fb360f68b99d within 10.0s (is the CSE running with 'json' ena
+12.502,158,4,n158s4,0.11,,0,,,,10079.463,no response to rqi=6241d265a517 within 10.0s (is the CSE running with 'json' ena
+12.503,191,4,n191s4,0.13,,0,,,,10121.317,no response to rqi=8223c5ddd18c within 10.0s (is the CSE running with 'json' ena
+12.591,105,4,n105s4,0.15,,0,,,,10081.836,no response to rqi=5a8f9d8e27ec within 10.0s (is the CSE running with 'json' ena
+12.634,85,4,n85s4,0.12,,0,,,,10081.813,no response to rqi=b6b013624e90 within 10.0s (is the CSE running with 'json' ena
+12.678,169,4,n169s4,0.12,,0,,,,10082.004,no response to rqi=5da970cfc7a8 within 10.0s (is the CSE running with 'json' ena
+12.722,53,4,n53s4,0.13,,0,,,,10081.831,no response to rqi=75d7a28072ca within 10.0s (is the CSE running with 'json' ena
+12.776,196,4,n196s4,0.13,,0,,,,10076.271,no response to rqi=a05dca95e2a2 within 10.0s (is the CSE running with 'json' ena
+12.814,77,4,n77s4,0.12,,0,,,,10081.875,no response to rqi=20d31785c657 within 10.0s (is the CSE running with 'json' ena
+12.858,16,4,n16s4,0.13,,0,,,,10081.833,no response to rqi=75bd1dfb8b53 within 10.0s (is the CSE running with 'json' ena
+12.906,130,4,n130s4,0.13,,0,,,,10077.893,no response to rqi=c6e1cf1a0826 within 10.0s (is the CSE running with 'json' ena
+12.961,195,4,n195s4,0.11,,0,,,,10073.907,no response to rqi=f415a92a4fac within 10.0s (is the CSE running with 'json' ena
+13.007,133,4,n133s4,0.1,,0,,,,10076.446,no response to rqi=e4295cc6930e within 10.0s (is the CSE running with 'json' ena
+13.065,189,4,n189s4,0.1,,0,,,,10069.32,no response to rqi=3c8756b673cc within 10.0s (is the CSE running with 'json' ena
+13.125,143,4,n143s4,0.13,,0,,,,10056.813,no response to rqi=175c7714b6ce within 10.0s (is the CSE running with 'json' ena
+13.178,188,4,n188s4,0.11,,0,,,,10050.074,no response to rqi=5a5fc46556e8 within 10.0s (is the CSE running with 'json' ena
+13.227,99,4,n99s4,0.13,,0,,,,10045.048,no response to rqi=ed203d615959 within 10.0s (is the CSE running with 'json' ena
+13.294,95,4,n95s4,0.11,,0,,,,10042.143,no response to rqi=ed9f508a73fe within 10.0s (is the CSE running with 'json' ena
+13.338,167,4,n167s4,0.12,,0,,,,10043.618,no response to rqi=f4d5b0ffcb07 within 10.0s (is the CSE running with 'json' ena
+13.34,117,4,n117s4,0.17,,0,,,,10085.376,no response to rqi=2d4c18978c68 within 10.0s (is the CSE running with 'json' ena
+13.386,35,4,n35s4,0.12,,0,,,,10114.491,no response to rqi=a3577545c4c7 within 10.0s (is the CSE running with 'json' ena
+13.435,166,4,n166s4,0.11,,0,,,,10132.905,no response to rqi=ce336aa7975e within 10.0s (is the CSE running with 'json' ena
+13.487,124,4,n124s4,0.11,,0,,,,10153.892,no response to rqi=49d7964e8b0e within 10.0s (is the CSE running with 'json' ena
+13.53,51,4,n51s4,0.11,,0,,,,10153.975,no response to rqi=2423156a0e16 within 10.0s (is the CSE running with 'json' ena
+13.575,199,4,n199s4,0.12,,0,,,,10153.728,no response to rqi=c396b814ffbf within 10.0s (is the CSE running with 'json' ena
+13.638,46,4,n46s4,0.11,,0,,,,10133.951,no response to rqi=b54090be7444 within 10.0s (is the CSE running with 'json' ena
+13.704,176,4,n176s4,0.12,,0,,,,10150.241,no response to rqi=e6d7eef21c53 within 10.0s (is the CSE running with 'json' ena
+13.706,118,4,n118s4,0.12,,0,,,,10191.542,no response to rqi=69ba8333a674 within 10.0s (is the CSE running with 'json' ena
+13.808,119,4,n119s4,0.1,,0,,,,10131.904,no response to rqi=696e2bbe8195 within 10.0s (is the CSE running with 'json' ena
+13.851,84,4,n84s4,0.13,,0,,,,10133.69,no response to rqi=4735d7e44884 within 10.0s (is the CSE running with 'json' ena
+13.895,25,4,n25s4,0.18,,0,,,,10136.831,no response to rqi=4c9b08078f7c within 10.0s (is the CSE running with 'json' ena
+13.958,31,4,n31s4,0.17,,0,,,,10117.779,no response to rqi=588ceec81410 within 10.0s (is the CSE running with 'json' ena
+14.042,185,4,n185s4,0.17,,0,,,,10078.393,no response to rqi=43aedc4e6c12 within 10.0s (is the CSE running with 'json' ena
+14.109,43,4,n43s4,0.14,,0,,,,10054.976,no response to rqi=17349e4f9ea8 within 10.0s (is the CSE running with 'json' ena
+14.191,93,4,n93s4,0.12,,0,,,,10017.236,no response to rqi=446e24ea36a9 within 10.0s (is the CSE running with 'json' ena
+14.243,127,4,n127s4,0.11,,0,,,,10021.32,no response to rqi=378e711220db within 10.0s (is the CSE running with 'json' ena
+14.292,107,4,n107s4,0.15,,0,,,,10046.606,no response to rqi=7909cb4c2ab1 within 10.0s (is the CSE running with 'json' ena
+14.343,174,4,n174s4,0.11,,0,,,,10037.084,no response to rqi=e640ffdd2ecf within 10.0s (is the CSE running with 'json' ena
+14.394,79,4,n79s4,0.12,,0,,,,10030.297,no response to rqi=9ac741843fad within 10.0s (is the CSE running with 'json' ena
+14.448,190,4,n190s4,0.11,,0,,,,10045.469,no response to rqi=b1e033e0b81c within 10.0s (is the CSE running with 'json' ena
+14.49,97,4,n97s4,0.12,,0,,,,10080.362,no response to rqi=9dfc7ab7ed11 within 10.0s (is the CSE running with 'json' ena
+14.539,106,4,n106s4,0.1,,0,,,,10110.866,no response to rqi=1f60af655977 within 10.0s (is the CSE running with 'json' ena
+14.607,58,4,n58s4,0.12,,0,,,,10138.386,no response to rqi=bd891615f0a7 within 10.0s (is the CSE running with 'json' ena
+14.651,161,4,n161s4,0.13,,0,,,,10096.049,no response to rqi=534a445e04aa within 10.0s (is the CSE running with 'json' ena
+14.698,10,4,n10s4,0.13,,0,,,,10105.841,no response to rqi=2b9339d6bb1f within 10.0s (is the CSE running with 'json' ena
+14.742,15,4,n15s4,0.11,,0,,,,10118.42,no response to rqi=b1edaf4fe9eb within 10.0s (is the CSE running with 'json' ena
+14.788,96,4,n96s4,0.11,,0,,,,10120.174,no response to rqi=546124dd3a87 within 10.0s (is the CSE running with 'json' ena
+14.833,192,4,n192s4,0.13,,0,,,,10133.667,no response to rqi=2775d0421e9e within 10.0s (is the CSE running with 'json' ena
+14.915,156,4,n156s4,0.12,,0,,,,10142.501,no response to rqi=ee0337614eb0 within 10.0s (is the CSE running with 'json' ena
+14.917,160,4,n160s4,0.14,,0,,,,10183.733,no response to rqi=6bc52aa3f555 within 10.0s (is the CSE running with 'json' ena
+15.002,19,4,n19s4,0.12,,0,,,,10142.126,no response to rqi=6451865bf34f within 10.0s (is the CSE running with 'json' ena
+15.046,193,4,n193s4,0.13,,0,,,,10153.646,no response to rqi=980a5f17ecf4 within 10.0s (is the CSE running with 'json' ena
+15.078,69,4,n69s4,0.14,,0,,,,10166.305,no response to rqi=39beee16427e within 10.0s (is the CSE running with 'json' ena
+15.134,155,4,n155s4,0.12,,0,,,,10154.125,no response to rqi=cc63f3ca2c24 within 10.0s (is the CSE running with 'json' ena
+15.182,24,4,n24s4,0.1,,0,,,,10150.531,no response to rqi=084b8de37a9f within 10.0s (is the CSE running with 'json' ena
+15.229,138,4,n138s4,0.12,,0,,,,10149.659,no response to rqi=e35f3ab2ddf8 within 10.0s (is the CSE running with 'json' ena
+15.274,7,4,n7s4,0.12,,0,,,,10157.009,no response to rqi=a03b24a24337 within 10.0s (is the CSE running with 'json' ena
+15.337,44,4,n44s4,0.11,,0,,,,10145.6,no response to rqi=70cf52fa7b5c within 10.0s (is the CSE running with 'json' ena
+15.382,55,4,n55s4,0.12,,0,,,,10157.384,no response to rqi=e59ee6e4dac3 within 10.0s (is the CSE running with 'json' ena
+15.426,40,4,n40s4,0.12,,0,,,,10194.225,no response to rqi=a10a08b340a3 within 10.0s (is the CSE running with 'json' ena
+15.506,129,4,n129s4,0.13,,0,,,,10159.488,no response to rqi=ca9a4c82d671 within 10.0s (is the CSE running with 'json' ena
+15.546,134,4,n134s4,0.1,,0,,,,10182.262,no response to rqi=ac0bee51bad7 within 10.0s (is the CSE running with 'json' ena
+15.604,152,4,n152s4,0.12,,0,,,,10168.028,no response to rqi=9a77fec52d98 within 10.0s (is the CSE running with 'json' ena
+15.606,165,4,n165s4,0.12,,0,,,,10210.748,no response to rqi=a61f90c6ca61 within 10.0s (is the CSE running with 'json' ena
+15.69,140,4,n140s4,0.12,,0,,,,10169.841,no response to rqi=85d54de38992 within 10.0s (is the CSE running with 'json' ena
+15.734,56,4,n56s4,0.13,,0,,,,10173.912,no response to rqi=7a51c22b6005 within 10.0s (is the CSE running with 'json' ena
+15.779,41,4,n41s4,0.12,,0,,,,10173.755,no response to rqi=957ece432322 within 10.0s (is the CSE running with 'json' ena
+15.823,182,4,n182s4,0.14,,0,,,,10177.515,no response to rqi=ec155f191f44 within 10.0s (is the CSE running with 'json' ena
+15.866,11,4,n11s4,0.11,,0,,,,10182.37,no response to rqi=d525b88fbb50 within 10.0s (is the CSE running with 'json' ena
+15.914,26,4,n26s4,0.11,,0,,,,10136.163,no response to rqi=04d0445daddb within 10.0s (is the CSE running with 'json' ena
+15.958,154,4,n154s4,0.12,,0,,,,10160.779,no response to rqi=26e94374500a within 10.0s (is the CSE running with 'json' ena
+16.003,113,4,n113s4,0.12,,0,,,,10162.242,no response to rqi=c889e1d2eb40 within 10.0s (is the CSE running with 'json' ena
+16.047,168,4,n168s4,0.16,,0,,,,10167.218,no response to rqi=78b316a00ee3 within 10.0s (is the CSE running with 'json' ena
+16.093,131,4,n131s4,0.13,,0,,,,10179.001,no response to rqi=dabca7e22559 within 10.0s (is the CSE running with 'json' ena
+16.152,39,4,n39s4,0.11,,0,,,,10178.051,no response to rqi=f6e78f323b00 within 10.0s (is the CSE running with 'json' ena
+16.24,30,4,n30s4,0.14,,0,,,,10179.454,no response to rqi=33866f94cd30 within 10.0s (is the CSE running with 'json' ena
+16.242,1,4,n1s4,0.11,,0,,,,10222.263,no response to rqi=8ed1950b19f4 within 10.0s (is the CSE running with 'json' ena
+16.332,14,4,n14s4,0.13,,0,,,,10185.438,no response to rqi=59fcd64abd2c within 10.0s (is the CSE running with 'json' ena
+16.334,61,4,n61s4,0.11,,0,,,,10230.462,no response to rqi=1d328702b120 within 10.0s (is the CSE running with 'json' ena
+16.418,33,4,n33s4,0.12,,0,,,,10193.849,no response to rqi=49ef58299a9c within 10.0s (is the CSE running with 'json' ena
+16.462,50,4,n50s4,0.12,,0,,,,10194.51,no response to rqi=9bcc8ef74224 within 10.0s (is the CSE running with 'json' ena
+16.507,114,4,n114s4,0.14,,0,,,,10193.648,no response to rqi=e446bbd165f2 within 10.0s (is the CSE running with 'json' ena
+16.55,146,4,n146s4,0.12,,0,,,,10197.914,no response to rqi=102ac66d4ae6 within 10.0s (is the CSE running with 'json' ena
+16.601,2,4,n2s4,0.11,,0,,,,10190.907,no response to rqi=fb430ec84e86 within 10.0s (is the CSE running with 'json' ena
+16.653,151,4,n151s4,0.13,,0,,,,10182.996,no response to rqi=03d54eef964d within 10.0s (is the CSE running with 'json' ena
+16.698,74,4,n74s4,0.1,,0,,,,10182.294,no response to rqi=0594fbbc5962 within 10.0s (is the CSE running with 'json' ena
+16.742,22,4,n22s4,0.1,,0,,,,10188.818,no response to rqi=55a2e15d15b7 within 10.0s (is the CSE running with 'json' ena
+16.786,153,4,n153s4,0.1,,0,,,,10197.192,no response to rqi=eddd7fa0a66d within 10.0s (is the CSE running with 'json' ena
+16.834,71,4,n71s4,0.12,,0,,,,10193.885,no response to rqi=9dec6552c478 within 10.0s (is the CSE running with 'json' ena
+16.883,148,4,n148s4,0.11,,0,,,,10188.834,no response to rqi=5c4ef35b103c within 10.0s (is the CSE running with 'json' ena
+16.942,88,4,n88s4,0.12,,0,,,,10192.481,no response to rqi=fbe1e220f7a1 within 10.0s (is the CSE running with 'json' ena
+17.009,144,4,n144s4,0.12,,0,,,,10171.661,no response to rqi=028d3aadaeee within 10.0s (is the CSE running with 'json' ena
+17.05,52,4,n52s4,0.13,,0,,,,10182.539,no response to rqi=4ec3b42ba382 within 10.0s (is the CSE running with 'json' ena
+17.094,12,4,n12s4,0.11,,0,,,,10181.924,no response to rqi=56242077a120 within 10.0s (is the CSE running with 'json' ena
+17.139,108,4,n108s4,0.1,,0,,,,10204.555,no response to rqi=85e317f3d638 within 10.0s (is the CSE running with 'json' ena
+17.211,136,4,n136s4,0.13,,0,,,,10177.495,no response to rqi=cbca6bb11816 within 10.0s (is the CSE running with 'json' ena
+17.254,32,4,n32s4,0.13,,0,,,,10188.949,no response to rqi=238d4cc37dc1 within 10.0s (is the CSE running with 'json' ena
+17.306,164,4,n164s4,0.14,,0,,,,10190.071,no response to rqi=a9e1c568ab94 within 10.0s (is the CSE running with 'json' ena
+17.347,73,4,n73s4,0.13,,0,,,,10193.57,no response to rqi=6efc22c462f3 within 10.0s (is the CSE running with 'json' ena
+17.414,90,4,n90s4,0.12,,0,,,,10171.11,no response to rqi=f71b166f421a within 10.0s (is the CSE running with 'json' ena
+17.436,89,4,n89s4,0.11,,0,,,,10236.967,no response to rqi=793808eeb1a0 within 10.0s (is the CSE running with 'json' ena
+17.48,94,4,n94s4,0.11,,0,,,,10236.335,no response to rqi=1707592b0d38 within 10.0s (is the CSE running with 'json' ena
+17.527,82,4,n82s4,0.13,,0,,,,10233.316,no response to rqi=8c628ec6edeb within 10.0s (is the CSE running with 'json' ena
+17.582,17,4,n17s4,0.1,,0,,,,10235.631,no response to rqi=b9ed4920d14e within 10.0s (is the CSE running with 'json' ena
+17.629,104,4,n104s4,0.1,,0,,,,10237.224,no response to rqi=1371b6985eff within 10.0s (is the CSE running with 'json' ena
+17.675,6,4,n6s4,0.14,,0,,,,10241.467,no response to rqi=f5528a6313b3 within 10.0s (is the CSE running with 'json' ena
+17.741,139,4,n139s4,0.1,,0,,,,10243.991,no response to rqi=0d259e5c3aea within 10.0s (is the CSE running with 'json' ena
+17.742,64,4,n64s4,0.1,,0,,,,10286.277,no response to rqi=a58a512a7786 within 10.0s (is the CSE running with 'json' ena
+17.823,187,5,n187s5,0.13,,0,,,,10206.448,no response to rqi=7d5e636c3570 within 10.0s (is the CSE running with 'json' ena
+17.838,81,5,n81s5,0.13,,0,,,,10266.462,no response to rqi=7ce0da6ef69e within 10.0s (is the CSE running with 'json' ena
+17.907,57,5,n57s5,0.13,,0,,,,10245.42,no response to rqi=6d78c3d126c5 within 10.0s (is the CSE running with 'json' ena
+17.942,3,5,n3s5,0.1,,0,,,,10265.292,no response to rqi=cc74c2feeff8 within 10.0s (is the CSE running with 'json' ena
+17.987,121,5,n121s5,0.11,,0,,,,10265.287,no response to rqi=6cc3214941fc within 10.0s (is the CSE running with 'json' ena
+18.054,173,5,n173s5,0.11,,0,,,,10258.984,no response to rqi=fc091009d376 within 10.0s (is the CSE running with 'json' ena
+18.102,149,5,n149s5,0.13,,0,,,,10258.738,no response to rqi=5e30af9725e1 within 10.0s (is the CSE running with 'json' ena
+18.154,37,5,n37s5,0.15,,0,,,,10257.053,no response to rqi=14efe20435f5 within 10.0s (is the CSE running with 'json' ena
+18.23,62,5,n62s5,0.11,,0,,,,10257.236,no response to rqi=59db11203c56 within 10.0s (is the CSE running with 'json' ena
+18.232,80,5,n80s5,0.11,,0,,,,10300.1,no response to rqi=91f73056f24b within 10.0s (is the CSE running with 'json' ena
+18.318,87,5,n87s5,0.13,,0,,,,10257.961,no response to rqi=f03928672417 within 10.0s (is the CSE running with 'json' ena
+18.381,177,5,n177s5,0.12,,0,,,,10238.921,no response to rqi=756dcfd4f7fe within 10.0s (is the CSE running with 'json' ena
+18.431,163,5,n163s5,0.1,,0,,,,10233.448,no response to rqi=8108d097b64a within 10.0s (is the CSE running with 'json' ena
+18.506,38,5,n38s5,0.12,,0,,,,10240.069,no response to rqi=8bca89cb821b within 10.0s (is the CSE running with 'json' ena
+18.509,125,5,n125s5,0.12,,0,,,,10284.234,no response to rqi=9f6e62b59895 within 10.0s (is the CSE running with 'json' ena
+18.564,123,5,n123s5,0.13,,0,,,,10230.741,no response to rqi=2242ac74aa7e within 10.0s (is the CSE running with 'json' ena
+18.652,126,5,n126s5,0.11,,0,,,,10217.166,no response to rqi=26d9d33c8e8f within 10.0s (is the CSE running with 'json' ena
+18.694,135,5,n135s5,0.1,,0,,,,10237.271,no response to rqi=2bf69e2de64c within 10.0s (is the CSE running with 'json' ena
+18.738,48,5,n48s5,0.11,,0,,,,10246.331,no response to rqi=21d63a3bad0b within 10.0s (is the CSE running with 'json' ena
+18.807,102,5,n102s5,0.11,,0,,,,10232.634,no response to rqi=45f5ee7852ab within 10.0s (is the CSE running with 'json' ena
+18.809,20,5,n20s5,0.1,,0,,,,10281.551,no response to rqi=41716678a92b within 10.0s (is the CSE running with 'json' ena
+18.894,59,5,n59s5,0.13,,0,,,,10241.105,no response to rqi=17986da10c00 within 10.0s (is the CSE running with 'json' ena
+18.945,78,5,n78s5,0.13,,0,,,,10243.241,no response to rqi=3c16471ef2d3 within 10.0s (is the CSE running with 'json' ena
+18.986,70,5,n70s5,0.11,,0,,,,10253.721,no response to rqi=023a2d921ee2 within 10.0s (is the CSE running with 'json' ena
+19.039,36,5,n36s5,0.11,,0,,,,10571.791,no response to rqi=b9e0535eb974 within 10.0s (is the CSE running with 'json' ena
+19.092,142,5,n142s5,0.14,,0,,,,10572.267,no response to rqi=e9bb39feee0d within 10.0s (is the CSE running with 'json' ena
+19.131,91,5,n91s5,0.14,,0,,,,10601.288,no response to rqi=84ba4950d8d7 within 10.0s (is the CSE running with 'json' ena
+19.174,60,5,n60s5,0.11,,0,,,,10634.091,no response to rqi=0ef6186681a9 within 10.0s (is the CSE running with 'json' ena
+19.23,66,5,n66s5,0.19,,0,,,,10661.99,no response to rqi=6f1d225c5277 within 10.0s (is the CSE running with 'json' ena
+19.3,180,5,n180s5,0.23,,0,,,,10670.142,no response to rqi=f8a2637c0fdc within 10.0s (is the CSE running with 'json' ena
+19.42,34,5,n34s5,0.12,,0,,,,10592.135,no response to rqi=b7717412cf3a within 10.0s (is the CSE running with 'json' ena
+19.467,179,5,n179s5,0.12,,0,,,,10589.606,no response to rqi=bdbc2e8803b9 within 10.0s (is the CSE running with 'json' ena
+19.477,147,5,n147s5,0.11,,0,,,,10623.538,no response to rqi=ac5b1d8a2a91 within 10.0s (is the CSE running with 'json' ena
+19.555,132,5,n132s5,0.12,,0,,,,10602.136,no response to rqi=6b29bae43754 within 10.0s (is the CSE running with 'json' ena
+19.556,159,5,n159s5,0.13,,0,,,,10644.291,no response to rqi=9ba130089691 within 10.0s (is the CSE running with 'json' ena
+19.642,67,5,n67s5,0.1,,0,,,,10605.889,no response to rqi=5941393613de within 10.0s (is the CSE running with 'json' ena
+19.686,21,5,n21s5,0.13,,0,,,,10609.745,no response to rqi=70e44b1ccacc within 10.0s (is the CSE running with 'json' ena
+19.742,157,5,n157s5,0.12,,0,,,,10598.592,no response to rqi=7c9f9c1ba2be within 10.0s (is the CSE running with 'json' ena
+19.743,137,5,n137s5,0.14,,0,,,,10664.092,no response to rqi=8eb33df8ef4c within 10.0s (is the CSE running with 'json' ena
+19.816,4,5,n4s5,0.13,,0,,,,10636.294,no response to rqi=66bdfb224047 within 10.0s (is the CSE running with 'json' ena
+19.864,9,5,n9s5,0.13,,0,,,,10656.954,no response to rqi=65d2a3acf430 within 10.0s (is the CSE running with 'json' ena
+19.911,23,5,n23s5,0.13,,0,,,,10653.334,no response to rqi=c1f74e98f2bc within 10.0s (is the CSE running with 'json' ena
+19.978,92,5,n92s5,0.12,,0,,,,10629.691,no response to rqi=ae32ed1d3d50 within 10.0s (is the CSE running with 'json' ena
+20.026,47,5,n47s5,0.13,,0,,,,10652.414,no response to rqi=7f851d30b036 within 10.0s (is the CSE running with 'json' ena
+20.059,197,5,n197s5,0.12,,0,,,,10660.97,no response to rqi=36404d952bfa within 10.0s (is the CSE running with 'json' ena
+20.114,18,5,n18s5,0.13,,0,,,,10650.298,no response to rqi=3b01fe65f831 within 10.0s (is the CSE running with 'json' ena
+20.158,63,5,n63s5,0.11,,0,,,,10650.011,no response to rqi=68ab61d012c3 within 10.0s (is the CSE running with 'json' ena
+20.21,186,5,n186s5,0.13,,0,,,,10641.958,no response to rqi=300ec70af282 within 10.0s (is the CSE running with 'json' ena
+20.25,68,5,n68s5,0.15,,0,,,,10651.934,no response to rqi=d6389844c73c within 10.0s (is the CSE running with 'json' ena
+20.303,194,5,n194s5,0.11,,0,,,,10661.005,no response to rqi=94fd146aa6eb within 10.0s (is the CSE running with 'json' ena
+20.346,122,5,n122s5,0.11,,0,,,,10675.756,no response to rqi=529e5bf5deb5 within 10.0s (is the CSE running with 'json' ena
+20.401,120,5,n120s5,0.11,,0,,,,10663.937,no response to rqi=0315d51190ad within 10.0s (is the CSE running with 'json' ena
+20.458,101,5,n101s5,0.12,,0,,,,10650.174,no response to rqi=6cfe694ae498 within 10.0s (is the CSE running with 'json' ena
+20.507,76,5,n76s5,0.11,,0,,,,10646.933,no response to rqi=52b81a1eae96 within 10.0s (is the CSE running with 'json' ena
+20.586,162,5,n162s5,0.13,,0,,,,10670.832,no response to rqi=a8dc2052567c within 10.0s (is the CSE running with 'json' ena
+20.603,98,5,n98s5,0.15,,0,,,,10697.501,no response to rqi=d28075fc98f6 within 10.0s (is the CSE running with 'json' ena
+20.667,172,5,n172s5,0.13,,0,,,,10680.947,no response to rqi=9b54251ea6e5 within 10.0s (is the CSE running with 'json' ena
+20.728,181,5,n181s5,0.11,,0,,,,10680.966,no response to rqi=634d390609f6 within 10.0s (is the CSE running with 'json' ena
+20.755,49,5,n49s5,0.16,,0,,,,10696.937,no response to rqi=271419386e0c within 10.0s (is the CSE running with 'json' ena
+20.799,54,5,n54s5,0.15,,0,,,,10701.18,no response to rqi=ad25c941d7b6 within 10.0s (is the CSE running with 'json' ena
+20.846,103,5,n103s5,0.15,,0,,,,10698.231,no response to rqi=890f5705e0f7 within 10.0s (is the CSE running with 'json' ena
+20.907,29,5,n29s5,0.13,,0,,,,10681.24,no response to rqi=3268adf2ca90 within 10.0s (is the CSE running with 'json' ena
+20.985,128,5,n128s5,0.14,,0,,,,10674.905,no response to rqi=5ee31c9632f3 within 10.0s (is the CSE running with 'json' ena
+20.987,75,5,n75s5,0.14,,0,,,,10717.398,no response to rqi=2a76782a823b within 10.0s (is the CSE running with 'json' ena
+21.062,145,5,n145s5,0.15,,0,,,,10686.17,no response to rqi=e2f96a53673c within 10.0s (is the CSE running with 'json' ena
+21.103,83,5,n83s5,0.13,,0,,,,10688.897,no response to rqi=30dd98fe4b2d within 10.0s (is the CSE running with 'json' ena
+21.151,115,5,n115s5,0.15,,0,,,,10691.733,no response to rqi=40d4012cabd6 within 10.0s (is the CSE running with 'json' ena
+21.179,110,5,n110s5,0.15,,0,,,,10709.761,no response to rqi=89b8efefdeea within 10.0s (is the CSE running with 'json' ena
+21.243,100,5,n100s5,0.13,,0,,,,10689.257,no response to rqi=ac5e9f35cf19 within 10.0s (is the CSE running with 'json' ena
+21.297,86,5,n86s5,0.13,,0,,,,10739.101,no response to rqi=77896bc846b5 within 10.0s (is the CSE running with 'json' ena
+21.344,112,5,n112s5,0.15,,0,,,,10736.823,no response to rqi=b87dca060a51 within 10.0s (is the CSE running with 'json' ena
+21.387,150,5,n150s5,0.13,,0,,,,10736.955,no response to rqi=c9ca4ab14c42 within 10.0s (is the CSE running with 'json' ena
+21.435,141,5,n141s5,0.14,,0,,,,10733.184,no response to rqi=948d5c7d0d33 within 10.0s (is the CSE running with 'json' ena
+21.509,0,5,n0s5,0.11,,0,,,,10720.573,no response to rqi=9cfadf566804 within 10.0s (is the CSE running with 'json' ena
+21.511,5,5,n5s5,0.14,,0,,,,10761.581,no response to rqi=0544c066949c within 10.0s (is the CSE running with 'json' ena
+21.595,111,5,n111s5,0.18,,0,,,,10724.884,no response to rqi=2a25981bf3fc within 10.0s (is the CSE running with 'json' ena
+21.656,8,5,n8s5,0.16,,0,,,,10708.154,no response to rqi=a366b71478b4 within 10.0s (is the CSE running with 'json' ena
+21.658,116,5,n116s5,0.14,,0,,,,10750.279,no response to rqi=535e64e9f0b8 within 10.0s (is the CSE running with 'json' ena
+21.744,28,5,n28s5,0.17,,0,,,,10708.754,no response to rqi=bad50fd89961 within 10.0s (is the CSE running with 'json' ena
+21.787,42,5,n42s5,0.14,,0,,,,10709.042,no response to rqi=d43b2af0c3aa within 10.0s (is the CSE running with 'json' ena
+21.856,13,5,n13s5,0.15,,0,,,,10717.496,no response to rqi=64bd2571dcd6 within 10.0s (is the CSE running with 'json' ena
+21.857,171,5,n171s5,0.14,,0,,,,10759.239,no response to rqi=edd771383361 within 10.0s (is the CSE running with 'json' ena
+21.943,178,5,n178s5,0.14,,0,,,,10727.882,no response to rqi=5085526f7aef within 10.0s (is the CSE running with 'json' ena
+21.988,27,5,n27s5,0.19,,0,,,,10728.576,no response to rqi=90559d0878b9 within 10.0s (is the CSE running with 'json' ena
+22.055,45,5,n45s5,0.16,,0,,,,10709.378,no response to rqi=6ab1c81032e4 within 10.0s (is the CSE running with 'json' ena
+22.1,72,5,n72s5,0.15,,0,,,,10715.204,no response to rqi=8a5b42053167 within 10.0s (is the CSE running with 'json' ena
+22.143,109,5,n109s5,0.13,,0,,,,10722.444,no response to rqi=fb7e2e53ff0b within 10.0s (is the CSE running with 'json' ena
+22.188,170,5,n170s5,0.14,,0,,,,10720.938,no response to rqi=5289f2c6dd47 within 10.0s (is the CSE running with 'json' ena
+22.234,183,5,n183s5,0.14,,0,,,,10747.187,no response to rqi=0fda089982fc within 10.0s (is the CSE running with 'json' ena
+22.307,184,5,n184s5,0.14,,0,,,,10721.462,no response to rqi=d1dac8f5fd4a within 10.0s (is the CSE running with 'json' ena
+22.309,198,5,n198s5,0.16,,0,,,,10781.477,no response to rqi=6a100f8a9ba5 within 10.0s (is the CSE running with 'json' ena
+22.395,175,5,n175s5,0.15,,0,,,,10753.003,no response to rqi=345fae60542d within 10.0s (is the CSE running with 'json' ena
+22.44,65,5,n65s5,0.21,,0,,,,10752.439,no response to rqi=8f8d2c87150a within 10.0s (is the CSE running with 'json' ena
+22.503,158,5,n158s5,0.14,,0,,,,10809.211,no response to rqi=6dddeed5b10d within 10.0s (is the CSE running with 'json' ena
+22.504,191,5,n191s5,0.12,,0,,,,10765.968,no response to rqi=3a44384de727 within 10.0s (is the CSE running with 'json' ena
+22.592,105,5,n105s5,0.13,,0,,,,10768.111,no response to rqi=9359aae9092c within 10.0s (is the CSE running with 'json' ena
+22.635,85,5,n85s5,0.17,,0,,,,10772.866,no response to rqi=a42b6043fc03 within 10.0s (is the CSE running with 'json' ena
+22.679,169,5,n169s5,0.16,,0,,,,10777.099,no response to rqi=1323db7cf729 within 10.0s (is the CSE running with 'json' ena
+22.723,53,5,n53s5,0.13,,0,,,,10776.894,no response to rqi=571d7ff67000 within 10.0s (is the CSE running with 'json' ena
+22.777,196,5,n196s5,0.16,,0,,,,10771.392,no response to rqi=800947f92042 within 10.0s (is the CSE running with 'json' ena
+22.815,77,5,n77s5,0.15,,0,,,,10777.931,no response to rqi=51811c4ba14a within 10.0s (is the CSE running with 'json' ena
+22.859,16,5,n16s5,0.15,,0,,,,10782.308,no response to rqi=1d4169184f55 within 10.0s (is the CSE running with 'json' ena
+22.907,130,5,n130s5,0.14,,0,,,,10811.364,no response to rqi=134f9e028def within 10.0s (is the CSE running with 'json' ena
+22.962,195,5,n195s5,0.13,,0,,,,10798.394,no response to rqi=b12fc1834357 within 10.0s (is the CSE running with 'json' ena
+23.008,133,5,n133s5,0.16,,0,,,,10796.618,no response to rqi=c98a9884a4fe within 10.0s (is the CSE running with 'json' ena
+23.067,189,5,n189s5,0.13,,0,,,,10781.732,no response to rqi=7cc289811cd7 within 10.0s (is the CSE running with 'json' ena
+23.126,143,5,n143s5,0.15,,0,,,,10766.498,no response to rqi=0dba5b58809c within 10.0s (is the CSE running with 'json' ena
+23.18,188,5,n188s5,0.17,,0,,,,10759.095,no response to rqi=c02c4da2a4d7 within 10.0s (is the CSE running with 'json' ena
+23.229,99,5,n99s5,0.13,,0,,,,10803.997,no response to rqi=1eb7c31decd3 within 10.0s (is the CSE running with 'json' ena
+23.295,95,5,n95s5,0.14,,0,,,,10781.165,no response to rqi=5c9cd4ca853a within 10.0s (is the CSE running with 'json' ena
+23.34,167,5,n167s5,0.13,,0,,,,10797.294,no response to rqi=eba9cfb579f3 within 10.0s (is the CSE running with 'json' ena
+23.341,117,5,n117s5,0.14,,0,,,,10839.568,no response to rqi=b4c95d0906e4 within 10.0s (is the CSE running with 'json' ena
+23.387,35,5,n35s5,0.17,,0,,,,10795.411,no response to rqi=95927ad460df within 10.0s (is the CSE running with 'json' ena
+23.436,166,5,n166s5,0.13,,0,,,,10798.548,no response to rqi=c75fc4face36 within 10.0s (is the CSE running with 'json' ena
+23.488,124,5,n124s5,0.14,,0,,,,10788.143,no response to rqi=b7dbe3ab8b03 within 10.0s (is the CSE running with 'json' ena
+23.531,51,5,n51s5,0.15,,0,,,,10791.821,no response to rqi=0e36896b93dc within 10.0s (is the CSE running with 'json' ena
+23.576,199,5,n199s5,0.15,,0,,,,10839.819,no response to rqi=a7dd569e5a3d within 10.0s (is the CSE running with 'json' ena
+23.639,46,5,n46s5,0.17,,0,,,,10820.904,no response to rqi=d0d93994c06a within 10.0s (is the CSE running with 'json' ena
+23.705,176,5,n176s5,0.14,,0,,,,10816.146,no response to rqi=66aa56b5538e within 10.0s (is the CSE running with 'json' ena
+23.707,118,5,n118s5,0.15,,0,,,,10856.924,no response to rqi=86342eed9c1e within 10.0s (is the CSE running with 'json' ena
+23.809,119,5,n119s5,0.16,,0,,,,10799.008,no response to rqi=d03c5011dc08 within 10.0s (is the CSE running with 'json' ena
+23.852,84,5,n84s5,0.27,,0,,,,10806.953,no response to rqi=b7a4a1afc52c within 10.0s (is the CSE running with 'json' ena
+23.897,25,5,n25s5,0.14,,0,,,,10811.408,no response to rqi=b557bc9d0bcf within 10.0s (is the CSE running with 'json' ena
+23.96,31,5,n31s5,0.17,,0,,,,10792.629,no response to rqi=a55cfb3ea652 within 10.0s (is the CSE running with 'json' ena
+24.043,185,5,n185s5,0.18,,0,,,,10760.399,no response to rqi=54013708a0c0 within 10.0s (is the CSE running with 'json' ena
+24.111,43,5,n43s5,0.14,,0,,,,10759.981,no response to rqi=a27a0354e729 within 10.0s (is the CSE running with 'json' ena
+24.192,93,5,n93s5,0.14,,0,,,,10764.434,no response to rqi=034a836523ed within 10.0s (is the CSE running with 'json' ena
+24.244,127,5,n127s5,0.17,,0,,,,10790.839,no response to rqi=b5571cf13b8e within 10.0s (is the CSE running with 'json' ena
+24.293,107,5,n107s5,0.16,,0,,,,10795.102,no response to rqi=2ad19d1f9eb4 within 10.0s (is the CSE running with 'json' ena
+24.344,174,5,n174s5,0.13,,0,,,,10890.696,no response to rqi=8c34f68578e9 within 10.0s (is the CSE running with 'json' ena
+24.395,79,5,n79s5,0.21,,0,,,,10885.064,no response to rqi=d12a213e70b0 within 10.0s (is the CSE running with 'json' ena
+24.45,190,5,n190s5,0.22,,0,,,,10914.315,no response to rqi=cdd375247d56 within 10.0s (is the CSE running with 'json' ena
+24.492,97,5,n97s5,0.19,,0,,,,10917.038,no response to rqi=ac0b3e552241 within 10.0s (is the CSE running with 'json' ena
+24.54,106,5,n106s5,0.21,,0,,,,10912.791,no response to rqi=957772534dd1 within 10.0s (is the CSE running with 'json' ena
+24.608,58,5,n58s5,0.2,,0,,,,10916.95,no response to rqi=a8d215fa25cf within 10.0s (is the CSE running with 'json' ena
+24.653,161,5,n161s5,0.18,,0,,,,10978.768,no response to rqi=c534a4ddb11f within 10.0s (is the CSE running with 'json' ena
+24.699,10,5,n10s5,0.17,,0,,,,10977.212,no response to rqi=8f1129b34618 within 10.0s (is the CSE running with 'json' ena
+24.743,15,5,n15s5,0.14,,0,,,,10977.35,no response to rqi=7aefd241de5f within 10.0s (is the CSE running with 'json' ena
+24.789,96,5,n96s5,0.13,,0,,,,11003.424,no response to rqi=8fe83b6dd024 within 10.0s (is the CSE running with 'json' ena
+24.834,192,5,n192s5,0.16,,0,,,,11029.233,no response to rqi=e329b24239fe within 10.0s (is the CSE running with 'json' ena
+24.916,156,5,n156s5,0.14,,0,,,,11092.74,no response to rqi=3911efe43a12 within 10.0s (is the CSE running with 'json' ena
+24.918,160,5,n160s5,0.13,,0,,,,11092.025,no response to rqi=8cff300ef82f within 10.0s (is the CSE running with 'json' ena
+25.003,19,5,n19s5,0.18,,0,,,,11049.188,no response to rqi=862ad7822552 within 10.0s (is the CSE running with 'json' ena
+25.047,193,5,n193s5,0.13,,0,,,,11102.322,no response to rqi=55d909338d17 within 10.0s (is the CSE running with 'json' ena
+25.079,69,5,n69s5,0.13,,0,,,,11165.575,no response to rqi=b3f012887680 within 10.0s (is the CSE running with 'json' ena
+25.135,155,5,n155s5,0.15,,0,,,,11111.586,no response to rqi=21f0703a89a5 within 10.0s (is the CSE running with 'json' ena
+25.183,24,5,n24s5,0.14,,0,,,,11134.085,no response to rqi=e7940b90aaae within 10.0s (is the CSE running with 'json' ena
+25.23,138,5,n138s5,0.15,,0,,,,11175.401,no response to rqi=b8bdaa0ffbfa within 10.0s (is the CSE running with 'json' ena
+25.275,7,5,n7s5,0.13,,0,,,,11201.608,no response to rqi=a60613171ea3 within 10.0s (is the CSE running with 'json' ena
+25.338,44,5,n44s5,0.12,,0,,,,11226.099,no response to rqi=bf2f825dedd0 within 10.0s (is the CSE running with 'json' ena
+25.383,55,5,n55s5,0.13,,0,,,,11309.403,no response to rqi=55f380a861b7 within 10.0s (is the CSE running with 'json' ena
+25.427,40,5,n40s5,0.15,,0,,,,11309.033,no response to rqi=18626b38339f within 10.0s (is the CSE running with 'json' ena
+25.507,129,5,n129s5,0.14,,0,,,,11273.71,no response to rqi=01749c4bf7f7 within 10.0s (is the CSE running with 'json' ena
+25.547,134,5,n134s5,0.13,,0,,,,11291.784,no response to rqi=0ae537dff517 within 10.0s (is the CSE running with 'json' ena
+25.606,152,5,n152s5,0.16,,0,,,,11353.66,no response to rqi=e653e3488f4e within 10.0s (is the CSE running with 'json' ena
+25.607,165,5,n165s5,0.17,,0,,,,11401.884,no response to rqi=a80567ad9afa within 10.0s (is the CSE running with 'json' ena
+25.691,140,5,n140s5,0.15,,0,,,,11381.652,no response to rqi=f3a9e49ca584 within 10.0s (is the CSE running with 'json' ena
+25.735,56,5,n56s5,0.14,,0,,,,11413.023,no response to rqi=c1f7b2c18a65 within 10.0s (is the CSE running with 'json' ena
+25.78,41,5,n41s5,0.17,,0,,,,11457.466,no response to rqi=2b67e42019f1 within 10.0s (is the CSE running with 'json' ena
+25.824,182,5,n182s5,0.22,,0,,,,11485.872,no response to rqi=3a212f86584c within 10.0s (is the CSE running with 'json' ena
+25.867,11,5,n11s5,0.13,,0,,,,11486.283,no response to rqi=53b85d511559 within 10.0s (is the CSE running with 'json' ena
+25.915,26,5,n26s5,0.15,,0,,,,11483.991,no response to rqi=c518d9e19141 within 10.0s (is the CSE running with 'json' ena
+25.959,154,5,n154s5,0.16,,0,,,,11489.917,no response to rqi=710a1f2effef within 10.0s (is the CSE running with 'json' ena
+26.004,113,5,n113s5,0.15,,0,,,,11526.925,no response to rqi=b3dc8c322379 within 10.0s (is the CSE running with 'json' ena
+26.048,168,5,n168s5,0.14,,0,,,,11528.783,no response to rqi=84d12e27e2fd within 10.0s (is the CSE running with 'json' ena
+26.094,131,5,n131s5,0.15,,0,,,,11526.305,no response to rqi=ed531c2dddfa within 10.0s (is the CSE running with 'json' ena
+26.153,39,5,n39s5,0.12,,0,,,,11512.078,no response to rqi=031c8d0f58c4 within 10.0s (is the CSE running with 'json' ena
+26.241,30,5,n30s5,0.16,,0,,,,11476.12,no response to rqi=3de77dd2d5d0 within 10.0s (is the CSE running with 'json' ena
+26.244,1,5,n1s5,0.16,,0,,,,11516.715,no response to rqi=82daa88594eb within 10.0s (is the CSE running with 'json' ena
+26.333,14,5,n14s5,0.12,,0,,,,11479.59,no response to rqi=4c69ef81195b within 10.0s (is the CSE running with 'json' ena
+26.335,61,5,n61s5,0.13,,0,,,,11525.445,no response to rqi=2528b5f74441 within 10.0s (is the CSE running with 'json' ena
+26.42,33,5,n33s5,0.15,,0,,,,11487.98,no response to rqi=1430bf2ead9c within 10.0s (is the CSE running with 'json' ena
+26.463,50,5,n50s5,0.13,,0,,,,11527.816,no response to rqi=0ec76d32ba6c within 10.0s (is the CSE running with 'json' ena
+26.508,114,5,n114s5,0.29,,0,,,,11528.323,no response to rqi=ddb8bbbbc3e6 within 10.0s (is the CSE running with 'json' ena
+26.551,146,5,n146s5,0.13,,0,,,,11529.019,no response to rqi=e2e67db05338 within 10.0s (is the CSE running with 'json' ena
+26.602,2,5,n2s5,0.16,,0,,,,11478.978,no response to rqi=7806e9519acd within 10.0s (is the CSE running with 'json' ena
+26.655,151,5,n151s5,0.15,,0,,,,11485.616,no response to rqi=86100ca7f921 within 10.0s (is the CSE running with 'json' ena
+26.699,74,5,n74s5,0.12,,0,,,,11485.384,no response to rqi=e2ed6c4dca17 within 10.0s (is the CSE running with 'json' ena
+26.743,22,5,n22s5,0.15,,0,,,,11510.743,no response to rqi=c21f4604d4f9 within 10.0s (is the CSE running with 'json' ena
+26.787,153,5,n153s5,0.14,,0,,,,11523.756,no response to rqi=351a5e226bbc within 10.0s (is the CSE running with 'json' ena
+26.835,71,5,n71s5,0.12,,0,,,,11529.401,no response to rqi=db92af3f1343 within 10.0s (is the CSE running with 'json' ena
+26.884,148,5,n148s5,0.13,,0,,,,11539.542,no response to rqi=f6d26b660ae9 within 10.0s (is the CSE running with 'json' ena
+26.943,88,5,n88s5,0.16,,0,,,,11532.475,no response to rqi=481fd9be5e23 within 10.0s (is the CSE running with 'json' ena
+27.01,144,5,n144s5,0.16,,0,,,,11526.724,no response to rqi=0f64e8c67e23 within 10.0s (is the CSE running with 'json' ena
+27.051,52,5,n52s5,0.16,,0,,,,11532.943,no response to rqi=420426d38118 within 10.0s (is the CSE running with 'json' ena
+27.095,12,5,n12s5,0.16,,0,,,,11538.899,no response to rqi=e1d0e72d83a6 within 10.0s (is the CSE running with 'json' ena
+27.139,108,5,n108s5,0.12,,0,,,,11550.795,no response to rqi=e938ab698e68 within 10.0s (is the CSE running with 'json' ena
+27.212,136,5,n136s5,0.19,,0,,,,11530.939,no response to rqi=ae9248e23c94 within 10.0s (is the CSE running with 'json' ena
+27.255,32,5,n32s5,0.15,,0,,,,11537.067,no response to rqi=7054c106509a within 10.0s (is the CSE running with 'json' ena
+27.307,164,5,n164s5,0.15,,0,,,,11534.574,no response to rqi=60266fef5b78 within 10.0s (is the CSE running with 'json' ena
+27.348,73,5,n73s5,0.17,,0,,,,11538.425,no response to rqi=a6d6b9b4b4c7 within 10.0s (is the CSE running with 'json' ena
+27.415,90,5,n90s5,0.17,,0,,,,11537.522,no response to rqi=4bfb9e3f3ea6 within 10.0s (is the CSE running with 'json' ena
+27.438,89,5,n89s5,0.14,,0,,,,11587.444,no response to rqi=3cead44b6f6e within 10.0s (is the CSE running with 'json' ena
+27.481,94,5,n94s5,0.13,,0,,,,11587.337,no response to rqi=62f8bb1c0e04 within 10.0s (is the CSE running with 'json' ena
+27.528,82,5,n82s5,0.13,,0,,,,11583.943,no response to rqi=95046cf48896 within 10.0s (is the CSE running with 'json' ena
+27.583,17,5,n17s5,0.13,,0,,,,11582.667,no response to rqi=bce449ee29f3 within 10.0s (is the CSE running with 'json' ena
+27.63,104,5,n104s5,0.15,,0,,,,11586.155,no response to rqi=32beb00c6dfb within 10.0s (is the CSE running with 'json' ena
+27.676,6,5,n6s5,0.2,,0,,,,11601.528,no response to rqi=0ed05b86d571 within 10.0s (is the CSE running with 'json' ena
+27.742,139,5,n139s5,0.14,,0,,,,11628.895,no response to rqi=ee25068325ec within 10.0s (is the CSE running with 'json' ena
+27.743,64,5,n64s5,0.13,,0,,,,11673.509,no response to rqi=2dcbe2f72c38 within 10.0s (is the CSE running with 'json' ena
+27.824,187,6,n187s6,0.16,,0,,,,11593.86,no response to rqi=2a71ea6cd4fd within 10.0s (is the CSE running with 'json' ena
+27.839,81,6,n81s6,0.16,,0,,,,11640.931,no response to rqi=d32f3729d86f within 10.0s (is the CSE running with 'json' ena
+27.908,57,6,n57s6,0.14,,0,,,,11616.173,no response to rqi=b386044927f7 within 10.0s (is the CSE running with 'json' ena
+27.943,3,6,n3s6,0.15,,0,,,,11646.774,no response to rqi=f7b9a5d09887 within 10.0s (is the CSE running with 'json' ena
+27.988,121,6,n121s6,0.15,,0,,,,11652.486,no response to rqi=65dc6096fc91 within 10.0s (is the CSE running with 'json' ena
+28.055,173,6,n173s6,0.18,,0,,,,11671.077,no response to rqi=450beae6d24b within 10.0s (is the CSE running with 'json' ena
+28.103,149,6,n149s6,0.15,,0,,,,11665.443,no response to rqi=24667fc5f099 within 10.0s (is the CSE running with 'json' ena
+28.155,37,6,n37s6,0.14,,0,,,,11657.175,no response to rqi=f5c216ecdbbc within 10.0s (is the CSE running with 'json' ena
+28.231,62,6,n62s6,0.12,,0,,,,11641.365,no response to rqi=5955a4ffbe81 within 10.0s (is the CSE running with 'json' ena
+28.233,80,6,n80s6,0.15,,0,,,,11689.273,no response to rqi=cb0d68bf8c90 within 10.0s (is the CSE running with 'json' ena
+28.319,87,6,n87s6,0.15,,0,,,,11680.672,no response to rqi=ecb728076f8f within 10.0s (is the CSE running with 'json' ena
+28.382,177,6,n177s6,0.16,,0,,,,11672.264,no response to rqi=c2cfb58e1e06 within 10.0s (is the CSE running with 'json' ena
+28.432,163,6,n163s6,0.14,,0,,,,11676.437,no response to rqi=9c4f1fd21754 within 10.0s (is the CSE running with 'json' ena
+28.507,38,6,n38s6,0.15,,0,,,,11681.153,no response to rqi=644d9bf150b8 within 10.0s (is the CSE running with 'json' ena
+28.51,125,6,n125s6,0.15,,0,,,,11722.164,no response to rqi=73d69a7f1fea within 10.0s (is the CSE running with 'json' ena
+28.565,123,6,n123s6,0.12,,0,,,,11711.39,no response to rqi=edf505e6ab70 within 10.0s (is the CSE running with 'json' ena
+28.653,126,6,n126s6,0.13,,0,,,,11667.01,no response to rqi=b5e7d0fe76aa within 10.0s (is the CSE running with 'json' ena
+28.696,135,6,n135s6,0.14,,0,,,,11701.118,no response to rqi=3db137c2cbe3 within 10.0s (is the CSE running with 'json' ena
+28.739,48,6,n48s6,0.14,,0,,,,11713.378,no response to rqi=9ae8729f6c24 within 10.0s (is the CSE running with 'json' ena
+28.808,102,6,n102s6,0.16,,0,,,,11692.989,no response to rqi=2e2950cf0071 within 10.0s (is the CSE running with 'json' ena
+28.81,20,6,n20s6,0.14,,0,,,,11734.686,no response to rqi=1ece7a9f0200 within 10.0s (is the CSE running with 'json' ena
+28.895,59,6,n59s6,0.16,,0,,,,11697.022,no response to rqi=82457df10b82 within 10.0s (is the CSE running with 'json' ena
+28.946,78,6,n78s6,0.16,,0,,,,11690.353,no response to rqi=962c63ef2dcb within 10.0s (is the CSE running with 'json' ena
+28.987,70,6,n70s6,0.13,,0,,,,11693.088,no response to rqi=374018768473 within 10.0s (is the CSE running with 'json' ena
+29.041,36,6,n36s6,0.15,,0,,,,11692.362,no response to rqi=79c063e1c387 within 10.0s (is the CSE running with 'json' ena
+29.093,142,6,n142s6,0.12,,0,,,,11701.643,no response to rqi=cf883a6970f2 within 10.0s (is the CSE running with 'json' ena
+29.132,91,6,n91s6,0.13,,0,,,,11708.76,no response to rqi=3d291d2f6990 within 10.0s (is the CSE running with 'json' ena
+29.175,60,6,n60s6,0.15,,0,,,,11710.169,no response to rqi=3f1697f89eb3 within 10.0s (is the CSE running with 'json' ena
+29.231,66,6,n66s6,0.14,,0,,,,11697.306,no response to rqi=bd66d858cdfa within 10.0s (is the CSE running with 'json' ena
+29.301,180,6,n180s6,0.22,,0,,,,11719.762,no response to rqi=4190c8a848fd within 10.0s (is the CSE running with 'json' ena
+29.421,34,6,n34s6,0.18,,0,,,,11643.078,no response to rqi=631fea688123 within 10.0s (is the CSE running with 'json' ena
+29.468,179,6,n179s6,0.23,,0,,,,11644.443,no response to rqi=5eb67439c34e within 10.0s (is the CSE running with 'json' ena
+29.478,147,6,n147s6,0.18,,0,,,,11635.396,no response to rqi=2a533958f50f within 10.0s (is the CSE running with 'json' ena
+29.556,132,6,n132s6,0.15,,0,,,,11604.734,no response to rqi=065d266a2977 within 10.0s (is the CSE running with 'json' ena
+29.557,159,6,n159s6,0.14,,0,,,,11690.258,no response to rqi=b79d2e240598 within 10.0s (is the CSE running with 'json' ena
+29.643,67,6,n67s6,0.12,,0,,,,11605.248,no response to rqi=521e676c8fcb within 10.0s (is the CSE running with 'json' ena
+29.687,21,6,n21s6,0.17,,0,,,,11604.797,no response to rqi=996030c63348 within 10.0s (is the CSE running with 'json' ena
+29.743,157,6,n157s6,0.18,,0,,,,11593.602,no response to rqi=c4d8397b1eea within 10.0s (is the CSE running with 'json' ena
+29.745,137,6,n137s6,0.17,,0,,,,11646.996,no response to rqi=c8a5fa496635 within 10.0s (is the CSE running with 'json' ena
+29.817,4,6,n4s6,0.17,,0,,,,11625.613,no response to rqi=2642a0aab676 within 10.0s (is the CSE running with 'json' ena
+29.865,9,6,n9s6,0.18,,0,,,,11623.689,no response to rqi=9b754e631c8f within 10.0s (is the CSE running with 'json' ena
+29.912,23,6,n23s6,0.13,,0,,,,11627.174,no response to rqi=5a2bb6f1c446 within 10.0s (is the CSE running with 'json' ena
+29.979,92,6,n92s6,0.12,,0,,,,11610.402,no response to rqi=37428fb1e441 within 10.0s (is the CSE running with 'json' ena
+30.027,47,6,n47s6,0.13,,0,,,,11629.831,no response to rqi=c57c27f685a5 within 10.0s (is the CSE running with 'json' ena
+30.06,197,6,n197s6,0.16,,0,,,,11682.423,no response to rqi=72c3443d835d within 10.0s (is the CSE running with 'json' ena
+30.115,18,6,n18s6,0.12,,0,,,,11676.347,no response to rqi=93c55bcbf6c8 within 10.0s (is the CSE running with 'json' ena
+30.159,63,6,n63s6,0.13,,0,,,,11677.221,no response to rqi=6657869fd1b3 within 10.0s (is the CSE running with 'json' ena
+30.211,186,6,n186s6,0.17,,0,,,,11668.762,no response to rqi=153c9894cfbf within 10.0s (is the CSE running with 'json' ena
+30.251,68,6,n68s6,0.13,,0,,,,11676.154,no response to rqi=83710ef34261 within 10.0s (is the CSE running with 'json' ena
+30.304,194,6,n194s6,0.14,,0,,,,11668.061,no response to rqi=a0672407d869 within 10.0s (is the CSE running with 'json' ena
+30.347,122,6,n122s6,0.16,,0,,,,11716.823,no response to rqi=b4ac0c49ca16 within 10.0s (is the CSE running with 'json' ena
+30.402,120,6,n120s6,0.13,,0,,,,11710.656,no response to rqi=fe2930f94452 within 10.0s (is the CSE running with 'json' ena
+30.459,101,6,n101s6,0.12,,0,,,,11703.609,no response to rqi=d7dfe731368e within 10.0s (is the CSE running with 'json' ena
+30.507,76,6,n76s6,0.12,,0,,,,11696.709,no response to rqi=d5776e1c92e8 within 10.0s (is the CSE running with 'json' ena
+30.587,162,6,n162s6,0.14,,0,,,,11684.317,no response to rqi=f676091aea49 within 10.0s (is the CSE running with 'json' ena
+30.604,98,6,n98s6,0.15,,0,,,,11712.317,no response to rqi=0afeb9f4da8d within 10.0s (is the CSE running with 'json' ena
+30.668,172,6,n172s6,0.13,,0,,,,11692.052,no response to rqi=0e12387624b9 within 10.0s (is the CSE running with 'json' ena
+30.729,181,6,n181s6,0.15,,0,,,,11748.429,no response to rqi=bf2b6bfc4bf6 within 10.0s (is the CSE running with 'json' ena
+30.756,49,6,n49s6,0.14,,0,,,,11763.763,no response to rqi=8dc6c70fbec1 within 10.0s (is the CSE running with 'json' ena
+30.8,54,6,n54s6,0.15,,0,,,,11768.033,no response to rqi=9c5d4498e5ee within 10.0s (is the CSE running with 'json' ena
+30.847,103,6,n103s6,0.14,,0,,,,11765.563,no response to rqi=1f8b94669991 within 10.0s (is the CSE running with 'json' ena
+30.908,29,6,n29s6,0.13,,0,,,,11766.498,no response to rqi=03fc89f43e8f within 10.0s (is the CSE running with 'json' ena
+30.987,128,6,n128s6,0.15,,0,,,,11752.197,no response to rqi=4da23e37841e within 10.0s (is the CSE running with 'json' ena
+30.988,75,6,n75s6,0.13,,0,,,,11793.511,no response to rqi=594d99b5767e within 10.0s (is the CSE running with 'json' ena
+31.063,145,6,n145s6,0.15,,0,,,,11764.774,no response to rqi=3e1c70bbf858 within 10.0s (is the CSE running with 'json' ena
+31.104,83,6,n83s6,0.12,,0,,,,11767.813,no response to rqi=23ea0f4196c3 within 10.0s (is the CSE running with 'json' ena
+31.152,115,6,n115s6,0.25,,0,,,,11813.908,no response to rqi=b4543b7ce8a1 within 10.0s (is the CSE running with 'json' ena
+31.179,110,6,n110s6,0.12,,0,,,,11828.864,no response to rqi=48eec25964a4 within 10.0s (is the CSE running with 'json' ena
+31.244,100,6,n100s6,0.15,,0,,,,11808.159,no response to rqi=f0ff74cfe357 within 10.0s (is the CSE running with 'json' ena
+31.298,86,6,n86s6,0.15,,0,,,,11797.991,no response to rqi=41e5852fd5b9 within 10.0s (is the CSE running with 'json' ena
+31.345,112,6,n112s6,0.15,,0,,,,11795.505,no response to rqi=727a5e0d2a93 within 10.0s (is the CSE running with 'json' ena
+31.388,150,6,n150s6,0.13,,0,,,,11795.899,no response to rqi=2cb484ba830c within 10.0s (is the CSE running with 'json' ena
+31.437,141,6,n141s6,0.15,,0,,,,11797.616,no response to rqi=ce5fe3e21b2f within 10.0s (is the CSE running with 'json' ena
+31.51,0,6,n0s6,0.14,,0,,,,11805.724,no response to rqi=5294358bdfd2 within 10.0s (is the CSE running with 'json' ena
+31.512,5,6,n5s6,0.18,,0,,,,11804.963,no response to rqi=478c230024d0 within 10.0s (is the CSE running with 'json' ena
+31.596,111,6,n111s6,0.14,,0,,,,11824.303,no response to rqi=38253113bec3 within 10.0s (is the CSE running with 'json' ena
+31.657,8,6,n8s6,0.12,,0,,,,11807.076,no response to rqi=b9acb53baf9c within 10.0s (is the CSE running with 'json' ena
+31.659,116,6,n116s6,0.14,,0,,,,11849.304,no response to rqi=fc9eeccea396 within 10.0s (is the CSE running with 'json' ena
+31.745,28,6,n28s6,0.17,,0,,,,11818.236,no response to rqi=92bad5795d57 within 10.0s (is the CSE running with 'json' ena
+31.788,42,6,n42s6,0.13,,0,,,,11831.473,no response to rqi=9699029c65c5 within 10.0s (is the CSE running with 'json' ena
+31.857,13,6,n13s6,0.14,,0,,,,11859.996,no response to rqi=ef154980d0c1 within 10.0s (is the CSE running with 'json' ena
+31.858,171,6,n171s6,0.13,,0,,,,11902.163,no response to rqi=a71f2e296050 within 10.0s (is the CSE running with 'json' ena
+31.944,178,6,n178s6,0.14,,0,,,,11865.989,no response to rqi=1b37d5504aa3 within 10.0s (is the CSE running with 'json' ena
+31.989,27,6,n27s6,0.13,,0,,,,11891.81,no response to rqi=8347f64ec230 within 10.0s (is the CSE running with 'json' ena
+32.056,45,6,n45s6,0.15,,0,,,,11868.229,no response to rqi=9d6f01a95ea1 within 10.0s (is the CSE running with 'json' ena
+32.101,72,6,n72s6,0.16,,0,,,,11867.43,no response to rqi=79eb913ad71c within 10.0s (is the CSE running with 'json' ena
+32.144,109,6,n109s6,0.16,,0,,,,11867.886,no response to rqi=42f5b1453746 within 10.0s (is the CSE running with 'json' ena
+32.189,170,6,n170s6,0.12,,0,,,,11867.624,no response to rqi=4961a20437ff within 10.0s (is the CSE running with 'json' ena
+32.235,183,6,n183s6,0.15,,0,,,,11873.106,no response to rqi=06cad70e115a within 10.0s (is the CSE running with 'json' ena
+32.308,184,6,n184s6,0.16,,0,,,,11871.411,no response to rqi=2bbaf07f8a9b within 10.0s (is the CSE running with 'json' ena
+32.31,198,6,n198s6,0.14,,0,,,,11913.811,no response to rqi=6a617b8a9b5e within 10.0s (is the CSE running with 'json' ena
+32.397,175,6,n175s6,0.17,,0,,,,11871.639,no response to rqi=675e14f23af5 within 10.0s (is the CSE running with 'json' ena
+32.443,65,6,n65s6,0.13,,0,,,,11905.457,no response to rqi=82b844454335 within 10.0s (is the CSE running with 'json' ena
+32.504,158,6,n158s6,0.15,,0,,,,11904.728,no response to rqi=121d3601c99b within 10.0s (is the CSE running with 'json' ena
+32.505,191,6,n191s6,0.12,,0,,,,11949.225,no response to rqi=571543d7598e within 10.0s (is the CSE running with 'json' ena
+32.593,105,6,n105s6,0.16,,0,,,,11903.037,no response to rqi=28728226a5c9 within 10.0s (is the CSE running with 'json' ena
+32.637,85,6,n85s6,0.15,,0,,,,11903.056,no response to rqi=d7dfeedd9ad1 within 10.0s (is the CSE running with 'json' ena
+32.681,169,6,n169s6,0.15,,0,,,,11921.602,no response to rqi=ad51bf6b609c within 10.0s (is the CSE running with 'json' ena
+32.724,53,6,n53s6,0.12,,0,,,,11931.736,no response to rqi=2caaf8081c90 within 10.0s (is the CSE running with 'json' ena
+32.778,196,6,n196s6,0.12,,0,,,,11930.847,no response to rqi=a4d03e92c726 within 10.0s (is the CSE running with 'json' ena
+32.817,77,6,n77s6,0.14,,0,,,,11935.494,no response to rqi=ec50ab53eb01 within 10.0s (is the CSE running with 'json' ena
+32.861,16,6,n16s6,0.14,,0,,,,11935.647,no response to rqi=9446311441c5 within 10.0s (is the CSE running with 'json' ena
+32.909,130,6,n130s6,0.14,,0,,,,11934.789,no response to rqi=182756bbfd4e within 10.0s (is the CSE running with 'json' ena
+32.963,195,6,n195s6,0.13,,0,,,,11925.924,no response to rqi=9d422fd5a1d5 within 10.0s (is the CSE running with 'json' ena
+33.009,133,6,n133s6,0.14,,0,,,,11936.705,no response to rqi=446dddc454b3 within 10.0s (is the CSE running with 'json' ena
+33.068,189,6,n189s6,0.14,,0,,,,11935.36,no response to rqi=45897900cebb within 10.0s (is the CSE running with 'json' ena
+33.127,143,6,n143s6,0.18,,0,,,,11929.952,no response to rqi=51241fc5053b within 10.0s (is the CSE running with 'json' ena
+33.181,188,6,n188s6,0.17,,0,,,,11919.191,no response to rqi=c404ec67a0f1 within 10.0s (is the CSE running with 'json' ena
+33.23,99,6,n99s6,0.17,,0,,,,11915.849,no response to rqi=6c3e59d0121a within 10.0s (is the CSE running with 'json' ena
+33.296,95,6,n95s6,0.13,,0,,,,11919.184,no response to rqi=6230263e3354 within 10.0s (is the CSE running with 'json' ena
+33.341,167,6,n167s6,0.15,,0,,,,11919.397,no response to rqi=ecc6258f976c within 10.0s (is the CSE running with 'json' ena
+33.342,117,6,n117s6,0.13,,0,,,,12000.642,no response to rqi=3bd27ce4e99a within 10.0s (is the CSE running with 'json' ena
+33.388,35,6,n35s6,0.19,,0,,,,11998.157,no response to rqi=377a08cdc75a within 10.0s (is the CSE running with 'json' ena
+33.437,166,6,n166s6,0.12,,0,,,,12005.507,no response to rqi=a9949ab05f92 within 10.0s (is the CSE running with 'json' ena
+33.489,124,6,n124s6,0.16,,0,,,,12007.723,no response to rqi=c9035d98c81c within 10.0s (is the CSE running with 'json' ena
+33.532,51,6,n51s6,0.15,,0,,,,12024.743,no response to rqi=25e2745caf39 within 10.0s (is the CSE running with 'json' ena
+33.577,199,6,n199s6,0.15,,0,,,,12048.5,no response to rqi=366d1f8bc05f within 10.0s (is the CSE running with 'json' ena
+33.64,46,6,n46s6,0.17,,0,,,,12031.739,no response to rqi=fd2329c0ca44 within 10.0s (is the CSE running with 'json' ena
+33.706,176,6,n176s6,0.14,,0,,,,12064.239,no response to rqi=8ff6e73d138c within 10.0s (is the CSE running with 'json' ena
+33.708,118,6,n118s6,0.13,,0,,,,12107.727,no response to rqi=c0547d7f88d3 within 10.0s (is the CSE running with 'json' ena
+33.81,119,6,n119s6,0.15,,0,,,,12049.783,no response to rqi=bc29554ecc03 within 10.0s (is the CSE running with 'json' ena
+33.853,84,6,n84s6,0.16,,0,,,,12051.131,no response to rqi=45e20293b57b within 10.0s (is the CSE running with 'json' ena
+33.899,25,6,n25s6,0.14,,0,,,,12058.149,no response to rqi=116dd366efe8 within 10.0s (is the CSE running with 'json' ena
+33.961,31,6,n31s6,0.16,,0,,,,12048.944,no response to rqi=8535ab3e4b8a within 10.0s (is the CSE running with 'json' ena
+34.044,185,6,n185s6,0.15,,0,,,,12014.191,no response to rqi=8d53e46ca7e3 within 10.0s (is the CSE running with 'json' ena
+34.112,43,6,n43s6,0.13,,0,,,,11988.532,no response to rqi=6bbe299d0239 within 10.0s (is the CSE running with 'json' ena
+34.193,93,6,n93s6,0.15,,0,,,,11995.094,no response to rqi=ed0dfcaf3a83 within 10.0s (is the CSE running with 'json' ena
+34.245,127,6,n127s6,0.12,,0,,,,11992.949,no response to rqi=5b054b69ea3b within 10.0s (is the CSE running with 'json' ena
+34.294,107,6,n107s6,0.16,,0,,,,11998.978,no response to rqi=d0396b82e4a3 within 10.0s (is the CSE running with 'json' ena
+34.345,174,6,n174s6,0.17,,0,,,,12031.271,no response to rqi=142e87b7325b within 10.0s (is the CSE running with 'json' ena
+34.397,79,6,n79s6,0.15,,0,,,,12027.896,no response to rqi=e75ec6ca3f94 within 10.0s (is the CSE running with 'json' ena
+34.451,190,6,n190s6,0.16,,0,,,,12021.253,no response to rqi=5eea528996c1 within 10.0s (is the CSE running with 'json' ena
+34.493,97,6,n97s6,0.16,,0,,,,12027.392,no response to rqi=21159af8523f within 10.0s (is the CSE running with 'json' ena
+34.541,106,6,n106s6,0.16,,0,,,,12023.086,no response to rqi=1b520867d29a within 10.0s (is the CSE running with 'json' ena
+34.609,58,6,n58s6,0.18,,0,,,,12043.802,no response to rqi=a5df7d4ca472 within 10.0s (is the CSE running with 'json' ena
+34.654,161,6,n161s6,0.12,,0,,,,12042.632,no response to rqi=9281299e9268 within 10.0s (is the CSE running with 'json' ena
+34.7,10,6,n10s6,0.17,,0,,,,12039.816,no response to rqi=e8a267bb4d71 within 10.0s (is the CSE running with 'json' ena
+34.744,15,6,n15s6,0.15,,0,,,,12046.531,no response to rqi=1a62d1c53dc7 within 10.0s (is the CSE running with 'json' ena
+34.79,96,6,n96s6,0.12,,0,,,,12060.498,no response to rqi=c37f73b58415 within 10.0s (is the CSE running with 'json' ena
+34.835,192,6,n192s6,0.16,,0,,,,12071.39,no response to rqi=186f8fdb011c within 10.0s (is the CSE running with 'json' ena
+34.917,156,6,n156s6,0.19,,0,,,,12078.253,no response to rqi=946f8b799ebd within 10.0s (is the CSE running with 'json' ena
+34.919,160,6,n160s6,0.18,,0,,,,12121.414,no response to rqi=4076fef7aeec within 10.0s (is the CSE running with 'json' ena
+35.005,19,6,n19s6,0.21,,0,,,,12079.302,no response to rqi=83813b528e8b within 10.0s (is the CSE running with 'json' ena
+35.048,193,6,n193s6,0.16,,0,,,,12103.219,no response to rqi=611ae9d3c57b within 10.0s (is the CSE running with 'json' ena
+35.081,69,6,n69s6,0.21,,0,,,,12116.248,no response to rqi=b94603e66250 within 10.0s (is the CSE running with 'json' ena
+35.136,155,6,n155s6,0.16,,0,,,,12105.239,no response to rqi=7e3a1a9d4719 within 10.0s (is the CSE running with 'json' ena
+35.184,24,6,n24s6,0.18,,0,,,,12100.489,no response to rqi=35bcaf566497 within 10.0s (is the CSE running with 'json' ena
+35.231,138,6,n138s6,0.2,,0,,,,12096.868,no response to rqi=aabc70f44fbe within 10.0s (is the CSE running with 'json' ena
+35.276,7,6,n7s6,0.24,,0,,,,12099.006,no response to rqi=f2cee06f673e within 10.0s (is the CSE running with 'json' ena
+35.339,44,6,n44s6,0.2,,0,,,,12084.628,no response to rqi=1503ff18c38d within 10.0s (is the CSE running with 'json' ena
+35.385,55,6,n55s6,0.18,,0,,,,12099.479,no response to rqi=ab0cf9da75d2 within 10.0s (is the CSE running with 'json' ena
+35.429,40,6,n40s6,0.23,,0,,,,12133.57,no response to rqi=61422690eac2 within 10.0s (is the CSE running with 'json' ena
+35.508,129,6,n129s6,0.19,,0,,,,12132.278,no response to rqi=b47f7dba5c07 within 10.0s (is the CSE running with 'json' ena
+35.548,134,6,n134s6,0.19,,0,,,,12199.766,no response to rqi=d88ff0d0fda8 within 10.0s (is the CSE running with 'json' ena
+35.607,152,6,n152s6,0.2,,0,,,,12143.743,no response to rqi=518213b5ae51 within 10.0s (is the CSE running with 'json' ena
+35.608,165,6,n165s6,0.19,,0,,,,12219.584,no response to rqi=8d8496431d1d within 10.0s (is the CSE running with 'json' ena
+35.693,140,6,n140s6,0.17,,0,,,,12197.053,no response to rqi=b02654447178 within 10.0s (is the CSE running with 'json' ena
+35.736,56,6,n56s6,0.17,,0,,,,12195.792,no response to rqi=704e1d875921 within 10.0s (is the CSE running with 'json' ena
+35.781,41,6,n41s6,0.17,,0,,,,12195.477,no response to rqi=40f0c7923ec3 within 10.0s (is the CSE running with 'json' ena
+35.825,182,6,n182s6,0.15,,0,,,,12199.38,no response to rqi=858ba200da8b within 10.0s (is the CSE running with 'json' ena
+35.869,11,6,n11s6,0.21,,0,,,,12245.962,no response to rqi=db8e17d23318 within 10.0s (is the CSE running with 'json' ena
+35.916,26,6,n26s6,0.16,,0,,,,12239.939,no response to rqi=6f7d85aadf7f within 10.0s (is the CSE running with 'json' ena
+35.961,154,6,n154s6,0.21,,0,,,,12198.234,no response to rqi=384b718b7475 within 10.0s (is the CSE running with 'json' ena
+36.005,113,6,n113s6,0.21,,0,,,,12209.675,no response to rqi=3250386646e7 within 10.0s (is the CSE running with 'json' ena
+36.049,168,6,n168s6,0.21,,0,,,,12225.341,no response to rqi=e2840fedf187 within 10.0s (is the CSE running with 'json' ena
+36.095,131,6,n131s6,0.19,,0,,,,12229.724,no response to rqi=2c7c02bc67a7 within 10.0s (is the CSE running with 'json' ena
+36.154,39,6,n39s6,0.16,,0,,,,12285.546,no response to rqi=5704cae96ffe within 10.0s (is the CSE running with 'json' ena
+36.242,30,6,n30s6,0.19,,0,,,,12241.936,no response to rqi=6faf7996ef1a within 10.0s (is the CSE running with 'json' ena
+36.245,1,6,n1s6,0.14,,0,,,,12239.936,no response to rqi=ed9854c67fa5 within 10.0s (is the CSE running with 'json' ena
+36.334,14,6,n14s6,0.21,,0,,,,12194.383,no response to rqi=965abbd3187b within 10.0s (is the CSE running with 'json' ena
+36.336,61,6,n61s6,0.19,,0,,,,12236.054,no response to rqi=089da7529562 within 10.0s (is the CSE running with 'json' ena
+36.421,33,6,n33s6,0.17,,0,,,,12223.327,no response to rqi=d3a313c64a95 within 10.0s (is the CSE running with 'json' ena
+36.465,50,6,n50s6,0.18,,0,,,,12227.546,no response to rqi=1434081ead3a within 10.0s (is the CSE running with 'json' ena
+36.509,114,6,n114s6,0.16,,0,,,,12237.757,no response to rqi=d4b56642facd within 10.0s (is the CSE running with 'json' ena
+36.552,146,6,n146s6,0.2,,0,,,,12243.911,no response to rqi=6db5c68a5a51 within 10.0s (is the CSE running with 'json' ena
+36.604,2,6,n2s6,0.21,,0,,,,12240.716,no response to rqi=c426599b85ec within 10.0s (is the CSE running with 'json' ena
+36.656,151,6,n151s6,0.22,,0,,,,12232.516,no response to rqi=808a1ce3b454 within 10.0s (is the CSE running with 'json' ena
+36.7,74,6,n74s6,0.17,,0,,,,12236.073,no response to rqi=65bc93cedccf within 10.0s (is the CSE running with 'json' ena
+36.744,22,6,n22s6,0.2,,0,,,,12235.925,no response to rqi=59bfbe8c5110 within 10.0s (is the CSE running with 'json' ena
+36.788,153,6,n153s6,0.21,,0,,,,12259.559,no response to rqi=593e698bd3db within 10.0s (is the CSE running with 'json' ena
+36.836,71,6,n71s6,0.16,,0,,,,12255.885,no response to rqi=9b0f46c9a39e within 10.0s (is the CSE running with 'json' ena
+36.886,148,6,n148s6,0.22,,0,,,,12250.739,no response to rqi=3d38d9c76459 within 10.0s (is the CSE running with 'json' ena
+36.945,88,6,n88s6,0.19,,0,,,,12241.459,no response to rqi=e65bb48dd6e2 within 10.0s (is the CSE running with 'json' ena
+37.011,144,6,n144s6,0.22,,0,,,,12256.589,no response to rqi=e9ba917455a3 within 10.0s (is the CSE running with 'json' ena
+37.053,52,6,n52s6,0.18,,0,,,,12259.876,no response to rqi=d62c83407d3d within 10.0s (is the CSE running with 'json' ena
+37.097,12,6,n12s6,0.2,,0,,,,12271.646,no response to rqi=e088e4157ff4 within 10.0s (is the CSE running with 'json' ena
+37.141,108,6,n108s6,0.17,,0,,,,12271.811,no response to rqi=8e517735d580 within 10.0s (is the CSE running with 'json' ena
+37.22,136,6,n136s6,0.23,,0,,,,12235.937,no response to rqi=23277d013333 within 10.0s (is the CSE running with 'json' ena
+37.256,32,6,n32s6,0.17,,0,,,,12247.922,no response to rqi=7ef0f53b53e9 within 10.0s (is the CSE running with 'json' ena
+37.308,164,6,n164s6,0.12,,0,,,,12240.008,no response to rqi=767b2d640ca5 within 10.0s (is the CSE running with 'json' ena
+37.349,73,6,n73s6,0.15,,0,,,,12247.363,no response to rqi=563805ff5332 within 10.0s (is the CSE running with 'json' ena
+37.416,90,6,n90s6,0.13,,0,,,,12270.808,no response to rqi=ef67c83e19b3 within 10.0s (is the CSE running with 'json' ena
+37.439,89,6,n89s6,0.14,,0,,,,12293.562,no response to rqi=5bb0e0c2384d within 10.0s (is the CSE running with 'json' ena
+37.482,94,6,n94s6,0.15,,0,,,,12306.414,no response to rqi=e9ba5be48c3f within 10.0s (is the CSE running with 'json' ena
+37.529,82,6,n82s6,0.16,,0,,,,12303.035,no response to rqi=19481b434356 within 10.0s (is the CSE running with 'json' ena
+37.584,17,6,n17s6,0.19,,0,,,,12340.774,no response to rqi=dcc6cbcfbfa4 within 10.0s (is the CSE running with 'json' ena
+37.631,104,6,n104s6,0.13,,0,,,,12341.617,no response to rqi=97cc5961aac5 within 10.0s (is the CSE running with 'json' ena
+37.677,6,6,n6s6,0.13,,0,,,,12339.425,no response to rqi=9df80bfb87a0 within 10.0s (is the CSE running with 'json' ena
+37.744,139,6,n139s6,0.15,,0,,,,12316.723,no response to rqi=d8e2cba827c1 within 10.0s (is the CSE running with 'json' ena
+37.744,64,6,n64s6,0.13,,0,,,,12374.179,no response to rqi=f24d97169c78 within 10.0s (is the CSE running with 'json' ena
+37.825,187,7,n187s7,0.13,,0,,,,12335.21,no response to rqi=57b0871fb963 within 10.0s (is the CSE running with 'json' ena
+37.84,81,7,n81s7,0.14,,0,,,,12364.047,no response to rqi=003e99b33ac3 within 10.0s (is the CSE running with 'json' ena
+37.909,57,7,n57s7,0.17,,0,,,,12339.167,no response to rqi=fe925fedafff within 10.0s (is the CSE running with 'json' ena
+37.944,3,7,n3s7,0.14,,0,,,,12407.517,no response to rqi=5c1108077d5e within 10.0s (is the CSE running with 'json' ena
+37.99,121,7,n121s7,0.15,,0,,,,12363.14,no response to rqi=7fec33ae8aa2 within 10.0s (is the CSE running with 'json' ena
+38.056,173,7,n173s7,0.18,,0,,,,12363.751,no response to rqi=db9d9c574639 within 10.0s (is the CSE running with 'json' ena
+38.104,149,7,n149s7,0.15,,0,,,,12407.415,no response to rqi=c96bda43958c within 10.0s (is the CSE running with 'json' ena
+38.156,37,7,n37s7,0.13,,0,,,,12428.027,no response to rqi=0e9d5c9664e6 within 10.0s (is the CSE running with 'json' ena
+38.232,62,7,n62s7,0.17,,0,,,,12396.002,no response to rqi=c38b8cd4a9a8 within 10.0s (is the CSE running with 'json' ena
+38.234,80,7,n80s7,0.14,,0,,,,12437.937,no response to rqi=69c63c9d3f7a within 10.0s (is the CSE running with 'json' ena
+38.32,87,7,n87s7,0.13,,0,,,,12395.988,no response to rqi=a14bc8196cd3 within 10.0s (is the CSE running with 'json' ena
+38.383,177,7,n177s7,0.13,,0,,,,12377.155,no response to rqi=6ded8570613f within 10.0s (is the CSE running with 'json' ena
+38.433,163,7,n163s7,0.13,,0,,,,12371.21,no response to rqi=986c5e5f867e within 10.0s (is the CSE running with 'json' ena
+38.508,38,7,n38s7,0.15,,0,,,,12339.759,no response to rqi=08a1be4bb022 within 10.0s (is the CSE running with 'json' ena
+38.511,125,7,n125s7,0.15,,0,,,,12383.632,no response to rqi=b3bc8a346e19 within 10.0s (is the CSE running with 'json' ena
+38.566,123,7,n123s7,0.16,,0,,,,12380.912,no response to rqi=1cd091b810a0 within 10.0s (is the CSE running with 'json' ena
+38.654,126,7,n126s7,0.16,,0,,,,12376.924,no response to rqi=a4b518c9c673 within 10.0s (is the CSE running with 'json' ena
+38.697,135,7,n135s7,0.12,,0,,,,12379.45,no response to rqi=8251f01299cd within 10.0s (is the CSE running with 'json' ena
+38.74,48,7,n48s7,0.15,,0,,,,12380.103,no response to rqi=06a30d897f8f within 10.0s (is the CSE running with 'json' ena
+38.809,102,7,n102s7,0.15,,0,,,,12355.672,no response to rqi=331e90f3d0b0 within 10.0s (is the CSE running with 'json' ena
+38.811,20,7,n20s7,0.15,,0,,,,12437.957,no response to rqi=0a835b9f63ea within 10.0s (is the CSE running with 'json' ena
+38.897,59,7,n59s7,0.14,,0,,,,12432.742,no response to rqi=c0353ef7167a within 10.0s (is the CSE running with 'json' ena
+38.947,78,7,n78s7,0.15,,0,,,,12429.36,no response to rqi=6d9ef76e4afb within 10.0s (is the CSE running with 'json' ena
+38.988,70,7,n70s7,0.15,,0,,,,12432.149,no response to rqi=2bbcc83c57d2 within 10.0s (is the CSE running with 'json' ena
+39.042,36,7,n36s7,0.16,,0,,,,12422.504,no response to rqi=4db0f34df30e within 10.0s (is the CSE running with 'json' ena
+39.094,142,7,n142s7,0.15,,0,,,,12443.15,no response to rqi=bc9f7b312ee2 within 10.0s (is the CSE running with 'json' ena
+39.133,91,7,n91s7,0.14,,0,,,,12447.705,no response to rqi=c1f492614703 within 10.0s (is the CSE running with 'json' ena
+39.176,60,7,n60s7,0.13,,0,,,,12447.888,no response to rqi=f4616e087010 within 10.0s (is the CSE running with 'json' ena
+39.232,66,7,n66s7,0.15,,0,,,,12445.8,no response to rqi=31ea3f3b9662 within 10.0s (is the CSE running with 'json' ena
+39.303,180,7,n180s7,0.15,,0,,,,12420.751,no response to rqi=5c8888e71d78 within 10.0s (is the CSE running with 'json' ena
+39.423,34,7,n34s7,0.16,,0,,,,12404.261,no response to rqi=facf311f35aa within 10.0s (is the CSE running with 'json' ena
+39.469,179,7,n179s7,0.15,,0,,,,12403.285,no response to rqi=e41042a0bb94 within 10.0s (is the CSE running with 'json' ena
+39.479,147,7,n147s7,0.12,,0,,,,12437.385,no response to rqi=36df482051d7 within 10.0s (is the CSE running with 'json' ena
+39.557,132,7,n132s7,0.13,,0,,,,12403.234,no response to rqi=136ae73a1779 within 10.0s (is the CSE running with 'json' ena
+39.558,159,7,n159s7,0.12,,0,,,,12446.255,no response to rqi=988658fbdec8 within 10.0s (is the CSE running with 'json' ena
+39.644,67,7,n67s7,0.16,,0,,,,12416.186,no response to rqi=049df9be7dcc within 10.0s (is the CSE running with 'json' ena
+39.689,21,7,n21s7,0.17,,0,,,,12372.597,no response to rqi=66d31600d8d5 within 10.0s (is the CSE running with 'json' ena
+39.744,157,7,n157s7,0.16,,0,,,,12424.038,no response to rqi=8cdcf84df21e within 10.0s (is the CSE running with 'json' ena
+39.746,137,7,n137s7,0.14,,0,,,,12466.253,no response to rqi=6c132077da7b within 10.0s (is the CSE running with 'json' ena
+39.819,4,7,n4s7,0.13,,0,,,,12437.602,no response to rqi=c5b58d36758b within 10.0s (is the CSE running with 'json' ena
+39.866,9,7,n9s7,0.12,,0,,,,12434.146,no response to rqi=4282ed1bc696 within 10.0s (is the CSE running with 'json' ena
+39.913,23,7,n23s7,0.16,,0,,,,12431.251,no response to rqi=f605ec2d112b within 10.0s (is the CSE running with 'json' ena
+39.981,92,7,n92s7,0.16,,0,,,,12417.139,no response to rqi=4c2bcff7d8a2 within 10.0s (is the CSE running with 'json' ena
+40.028,47,7,n47s7,0.18,,0,,,,12428.272,no response to rqi=6081d9aaa7e0 within 10.0s (is the CSE running with 'json' ena
+40.061,197,7,n197s7,0.13,,0,,,,12451.83,no response to rqi=246e40c9e095 within 10.0s (is the CSE running with 'json' ena
+40.116,18,7,n18s7,0.14,,0,,,,12440.398,no response to rqi=4d16a7a89bbd within 10.0s (is the CSE running with 'json' ena
+40.16,63,7,n63s7,0.14,,0,,,,12440.209,no response to rqi=a96f9d5f8ba2 within 10.0s (is the CSE running with 'json' ena
+40.213,186,7,n186s7,0.15,,0,,,,12453.891,no response to rqi=e2e66490d65d within 10.0s (is the CSE running with 'json' ena
+40.252,68,7,n68s7,0.15,,0,,,,12456.147,no response to rqi=b440b074c373 within 10.0s (is the CSE running with 'json' ena
+40.305,194,7,n194s7,0.16,,0,,,,12468.031,no response to rqi=ed42bf448b1c within 10.0s (is the CSE running with 'json' ena
+40.348,122,7,n122s7,0.12,,0,,,,12511.752,no response to rqi=af14ec337865 within 10.0s (is the CSE running with 'json' ena
+40.403,120,7,n120s7,0.13,,0,,,,12510.679,no response to rqi=65abaac52609 within 10.0s (is the CSE running with 'json' ena
+40.46,101,7,n101s7,0.12,,0,,,,12596.436,no response to rqi=160a031fe322 within 10.0s (is the CSE running with 'json' ena
+40.509,76,7,n76s7,0.14,,0,,,,12591.782,no response to rqi=c1025a978415 within 10.0s (is the CSE running with 'json' ena
+40.588,162,7,n162s7,0.13,,0,,,,12556.733,no response to rqi=ed6c26913f3c within 10.0s (is the CSE running with 'json' ena
+40.605,98,7,n98s7,0.15,,0,,,,12582.981,no response to rqi=3fceb2a71cd0 within 10.0s (is the CSE running with 'json' ena
+40.669,172,7,n172s7,0.13,,0,,,,12562.792,no response to rqi=80a5542700b6 within 10.0s (is the CSE running with 'json' ena
+40.73,181,7,n181s7,0.17,,0,,,,12557.665,no response to rqi=20117b5b97c1 within 10.0s (is the CSE running with 'json' ena
+40.758,49,7,n49s7,0.16,,0,,,,12590.837,no response to rqi=fb65b80508cc within 10.0s (is the CSE running with 'json' ena
+40.801,54,7,n54s7,0.16,,0,,,,12609.927,no response to rqi=589aff6719b6 within 10.0s (is the CSE running with 'json' ena
+40.848,103,7,n103s7,0.16,,0,,,,12646.365,no response to rqi=d680cb37f672 within 10.0s (is the CSE running with 'json' ena
+40.909,29,7,n29s7,0.16,,0,,,,12627.628,no response to rqi=6ab8835c36db within 10.0s (is the CSE running with 'json' ena
+40.988,128,7,n128s7,0.21,,0,,,,12592.495,no response to rqi=a97e9649e884 within 10.0s (is the CSE running with 'json' ena
+40.989,75,7,n75s7,0.12,,0,,,,12635.397,no response to rqi=c8fc968b4a00 within 10.0s (is the CSE running with 'json' ena
+41.066,145,7,n145s7,0.16,,0,,,,12632.641,no response to rqi=1c1107de5430 within 10.0s (is the CSE running with 'json' ena
+41.106,83,7,n83s7,0.17,,0,,,,12634.627,no response to rqi=e605acf20bfe within 10.0s (is the CSE running with 'json' ena
+41.153,115,7,n115s7,0.13,,0,,,,12640.483,no response to rqi=f4aeb8c4f04f within 10.0s (is the CSE running with 'json' ena
+41.181,110,7,n110s7,0.16,,0,,,,12693.266,no response to rqi=7b79edd23d82 within 10.0s (is the CSE running with 'json' ena
+41.245,100,7,n100s7,0.15,,0,,,,12671.178,no response to rqi=154ae3d40723 within 10.0s (is the CSE running with 'json' ena
+41.3,86,7,n86s7,0.15,,0,,,,12677.214,no response to rqi=06bd05f69e29 within 10.0s (is the CSE running with 'json' ena
+41.346,112,7,n112s7,0.12,,0,,,,12724.107,no response to rqi=ab2a5408ece9 within 10.0s (is the CSE running with 'json' ena
+41.389,150,7,n150s7,0.16,,0,,,,12726.751,no response to rqi=479114ca93b4 within 10.0s (is the CSE running with 'json' ena
+41.438,141,7,n141s7,0.16,,0,,,,12722.379,no response to rqi=04e1ee151393 within 10.0s (is the CSE running with 'json' ena
+41.511,0,7,n0s7,0.12,,0,,,,12719.067,no response to rqi=1cd27b21555d within 10.0s (is the CSE running with 'json' ena
+41.513,5,7,n5s7,0.15,,0,,,,12763.387,no response to rqi=1f228d57cdd1 within 10.0s (is the CSE running with 'json' ena
+41.598,111,7,n111s7,0.16,,0,,,,12722.671,no response to rqi=cefdf575a9eb within 10.0s (is the CSE running with 'json' ena
+41.659,8,7,n8s7,0.12,,0,,,,12722.492,no response to rqi=25f166cf2d0d within 10.0s (is the CSE running with 'json' ena
+41.66,116,7,n116s7,0.15,,0,,,,12777.868,no response to rqi=dcb0cc9dcc2a within 10.0s (is the CSE running with 'json' ena
+41.746,28,7,n28s7,0.16,,0,,,,12787.405,no response to rqi=3cb35f9ec7dc within 10.0s (is the CSE running with 'json' ena
+41.789,42,7,n42s7,0.15,,0,,,,12786.818,no response to rqi=8eff370fd404 within 10.0s (is the CSE running with 'json' ena
+41.858,13,7,n13s7,0.16,,0,,,,12762.205,no response to rqi=443292fb8232 within 10.0s (is the CSE running with 'json' ena
+41.859,171,7,n171s7,0.13,,0,,,,12761.96,no response to rqi=cccf825195c2 within 10.0s (is the CSE running with 'json' ena
+41.946,178,7,n178s7,0.18,,0,,,,12766.035,no response to rqi=1c9676711adf within 10.0s (is the CSE running with 'json' ena
+41.99,27,7,n27s7,0.12,,0,,,,12766.316,no response to rqi=d717d637e94f within 10.0s (is the CSE running with 'json' ena
+42.057,45,7,n45s7,0.15,,0,,,,12743.17,no response to rqi=52c7606fcbae within 10.0s (is the CSE running with 'json' ena
+42.102,72,7,n72s7,0.18,,0,,,,12764.063,no response to rqi=41d5bd95e80e within 10.0s (is the CSE running with 'json' ena
+42.145,109,7,n109s7,0.15,,0,,,,12777.939,no response to rqi=817eec16ed0f within 10.0s (is the CSE running with 'json' ena
+42.189,170,7,n170s7,0.13,,0,,,,12790.968,no response to rqi=3d867fe46178 within 10.0s (is the CSE running with 'json' ena
+42.236,183,7,n183s7,0.13,,0,,,,12797.789,no response to rqi=1aa938e0c5f4 within 10.0s (is the CSE running with 'json' ena
+42.309,184,7,n184s7,0.19,,0,,,,12767.315,no response to rqi=b94256e8b948 within 10.0s (is the CSE running with 'json' ena
+42.311,198,7,n198s7,0.2,,0,,,,12808.85,no response to rqi=ae4cc1950823 within 10.0s (is the CSE running with 'json' ena
+42.398,175,7,n175s7,0.21,,0,,,,12833.509,no response to rqi=701090089c84 within 10.0s (is the CSE running with 'json' ena
+42.444,65,7,n65s7,0.18,,0,,,,12832.606,no response to rqi=698fa8daee1a within 10.0s (is the CSE running with 'json' ena
+42.506,158,7,n158s7,0.17,,0,,,,12814.261,no response to rqi=b36dc904d550 within 10.0s (is the CSE running with 'json' ena
+42.507,191,7,n191s7,0.13,,0,,,,12861.428,no response to rqi=41f84f5502a7 within 10.0s (is the CSE running with 'json' ena
+42.594,105,7,n105s7,0.14,,0,,,,12836.034,no response to rqi=4e5af8a02c17 within 10.0s (is the CSE running with 'json' ena
+42.638,85,7,n85s7,0.16,,0,,,,12837.997,no response to rqi=9767684d47bf within 10.0s (is the CSE running with 'json' ena
+42.682,169,7,n169s7,0.13,,0,,,,12895.184,no response to rqi=d9eeaa147162 within 10.0s (is the CSE running with 'json' ena
+42.725,53,7,n53s7,0.13,,0,,,,12894.991,no response to rqi=4f1b1d691c00 within 10.0s (is the CSE running with 'json' ena
+42.779,196,7,n196s7,0.14,,0,,,,12885.06,no response to rqi=9c2f81c0d403 within 10.0s (is the CSE running with 'json' ena
+42.818,77,7,n77s7,0.16,,0,,,,12890.534,no response to rqi=6d5a94e4da1f within 10.0s (is the CSE running with 'json' ena
+42.862,16,7,n16s7,0.14,,0,,,,12909.599,no response to rqi=fb88f34cca9f within 10.0s (is the CSE running with 'json' ena
+42.91,130,7,n130s7,0.15,,0,,,,12944.6,no response to rqi=a898590e1d62 within 10.0s (is the CSE running with 'json' ena
+42.964,195,7,n195s7,0.16,,0,,,,12936.301,no response to rqi=53c62d9c2030 within 10.0s (is the CSE running with 'json' ena
+43.01,133,7,n133s7,0.14,,0,,,,12938.508,no response to rqi=5a284227065d within 10.0s (is the CSE running with 'json' ena
+43.069,189,7,n189s7,0.15,,0,,,,12927.49,no response to rqi=bd55c07871a4 within 10.0s (is the CSE running with 'json' ena
+43.128,143,7,n143s7,0.16,,0,,,,12916.933,no response to rqi=7a9a3c5ab48d within 10.0s (is the CSE running with 'json' ena
+43.182,188,7,n188s7,0.16,,0,,,,12965.978,no response to rqi=6e4afb7df62d within 10.0s (is the CSE running with 'json' ena
+43.231,99,7,n99s7,0.15,,0,,,,12961.202,no response to rqi=94aab61df7d2 within 10.0s (is the CSE running with 'json' ena
+43.297,95,7,n95s7,0.13,,0,,,,12939.057,no response to rqi=b3c4dbf25e97 within 10.0s (is the CSE running with 'json' ena
+43.342,167,7,n167s7,0.16,,0,,,,12995.691,no response to rqi=88b577a3c2bb within 10.0s (is the CSE running with 'json' ena
+43.344,117,7,n117s7,0.15,,0,,,,13044.274,no response to rqi=bc5560091619 within 10.0s (is the CSE running with 'json' ena
+43.389,35,7,n35s7,0.13,,0,,,,13043.474,no response to rqi=877058ac069a within 10.0s (is the CSE running with 'json' ena
+43.438,166,7,n166s7,0.13,,0,,,,13038.3,no response to rqi=aae721874220 within 10.0s (is the CSE running with 'json' ena
+43.49,124,7,n124s7,0.16,,0,,,,13039.094,no response to rqi=81d191fa7970 within 10.0s (is the CSE running with 'json' ena
+43.533,51,7,n51s7,0.13,,0,,,,13059.181,no response to rqi=6a526d1770d7 within 10.0s (is the CSE running with 'json' ena
+43.578,199,7,n199s7,0.14,,0,,,,13102.404,no response to rqi=2578424798c0 within 10.0s (is the CSE running with 'json' ena
+43.642,46,7,n46s7,0.16,,0,,,,13086.68,no response to rqi=55ecc1065840 within 10.0s (is the CSE running with 'json' ena
+43.707,176,7,n176s7,0.14,,0,,,,13085.207,no response to rqi=69a4b8417e83 within 10.0s (is the CSE running with 'json' ena
+43.71,118,7,n118s7,0.16,,0,,,,13126.738,no response to rqi=024ed6c64df0 within 10.0s (is the CSE running with 'json' ena
+43.812,119,7,n119s7,0.15,,0,,,,13068.769,no response to rqi=0c7d0a84549f within 10.0s (is the CSE running with 'json' ena
+43.854,84,7,n84s7,0.16,,0,,,,13073.962,no response to rqi=7cd014a44888 within 10.0s (is the CSE running with 'json' ena
+43.9,25,7,n25s7,0.19,,0,,,,13087.587,no response to rqi=2193e8655700 within 10.0s (is the CSE running with 'json' ena
+43.962,31,7,n31s7,0.17,,0,,,,13085.448,no response to rqi=6c2cfca583ec within 10.0s (is the CSE running with 'json' ena
+44.046,185,7,n185s7,0.14,,0,,,,13061.93,no response to rqi=3680b0dbc486 within 10.0s (is the CSE running with 'json' ena
+44.113,43,7,n43s7,0.15,,0,,,,13039.664,no response to rqi=3fb374512971 within 10.0s (is the CSE running with 'json' ena
+44.194,93,7,n93s7,0.12,,0,,,,13045.76,no response to rqi=7afdc26bb121 within 10.0s (is the CSE running with 'json' ena
+44.246,127,7,n127s7,0.14,,0,,,,13056.274,no response to rqi=fe0cedf19609 within 10.0s (is the CSE running with 'json' ena
+44.295,107,7,n107s7,0.14,,0,,,,13097.908,no response to rqi=23f000c8475d within 10.0s (is the CSE running with 'json' ena
+44.346,174,7,n174s7,0.14,,0,,,,13089.781,no response to rqi=7627451e6f4e within 10.0s (is the CSE running with 'json' ena
+44.398,79,7,n79s7,0.15,,0,,,,13082.368,no response to rqi=7db3c9f0895b within 10.0s (is the CSE running with 'json' ena
+44.452,190,7,n190s7,0.16,,0,,,,13072.132,no response to rqi=1852fb7a40c7 within 10.0s (is the CSE running with 'json' ena
+44.494,97,7,n97s7,0.14,,0,,,,13079.542,no response to rqi=83fe187e080d within 10.0s (is the CSE running with 'json' ena
+44.542,106,7,n106s7,0.14,,0,,,,13094.985,no response to rqi=68c0148af809 within 10.0s (is the CSE running with 'json' ena
+44.611,58,7,n58s7,0.14,,0,,,,13104.825,no response to rqi=e3de9c4ce6f2 within 10.0s (is the CSE running with 'json' ena
+44.655,161,7,n161s7,0.14,,0,,,,13105.603,no response to rqi=bc8a12c79e93 within 10.0s (is the CSE running with 'json' ena
+44.702,10,7,n10s7,0.15,,0,,,,13102.722,no response to rqi=5e6384577040 within 10.0s (is the CSE running with 'json' ena
+44.745,15,7,n15s7,0.17,,0,,,,13106.857,no response to rqi=35b7ac3ce664 within 10.0s (is the CSE running with 'json' ena
+44.791,96,7,n96s7,0.15,,0,,,,13113.21,no response to rqi=99aa9eddb559 within 10.0s (is the CSE running with 'json' ena
+44.836,192,7,n192s7,0.17,,0,,,,13111.734,no response to rqi=f90319a550fa within 10.0s (is the CSE running with 'json' ena
+44.918,156,7,n156s7,0.16,,0,,,,13143.642,no response to rqi=eb30d04b8a32 within 10.0s (is the CSE running with 'json' ena
+44.92,160,7,n160s7,0.15,,0,,,,13203.219,no response to rqi=158b32818464 within 10.0s (is the CSE running with 'json' ena
+45.006,19,7,n19s7,0.15,,0,,,,13252.549,no response to rqi=a36a7f23923b within 10.0s (is the CSE running with 'json' ena
+45.05,193,7,n193s7,0.12,,0,,,,13254.734,no response to rqi=631cb31909ae within 10.0s (is the CSE running with 'json' ena
+45.082,69,7,n69s7,0.16,,0,,,,13266.173,no response to rqi=df6db6358683 within 10.0s (is the CSE running with 'json' ena
+45.138,155,7,n155s7,0.16,,0,,,,13258.809,no response to rqi=ff3df421b1c5 within 10.0s (is the CSE running with 'json' ena
+45.185,24,7,n24s7,0.13,,0,,,,13255.111,no response to rqi=d7a9f0f24d51 within 10.0s (is the CSE running with 'json' ena
+45.233,138,7,n138s7,0.13,,0,,,,13251.526,no response to rqi=a8d49d188be8 within 10.0s (is the CSE running with 'json' ena
+45.277,7,7,n7s7,0.18,,0,,,,13283.651,no response to rqi=abae1aa2d83f within 10.0s (is the CSE running with 'json' ena
+45.34,44,7,n44s7,0.15,,0,,,,13263.938,no response to rqi=72a97cf12c8d within 10.0s (is the CSE running with 'json' ena
+45.387,55,7,n55s7,0.12,,0,,,,13261.728,no response to rqi=a11f34a384e1 within 10.0s (is the CSE running with 'json' ena
+45.43,40,7,n40s7,0.13,,0,,,,13262.141,no response to rqi=005bb010d0b6 within 10.0s (is the CSE running with 'json' ena
+45.509,129,7,n129s7,0.16,,0,,,,13228.897,no response to rqi=a2aa924ebfea within 10.0s (is the CSE running with 'json' ena
+45.55,134,7,n134s7,0.16,,0,,,,13230.609,no response to rqi=d353c3197e71 within 10.0s (is the CSE running with 'json' ena
+45.608,152,7,n152s7,0.14,,0,,,,13288.115,no response to rqi=4e377c1ba133 within 10.0s (is the CSE running with 'json' ena
+45.61,165,7,n165s7,0.13,,0,,,,13330.311,no response to rqi=a9e041329274 within 10.0s (is the CSE running with 'json' ena
+45.694,140,7,n140s7,0.14,,0,,,,13306.958,no response to rqi=3e93490c0ccd within 10.0s (is the CSE running with 'json' ena
+45.738,56,7,n56s7,0.12,,0,,,,13310.613,no response to rqi=42391226ed07 within 10.0s (is the CSE running with 'json' ena
+45.782,41,7,n41s7,0.15,,0,,,,13310.203,no response to rqi=4c8e73625b1f within 10.0s (is the CSE running with 'json' ena
+45.826,182,7,n182s7,0.16,,0,,,,13310.985,no response to rqi=92ee52e974e1 within 10.0s (is the CSE running with 'json' ena
+45.87,11,7,n11s7,0.12,,0,,,,13319.609,no response to rqi=d805f747793c within 10.0s (is the CSE running with 'json' ena
+45.918,26,7,n26s7,0.15,,0,,,,13330.736,no response to rqi=5259c32d55b5 within 10.0s (is the CSE running with 'json' ena
+45.962,154,7,n154s7,0.14,,0,,,,13330.452,no response to rqi=cac102d99fe5 within 10.0s (is the CSE running with 'json' ena
+46.006,113,7,n113s7,0.13,,0,,,,13378.292,no response to rqi=454e044273fe within 10.0s (is the CSE running with 'json' ena
+46.05,168,7,n168s7,0.16,,0,,,,13378.067,no response to rqi=af7ef8d81f98 within 10.0s (is the CSE running with 'json' ena
+46.097,131,7,n131s7,0.17,,0,,,,13332.909,no response to rqi=49a58acb3328 within 10.0s (is the CSE running with 'json' ena
+46.156,39,7,n39s7,0.16,,0,,,,13343.052,no response to rqi=0c48a17ed2dd within 10.0s (is the CSE running with 'json' ena
+46.244,30,7,n30s7,0.21,,0,,,,13334.628,no response to rqi=3d14312edc2f within 10.0s (is the CSE running with 'json' ena
+46.248,1,7,n1s7,0.17,,0,,,,13389.672,no response to rqi=c46c0c32e4f3 within 10.0s (is the CSE running with 'json' ena
+46.335,14,7,n14s7,0.12,,0,,,,13379.705,no response to rqi=fe8b20438d34 within 10.0s (is the CSE running with 'json' ena
+46.337,61,7,n61s7,0.12,,0,,,,13422.858,no response to rqi=5e829d7878ee within 10.0s (is the CSE running with 'json' ena
+46.423,33,7,n33s7,0.17,,0,,,,13381.742,no response to rqi=08a74d94ebcc within 10.0s (is the CSE running with 'json' ena
+46.466,50,7,n50s7,0.16,,0,,,,13386.322,no response to rqi=3ddafa646a96 within 10.0s (is the CSE running with 'json' ena
+46.51,114,7,n114s7,0.14,,0,,,,13396.931,no response to rqi=9d1367c2ebdd within 10.0s (is the CSE running with 'json' ena
+46.554,146,7,n146s7,0.14,,0,,,,13407.793,no response to rqi=9d139ed73c4e within 10.0s (is the CSE running with 'json' ena
+46.605,2,7,n2s7,0.15,,0,,,,13424.754,no response to rqi=57f402c26a49 within 10.0s (is the CSE running with 'json' ena
+46.657,151,7,n151s7,0.12,,0,,,,13436.144,no response to rqi=6b5a4e267b8f within 10.0s (is the CSE running with 'json' ena
+46.701,74,7,n74s7,0.15,,0,,,,13446.922,no response to rqi=f382d8970720 within 10.0s (is the CSE running with 'json' ena
+46.746,22,7,n22s7,0.15,,0,,,,13459.747,no response to rqi=fb3a03f9cd39 within 10.0s (is the CSE running with 'json' ena
+46.79,153,7,n153s7,0.14,,0,,,,13458.666,no response to rqi=3b768fd8cc36 within 10.0s (is the CSE running with 'json' ena
+46.838,71,7,n71s7,0.17,,0,,,,13460.642,no response to rqi=73a944cf85e9 within 10.0s (is the CSE running with 'json' ena
+46.887,148,7,n148s7,0.15,,0,,,,13457.306,no response to rqi=82e379ca23ec within 10.0s (is the CSE running with 'json' ena
+46.946,88,7,n88s7,0.16,,0,,,,13442.517,no response to rqi=7e39183904da within 10.0s (is the CSE running with 'json' ena
+47.013,144,7,n144s7,0.12,,0,,,,13440.276,no response to rqi=286b114efdb0 within 10.0s (is the CSE running with 'json' ena
+47.054,52,7,n52s7,0.15,,0,,,,13445.035,no response to rqi=fa487eb3e950 within 10.0s (is the CSE running with 'json' ena
+47.098,12,7,n12s7,0.13,,0,,,,13488.397,no response to rqi=94628a3bc1a9 within 10.0s (is the CSE running with 'json' ena
+47.142,108,7,n108s7,0.14,,0,,,,13490.684,no response to rqi=7710d1ae4665 within 10.0s (is the CSE running with 'json' ena
+47.223,136,7,n136s7,0.18,,0,,,,13460.648,no response to rqi=75e337e596f7 within 10.0s (is the CSE running with 'json' ena
+47.258,32,7,n32s7,0.15,,0,,,,13470.338,no response to rqi=684c3a64bad3 within 10.0s (is the CSE running with 'json' ena
+47.309,164,7,n164s7,0.19,,0,,,,13493.059,no response to rqi=651205155359 within 10.0s (is the CSE running with 'json' ena
+47.351,73,7,n73s7,0.16,,0,,,,13501.785,no response to rqi=c0ac13d28014 within 10.0s (is the CSE running with 'json' ena
+47.417,90,7,n90s7,0.2,,0,,,,13507.18,no response to rqi=4768955b8f4c within 10.0s (is the CSE running with 'json' ena
+47.44,89,7,n89s7,0.16,,0,,,,13572.964,no response to rqi=6d0875eb14c3 within 10.0s (is the CSE running with 'json' ena
+47.483,94,7,n94s7,0.14,,0,,,,13573.115,no response to rqi=cd64d5cc5fcb within 10.0s (is the CSE running with 'json' ena
+47.532,82,7,n82s7,0.22,,0,,,,13572.808,no response to rqi=17d5d91db397 within 10.0s (is the CSE running with 'json' ena
+47.585,17,7,n17s7,0.19,,0,,,,13563.25,no response to rqi=27646781bb20 within 10.0s (is the CSE running with 'json' ena
+47.633,104,7,n104s7,0.22,,0,,,,13559.614,no response to rqi=46aee864e0b8 within 10.0s (is the CSE running with 'json' ena
+47.678,6,7,n6s7,0.2,,0,,,,13595.334,no response to rqi=1ae0de5d0b59 within 10.0s (is the CSE running with 'json' ena
+47.745,139,7,n139s7,0.19,,0,,,,13615.071,no response to rqi=777c279354a4 within 10.0s (is the CSE running with 'json' ena
+47.746,64,7,n64s7,0.19,,0,,,,13570.013,no response to rqi=0180b01326a0 within 10.0s (is the CSE running with 'json' ena
+47.826,187,8,n187s8,0.14,,0,,,,13590.832,no response to rqi=a42f238eb5be within 10.0s (is the CSE running with 'json' ena
+47.841,81,8,n81s8,0.13,,0,,,,13631.643,no response to rqi=66fa9ca96cf6 within 10.0s (is the CSE running with 'json' ena
+47.91,57,8,n57s8,0.13,,0,,,,13620.228,no response to rqi=c73ca642089e within 10.0s (is the CSE running with 'json' ena
+47.945,3,8,n3s8,0.15,,0,,,,13631.268,no response to rqi=7b875761dee5 within 10.0s (is the CSE running with 'json' ena
+47.991,121,8,n121s8,0.15,,0,,,,13661.542,no response to rqi=a48f68e7ccfe within 10.0s (is the CSE running with 'json' ena
+48.057,173,8,n173s8,0.16,,0,,,,13695.433,no response to rqi=3dbfe23ee2ea within 10.0s (is the CSE running with 'json' ena
+48.105,149,8,n149s8,0.15,,0,,,,13691.401,no response to rqi=7036b859132d within 10.0s (is the CSE running with 'json' ena
+48.158,37,8,n37s8,0.12,,0,,,,13682.295,no response to rqi=0778ceac0298 within 10.0s (is the CSE running with 'json' ena
+48.233,62,8,n62s8,0.15,,0,,,,13702.503,no response to rqi=710411e631f3 within 10.0s (is the CSE running with 'json' ena
+48.235,80,8,n80s8,0.15,,0,,,,13745.135,no response to rqi=9d29025c7a79 within 10.0s (is the CSE running with 'json' ena
+48.321,87,8,n87s8,0.15,,0,,,,13726.934,no response to rqi=fbb1d5456bc8 within 10.0s (is the CSE running with 'json' ena
+48.384,177,8,n177s8,0.19,,0,,,,13721.294,no response to rqi=543366b408ac within 10.0s (is the CSE running with 'json' ena
+48.434,163,8,n163s8,0.13,,0,,,,13718.552,no response to rqi=e0b29e6a4fe4 within 10.0s (is the CSE running with 'json' ena
+48.509,38,8,n38s8,0.13,,0,,,,13731.587,no response to rqi=ea0ee462623f within 10.0s (is the CSE running with 'json' ena
+48.512,125,8,n125s8,0.12,,0,,,,13776.245,no response to rqi=b4732deba215 within 10.0s (is the CSE running with 'json' ena
+48.567,123,8,n123s8,0.15,,0,,,,13765.167,no response to rqi=92defc1c73a1 within 10.0s (is the CSE running with 'json' ena
+48.655,126,8,n126s8,0.15,,0,,,,13725.034,no response to rqi=ba1e498f75b7 within 10.0s (is the CSE running with 'json' ena
+48.698,135,8,n135s8,0.15,,0,,,,13788.879,no response to rqi=600eed9b15f0 within 10.0s (is the CSE running with 'json' ena
+48.741,48,8,n48s8,0.16,,0,,,,13787.172,no response to rqi=f5345246bfd7 within 10.0s (is the CSE running with 'json' ena
+48.81,102,8,n102s8,0.12,,0,,,,13788.844,no response to rqi=3e749a641cb2 within 10.0s (is the CSE running with 'json' ena
+48.812,20,8,n20s8,0.12,,0,,,,13828.855,no response to rqi=6774e99668a8 within 10.0s (is the CSE running with 'json' ena
+48.898,59,8,n59s8,0.13,,0,,,,13786.581,no response to rqi=6c508f3e7004 within 10.0s (is the CSE running with 'json' ena
+48.948,78,8,n78s8,0.14,,0,,,,13799.011,no response to rqi=f95ee3151f2c within 10.0s (is the CSE running with 'json' ena
+48.989,70,8,n70s8,0.16,,0,,,,13826.559,no response to rqi=c27ad7ec72cf within 10.0s (is the CSE running with 'json' ena
+49.043,36,8,n36s8,0.13,,0,,,,13817.674,no response to rqi=6df99a0dc75d within 10.0s (is the CSE running with 'json' ena
+49.095,142,8,n142s8,0.15,,0,,,,13838.977,no response to rqi=5556091eaf14 within 10.0s (is the CSE running with 'json' ena
+49.134,91,8,n91s8,0.12,,0,,,,13846.837,no response to rqi=260227b4834c within 10.0s (is the CSE running with 'json' ena
+49.177,60,8,n60s8,0.16,,0,,,,13875.021,no response to rqi=5f5254076bf0 within 10.0s (is the CSE running with 'json' ena
+49.233,66,8,n66s8,0.15,,0,,,,13867.218,no response to rqi=82066b82de8d within 10.0s (is the CSE running with 'json' ena
+49.304,180,8,n180s8,0.2,,0,,,,13840.632,no response to rqi=0af94304548c within 10.0s (is the CSE running with 'json' ena
+49.424,34,8,n34s8,0.15,,0,,,,13788.221,no response to rqi=d17c99cf3af0 within 10.0s (is the CSE running with 'json' ena
+49.47,179,8,n179s8,0.13,,0,,,,13840.867,no response to rqi=3b265a2707ac within 10.0s (is the CSE running with 'json' ena
+49.48,147,8,n147s8,0.19,,0,,,,13880.697,no response to rqi=dae15a8fee85 within 10.0s (is the CSE running with 'json' ena
+49.558,132,8,n132s8,0.14,,0,,,,13932.85,no response to rqi=75456df997be within 10.0s (is the CSE running with 'json' ena
+49.559,159,8,n159s8,0.18,,0,,,,13977.118,no response to rqi=2fc1406da958 within 10.0s (is the CSE running with 'json' ena
+49.645,67,8,n67s8,0.13,,0,,,,13935.07,no response to rqi=3de19aa0aa88 within 10.0s (is the CSE running with 'json' ena
+49.69,21,8,n21s8,0.12,,0,,,,13938.375,no response to rqi=410e12a64f42 within 10.0s (is the CSE running with 'json' ena
+49.745,157,8,n157s8,0.15,,0,,,,13970.821,no response to rqi=f67a693899af within 10.0s (is the CSE running with 'json' ena
+49.747,137,8,n137s8,0.15,,0,,,,14017.316,no response to rqi=2e645eb74ba6 within 10.0s (is the CSE running with 'json' ena
+49.82,4,8,n4s8,0.14,,0,,,,13992.688,no response to rqi=c2d5527b8d96 within 10.0s (is the CSE running with 'json' ena
+49.867,9,8,n9s8,0.16,,0,,,,14016.326,no response to rqi=b02c5a3be638 within 10.0s (is the CSE running with 'json' ena
+49.914,23,8,n23s8,0.15,,0,,,,14014.127,no response to rqi=9fdf2b9f9178 within 10.0s (is the CSE running with 'json' ena
+49.982,92,8,n92s8,0.16,,0,,,,13990.803,no response to rqi=3bd924ac7833 within 10.0s (is the CSE running with 'json' ena
+50.029,47,8,n47s8,0.13,,0,,,,13987.292,no response to rqi=383046b34b61 within 10.0s (is the CSE running with 'json' ena
+50.062,197,8,n197s8,0.12,,0,,,,14036.877,no response to rqi=3227c84044fa within 10.0s (is the CSE running with 'json' ena
+50.117,18,8,n18s8,0.13,,0,,,,14028.083,no response to rqi=65f3d0d10bef within 10.0s (is the CSE running with 'json' ena
+50.161,63,8,n63s8,0.14,,0,,,,13984.59,no response to rqi=2c57ef6ba276 within 10.0s (is the CSE running with 'json' ena
+50.214,186,8,n186s8,0.13,,0,,,,13989.527,no response to rqi=5b7fc4a5f2af within 10.0s (is the CSE running with 'json' ena
+50.254,68,8,n68s8,0.16,,0,,,,14032.082,no response to rqi=1d0b904d6eb5 within 10.0s (is the CSE running with 'json' ena
+50.306,194,8,n194s8,0.13,,0,,,,14048.478,no response to rqi=80f17a79d113 within 10.0s (is the CSE running with 'json' ena
+50.349,122,8,n122s8,0.15,,0,,,,14051.067,no response to rqi=2701d2d37876 within 10.0s (is the CSE running with 'json' ena
+50.404,120,8,n120s8,0.15,,0,,,,14061.057,no response to rqi=eb753d7e9173 within 10.0s (is the CSE running with 'json' ena
+50.461,101,8,n101s8,0.12,,0,,,,14066.834,no response to rqi=fbfa9389aa0d within 10.0s (is the CSE running with 'json' ena
+50.51,76,8,n76s8,0.16,,0,,,,14063.329,no response to rqi=1cf993a4a468 within 10.0s (is the CSE running with 'json' ena
+50.589,162,8,n162s8,0.16,,0,,,,14075.838,no response to rqi=20a0892cbf34 within 10.0s (is the CSE running with 'json' ena
+50.606,98,8,n98s8,0.15,,0,,,,14102.101,no response to rqi=d346bf106d70 within 10.0s (is the CSE running with 'json' ena
+50.67,172,8,n172s8,0.15,,0,,,,14081.894,no response to rqi=127fcd5260e1 within 10.0s (is the CSE running with 'json' ena
+50.731,181,8,n181s8,0.15,,0,,,,14087.783,no response to rqi=5e010378b1e4 within 10.0s (is the CSE running with 'json' ena
+50.759,49,8,n49s8,0.15,,0,,,,14105.746,no response to rqi=c2a60275172d within 10.0s (is the CSE running with 'json' ena
+50.802,54,8,n54s8,0.16,,0,,,,14109.997,no response to rqi=571b18a798a4 within 10.0s (is the CSE running with 'json' ena
+50.85,103,8,n103s8,0.14,,0,,,,14125.135,no response to rqi=248e00e68fd7 within 10.0s (is the CSE running with 'json' ena
+50.91,29,8,n29s8,0.14,,0,,,,14113.93,no response to rqi=c8ff3b46316a within 10.0s (is the CSE running with 'json' ena
+50.989,128,8,n128s8,0.16,,0,,,,14112.468,no response to rqi=569865e30b27 within 10.0s (is the CSE running with 'json' ena
+50.99,75,8,n75s8,0.15,,0,,,,14158.708,no response to rqi=6da6f7a98d26 within 10.0s (is the CSE running with 'json' ena
+51.067,145,8,n145s8,0.13,,0,,,,14129.675,no response to rqi=83ea82fa5c9f within 10.0s (is the CSE running with 'json' ena
+51.107,83,8,n83s8,0.16,,0,,,,14137.567,no response to rqi=25c8679b6aa6 within 10.0s (is the CSE running with 'json' ena
+51.154,115,8,n115s8,0.13,,0,,,,14145.441,no response to rqi=f05a867bce5b within 10.0s (is the CSE running with 'json' ena
+51.182,110,8,n110s8,0.15,,0,,,,14179.747,no response to rqi=355c5191fe6c within 10.0s (is the CSE running with 'json' ena
+51.246,100,8,n100s8,0.14,,0,,,,14183.696,no response to rqi=e376c0fad7e7 within 10.0s (is the CSE running with 'json' ena
+51.301,86,8,n86s8,0.14,,0,,,,14179.783,no response to rqi=60ea9b84a954 within 10.0s (is the CSE running with 'json' ena
+51.347,112,8,n112s8,0.13,,0,,,,14202.109,no response to rqi=6c948892bf3d within 10.0s (is the CSE running with 'json' ena
+51.39,150,8,n150s8,0.14,,0,,,,14201.878,no response to rqi=0f4e45497d96 within 10.0s (is the CSE running with 'json' ena
+51.439,141,8,n141s8,0.14,,0,,,,14211.935,no response to rqi=15ee33e657c1 within 10.0s (is the CSE running with 'json' ena
+51.512,0,8,n0s8,0.15,,0,,,,14273.074,no response to rqi=32e8ab0be8f2 within 10.0s (is the CSE running with 'json' ena
+51.514,5,8,n5s8,0.15,,0,,,,14272.523,no response to rqi=965bce9f3ba7 within 10.0s (is the CSE running with 'json' ena
+51.599,111,8,n111s8,0.12,,0,,,,14233.627,no response to rqi=46a3ff5a884d within 10.0s (is the CSE running with 'json' ena
+51.66,8,8,n8s8,0.12,,0,,,,14237.503,no response to rqi=8b3d42359263 within 10.0s (is the CSE running with 'json' ena
+51.661,116,8,n116s8,0.12,,0,,,,14278.94,no response to rqi=792e3ed19bbd within 10.0s (is the CSE running with 'json' ena
+51.747,28,8,n28s8,0.13,,0,,,,14264.464,no response to rqi=d497102c7bc0 within 10.0s (is the CSE running with 'json' ena
+51.79,42,8,n42s8,0.13,,0,,,,14265.976,no response to rqi=c7c0df9ab19e within 10.0s (is the CSE running with 'json' ena
+51.859,13,8,n13s8,0.12,,0,,,,14313.417,no response to rqi=454c79f79c2b within 10.0s (is the CSE running with 'json' ena
+51.861,171,8,n171s8,0.14,,0,,,,14313.644,no response to rqi=c8218752ddf6 within 10.0s (is the CSE running with 'json' ena
+51.947,178,8,n178s8,0.13,,0,,,,14270.498,no response to rqi=3c4c9e8c11f0 within 10.0s (is the CSE running with 'json' ena
+51.991,27,8,n27s8,0.14,,0,,,,14273.49,no response to rqi=ff8fbc8a05f9 within 10.0s (is the CSE running with 'json' ena
+52.058,45,8,n45s8,0.16,,0,,,,14268.98,no response to rqi=57965a0e9749 within 10.0s (is the CSE running with 'json' ena
+52.103,72,8,n72s8,0.17,,0,,,,14327.73,no response to rqi=2c7f96fe38ff within 10.0s (is the CSE running with 'json' ena
+52.147,109,8,n109s8,0.13,,0,,,,14333.949,no response to rqi=6ab24617b3d4 within 10.0s (is the CSE running with 'json' ena
+52.191,170,8,n170s8,0.14,,0,,,,14333.688,no response to rqi=f4f27ca5fc13 within 10.0s (is the CSE running with 'json' ena
+52.237,183,8,n183s8,0.15,,0,,,,14332.395,no response to rqi=04856f3be960 within 10.0s (is the CSE running with 'json' ena
+52.31,184,8,n184s8,0.13,,0,,,,14336.456,no response to rqi=b9c9a14db482 within 10.0s (is the CSE running with 'json' ena
+52.313,198,8,n198s8,0.15,,0,,,,14379.351,no response to rqi=7180e64ad3bb within 10.0s (is the CSE running with 'json' ena
+52.399,175,8,n175s8,0.17,,0,,,,14360.699,no response to rqi=dbc1237093ca within 10.0s (is the CSE running with 'json' ena
+52.445,65,8,n65s8,0.13,,0,,,,14367.566,no response to rqi=246dea1a9882 within 10.0s (is the CSE running with 'json' ena
+52.507,158,8,n158s8,0.16,,0,,,,14359.479,no response to rqi=09fc0651b031 within 10.0s (is the CSE running with 'json' ena
+52.508,191,8,n191s8,0.11,,0,,,,14404.178,no response to rqi=11f7fc0b7ab0 within 10.0s (is the CSE running with 'json' ena
+52.595,105,8,n105s8,0.13,,0,,,,14363.568,no response to rqi=8e2ef0469262 within 10.0s (is the CSE running with 'json' ena
+52.639,85,8,n85s8,0.12,,0,,,,14365.121,no response to rqi=17c1cf58aa24 within 10.0s (is the CSE running with 'json' ena
+52.683,169,8,n169s8,0.13,,0,,,,14391.367,no response to rqi=d866c6ba1098 within 10.0s (is the CSE running with 'json' ena
+52.726,53,8,n53s8,0.15,,0,,,,14400.945,no response to rqi=9c9781d5262a within 10.0s (is the CSE running with 'json' ena
+52.78,196,8,n196s8,0.14,,0,,,,14425.112,no response to rqi=8bb591283ced within 10.0s (is the CSE running with 'json' ena
+52.819,77,8,n77s8,0.2,,0,,,,14433.492,no response to rqi=2a86b606e99c within 10.0s (is the CSE running with 'json' ena
+52.863,16,8,n16s8,0.18,,0,,,,14452.17,no response to rqi=1154b0fd3a0f within 10.0s (is the CSE running with 'json' ena
+52.911,130,8,n130s8,0.19,,0,,,,14453.116,no response to rqi=0bc315e5a345 within 10.0s (is the CSE running with 'json' ena
+52.965,195,8,n195s8,0.16,,0,,,,14448.918,no response to rqi=98de2044ff8b within 10.0s (is the CSE running with 'json' ena
+53.011,133,8,n133s8,0.14,,0,,,,14449.709,no response to rqi=2da13129c163 within 10.0s (is the CSE running with 'json' ena
+53.07,189,8,n189s8,0.12,,0,,,,14470.699,no response to rqi=84193381212d within 10.0s (is the CSE running with 'json' ena
+53.129,143,8,n143s8,0.12,,0,,,,14455.327,no response to rqi=ce97cffd0541 within 10.0s (is the CSE running with 'json' ena
+53.183,188,8,n188s8,0.13,,0,,,,14446.203,no response to rqi=0102708582c3 within 10.0s (is the CSE running with 'json' ena
+53.233,99,8,n99s8,0.13,,0,,,,14449.152,no response to rqi=33724ded755a within 10.0s (is the CSE running with 'json' ena
+53.298,95,8,n95s8,0.12,,0,,,,14426.13,no response to rqi=cc6da9208506 within 10.0s (is the CSE running with 'json' ena
+53.343,167,8,n167s8,0.16,,0,,,,14477.36,no response to rqi=b862bcb6cc17 within 10.0s (is the CSE running with 'json' ena
+53.345,117,8,n117s8,0.13,,0,,,,14519.392,no response to rqi=b27c48d6ced0 within 10.0s (is the CSE running with 'json' ena
+53.39,35,8,n35s8,0.16,,0,,,,14522.593,no response to rqi=84f696c26b9e within 10.0s (is the CSE running with 'json' ena
+53.439,166,8,n166s8,0.15,,0,,,,14517.267,no response to rqi=7e219850dd75 within 10.0s (is the CSE running with 'json' ena
+53.491,124,8,n124s8,0.16,,0,,,,14508.924,no response to rqi=f8762e04a6a6 within 10.0s (is the CSE running with 'json' ena
+53.535,51,8,n51s8,0.15,,0,,,,14541.794,no response to rqi=a0cd1efde853 within 10.0s (is the CSE running with 'json' ena
+53.579,199,8,n199s8,0.17,,0,,,,14545.357,no response to rqi=eabceffa5267 within 10.0s (is the CSE running with 'json' ena
+53.643,46,8,n46s8,0.12,,0,,,,14526.549,no response to rqi=84984a1a5e84 within 10.0s (is the CSE running with 'json' ena
+53.708,176,8,n176s8,0.15,,0,,,,14531.789,no response to rqi=cfc1d900ba7a within 10.0s (is the CSE running with 'json' ena
+53.711,118,8,n118s8,0.15,,0,,,,14573.895,no response to rqi=25bd0bcd6584 within 10.0s (is the CSE running with 'json' ena
+53.813,119,8,n119s8,0.16,,0,,,,14514.964,no response to rqi=fe3211efd7ed within 10.0s (is the CSE running with 'json' ena
+53.855,84,8,n84s8,0.15,,0,,,,14529.074,no response to rqi=fbcdbaecf0aa within 10.0s (is the CSE running with 'json' ena
+53.901,25,8,n25s8,0.15,,0,,,,14555.153,no response to rqi=362fd18e057f within 10.0s (is the CSE running with 'json' ena
+53.963,31,8,n31s8,0.17,,0,,,,14566.463,no response to rqi=92c3bb8c5138 within 10.0s (is the CSE running with 'json' ena
+54.047,185,8,n185s8,0.14,,0,,,,14549.452,no response to rqi=ef5d13d13c7c within 10.0s (is the CSE running with 'json' ena
+54.114,43,8,n43s8,0.15,,0,,,,14606.897,no response to rqi=ba26cc137173 within 10.0s (is the CSE running with 'json' ena
+54.195,93,8,n93s8,0.16,,0,,,,14625.594,no response to rqi=ad835ea506a4 within 10.0s (is the CSE running with 'json' ena
+54.247,127,8,n127s8,0.15,,0,,,,14617.346,no response to rqi=9e35b6b5b680 within 10.0s (is the CSE running with 'json' ena
+54.296,107,8,n107s8,0.16,,0,,,,14628.096,no response to rqi=5a8b2ce8826f within 10.0s (is the CSE running with 'json' ena
+54.348,174,8,n174s8,0.13,,0,,,,14753.703,no response to rqi=1f6cbfc1a4e2 within 10.0s (is the CSE running with 'json' ena
+54.399,79,8,n79s8,0.12,,0,,,,14704.246,no response to rqi=32c1fd519529 within 10.0s (is the CSE running with 'json' ena
+54.453,190,8,n190s8,0.15,,0,,,,14748.939,no response to rqi=e8384cadcf27 within 10.0s (is the CSE running with 'json' ena
+54.495,97,8,n97s8,0.15,,0,,,,14749.59,no response to rqi=9a8f38cde637 within 10.0s (is the CSE running with 'json' ena
+54.543,106,8,n106s8,0.16,,0,,,,14773.951,no response to rqi=1cfb08828463 within 10.0s (is the CSE running with 'json' ena
+54.612,58,8,n58s8,0.14,,0,,,,14788.995,no response to rqi=c20fb09599bf within 10.0s (is the CSE running with 'json' ena
+54.656,161,8,n161s8,0.17,,0,,,,14840.38,no response to rqi=24dcf56bc532 within 10.0s (is the CSE running with 'json' ena
+54.703,10,8,n10s8,0.15,,0,,,,14837.963,no response to rqi=861b62516e99 within 10.0s (is the CSE running with 'json' ena
+54.746,15,8,n15s8,0.13,,0,,,,14882.415,no response to rqi=ec589bd401a3 within 10.0s (is the CSE running with 'json' ena
+54.792,96,8,n96s8,0.12,,0,,,,14944.494,no response to rqi=d18c58e275fd within 10.0s (is the CSE running with 'json' ena
+54.838,192,8,n192s8,0.16,,0,,,,14942.78,no response to rqi=a1e07a499ff7 within 10.0s (is the CSE running with 'json' ena
+54.919,156,8,n156s8,0.13,,0,,,,14961.792,no response to rqi=d291054c14b0 within 10.0s (is the CSE running with 'json' ena
+54.921,160,8,n160s8,0.16,,0,,,,15006.952,no response to rqi=bef74b99b79a within 10.0s (is the CSE running with 'json' ena
+55.008,19,8,n19s8,0.16,,0,,,,14969.069,no response to rqi=179f836c87d9 within 10.0s (is the CSE running with 'json' ena
+55.051,193,8,n193s8,0.13,,0,,,,14969.946,no response to rqi=76d3caa95c11 within 10.0s (is the CSE running with 'json' ena
+55.083,69,8,n69s8,0.14,,0,,,,15007.342,no response to rqi=744025357425 within 10.0s (is the CSE running with 'json' ena
+55.138,155,8,n155s8,0.13,,0,,,,15017.943,no response to rqi=774660e710fb within 10.0s (is the CSE running with 'json' ena
+55.186,24,8,n24s8,0.15,,0,,,,15018.191,no response to rqi=6c6df2c55613 within 10.0s (is the CSE running with 'json' ena
+55.234,138,8,n138s8,0.14,,0,,,,15054.815,no response to rqi=8706e2f5968a within 10.0s (is the CSE running with 'json' ena
+55.278,7,8,n7s8,0.15,,0,,,,15053.958,no response to rqi=2bee58d2a070 within 10.0s (is the CSE running with 'json' ena
+55.341,44,8,n44s8,0.14,,0,,,,15043.696,no response to rqi=4f61d0ef5552 within 10.0s (is the CSE running with 'json' ena
+55.388,55,8,n55s8,0.12,,0,,,,15040.642,no response to rqi=044c1f75195c within 10.0s (is the CSE running with 'json' ena
+55.431,40,8,n40s8,0.14,,0,,,,15104.347,no response to rqi=a0303471e053 within 10.0s (is the CSE running with 'json' ena
+55.51,129,8,n129s8,0.13,,0,,,,15074.244,no response to rqi=7f8f18b5e5cf within 10.0s (is the CSE running with 'json' ena
+55.551,134,8,n134s8,0.13,,0,,,,15077.611,no response to rqi=4076c214835f within 10.0s (is the CSE running with 'json' ena
+55.609,152,8,n152s8,0.15,,0,,,,15063.103,no response to rqi=b97bfdece9bc within 10.0s (is the CSE running with 'json' ena
+55.611,165,8,n165s8,0.13,,0,,,,15063.029,no response to rqi=07e32b4208e8 within 10.0s (is the CSE running with 'json' ena
+55.695,140,8,n140s8,0.12,,0,,,,15052.013,no response to rqi=598847cc99f6 within 10.0s (is the CSE running with 'json' ena
+55.739,56,8,n56s8,0.14,,0,,,,15053.821,no response to rqi=404462f1a714 within 10.0s (is the CSE running with 'json' ena
+55.783,41,8,n41s8,0.15,,0,,,,15073.245,no response to rqi=919f70726200 within 10.0s (is the CSE running with 'json' ena
+55.828,182,8,n182s8,0.16,,0,,,,15083.285,no response to rqi=13f501a1d94f within 10.0s (is the CSE running with 'json' ena
+55.871,11,8,n11s8,0.18,,0,,,,15085.418,no response to rqi=fad0c05e5321 within 10.0s (is the CSE running with 'json' ena
+55.919,26,8,n26s8,0.14,,0,,,,15109.772,no response to rqi=c7a840565a61 within 10.0s (is the CSE running with 'json' ena
+55.963,154,8,n154s8,0.15,,0,,,,15161.823,no response to rqi=2f08c5901956 within 10.0s (is the CSE running with 'json' ena
+56.007,113,8,n113s8,0.13,,0,,,,15225.209,no response to rqi=be1a93bb8734 within 10.0s (is the CSE running with 'json' ena
+56.051,168,8,n168s8,0.16,,0,,,,15261.982,no response to rqi=7f1a7748069d within 10.0s (is the CSE running with 'json' ena
+56.098,131,8,n131s8,0.15,,0,,,,15273.891,no response to rqi=0e44c8924319 within 10.0s (is the CSE running with 'json' ena
+56.157,39,8,n39s8,0.16,,0,,,,15311.019,no response to rqi=0c5a6c29bd3b within 10.0s (is the CSE running with 'json' ena
+56.245,30,8,n30s8,0.14,,0,,,,15321.233,no response to rqi=a32f73975b94 within 10.0s (is the CSE running with 'json' ena
+56.249,1,8,n1s8,0.15,,0,,,,15359.166,no response to rqi=50006e75c5f8 within 10.0s (is the CSE running with 'json' ena
+56.336,14,8,n14s8,0.16,,0,,,,15319.933,no response to rqi=4c62c5269612 within 10.0s (is the CSE running with 'json' ena
+56.339,61,8,n61s8,0.14,,0,,,,15318.44,no response to rqi=1cdb5b2704e9 within 10.0s (is the CSE running with 'json' ena
+56.424,33,8,n33s8,0.21,,0,,,,15308.246,no response to rqi=054a51d879e6 within 10.0s (is the CSE running with 'json' ena
+56.467,50,8,n50s8,0.14,,0,,,,15309.392,no response to rqi=693b4b924b4a within 10.0s (is the CSE running with 'json' ena
+56.511,114,8,n114s8,0.12,,0,,,,15326.39,no response to rqi=632bb86ea6c6 within 10.0s (is the CSE running with 'json' ena
+56.555,146,8,n146s8,0.16,,0,,,,15339.364,no response to rqi=53524edf25d2 within 10.0s (is the CSE running with 'json' ena
+56.606,2,8,n2s8,0.16,,0,,,,15361.642,no response to rqi=8bfddc2b5e30 within 10.0s (is the CSE running with 'json' ena
+56.658,151,8,n151s8,0.15,,0,,,,15358.28,no response to rqi=11d2943661e4 within 10.0s (is the CSE running with 'json' ena
+56.703,74,8,n74s8,0.18,,0,,,,15373.843,no response to rqi=4d1198e2e580 within 10.0s (is the CSE running with 'json' ena
+56.747,22,8,n22s8,0.13,,0,,,,15393.815,no response to rqi=0067b55319b2 within 10.0s (is the CSE running with 'json' ena
+56.791,153,8,n153s8,0.2,,0,,,,15393.579,no response to rqi=4e6fc27541b5 within 10.0s (is the CSE running with 'json' ena
+56.839,71,8,n71s8,0.15,,0,,,,15413.317,no response to rqi=318a52c22c04 within 10.0s (is the CSE running with 'json' ena
+56.888,148,8,n148s8,0.15,,0,,,,15408.331,no response to rqi=d36fe66e9af1 within 10.0s (is the CSE running with 'json' ena
+56.947,88,8,n88s8,0.16,,0,,,,15409.361,no response to rqi=7d8ac6364155 within 10.0s (is the CSE running with 'json' ena
+57.014,144,8,n144s8,0.16,,0,,,,15386.397,no response to rqi=86438fc805a7 within 10.0s (is the CSE running with 'json' ena
+57.055,52,8,n52s8,0.14,,0,,,,15389.551,no response to rqi=0d7cf093c377 within 10.0s (is the CSE running with 'json' ena
+57.099,12,8,n12s8,0.14,,0,,,,15389.254,no response to rqi=adcfa0cdd526 within 10.0s (is the CSE running with 'json' ena
+57.143,108,8,n108s8,0.15,,0,,,,15416.687,no response to rqi=ad069b6f2cf4 within 10.0s (is the CSE running with 'json' ena
+57.224,136,8,n136s8,0.16,,0,,,,15414.031,no response to rqi=9d8bb12cdfda within 10.0s (is the CSE running with 'json' ena
+57.259,32,8,n32s8,0.12,,0,,,,15465.825,no response to rqi=811bcb47facf within 10.0s (is the CSE running with 'json' ena
+57.311,164,8,n164s8,0.16,,0,,,,15457.966,no response to rqi=d2e44cef6313 within 10.0s (is the CSE running with 'json' ena
+57.352,73,8,n73s8,0.2,,0,,,,15486.197,no response to rqi=9fe2e78c2ab3 within 10.0s (is the CSE running with 'json' ena
+57.418,90,8,n90s8,0.13,,0,,,,15462.357,no response to rqi=3b391d4ede2b within 10.0s (is the CSE running with 'json' ena
+57.441,89,8,n89s8,0.14,,0,,,,15483.185,no response to rqi=d8c9ca0fddc4 within 10.0s (is the CSE running with 'json' ena
+57.485,94,8,n94s8,0.15,,0,,,,15483.308,no response to rqi=ac369d6a2dc7 within 10.0s (is the CSE running with 'json' ena
+57.533,82,8,n82s8,0.16,,0,,,,15491.818,no response to rqi=889634fa80d3 within 10.0s (is the CSE running with 'json' ena
+57.586,17,8,n17s8,0.14,,0,,,,15502.135,no response to rqi=ecf2d88d4602 within 10.0s (is the CSE running with 'json' ena
+57.634,104,8,n104s8,0.15,,0,,,,15502.408,no response to rqi=0318624e03ed within 10.0s (is the CSE running with 'json' ena
+57.679,6,8,n6s8,0.13,,0,,,,15541.307,no response to rqi=5517667a1ba2 within 10.0s (is the CSE running with 'json' ena
+57.748,139,8,n139s8,0.2,,0,,,,15516.512,no response to rqi=9ccebf6a6a18 within 10.0s (is the CSE running with 'json' ena
+57.75,64,8,n64s8,0.13,,0,,,,15557.927,no response to rqi=4d8b3a5459ae within 10.0s (is the CSE running with 'json' ena
+57.827,187,9,n187s9,0.16,,0,,,,15563.299,no response to rqi=96bbcd7f752f within 10.0s (is the CSE running with 'json' ena
+57.842,81,9,n81s9,0.14,,0,,,,15594.426,no response to rqi=83c93f7d30f7 within 10.0s (is the CSE running with 'json' ena
+57.912,57,9,n57s9,0.16,,0,,,,15616.523,no response to rqi=a97c277c426c within 10.0s (is the CSE running with 'json' ena
+57.946,3,9,n3s9,0.15,,0,,,,15626.237,no response to rqi=7d989a24e805 within 10.0s (is the CSE running with 'json' ena
+57.992,121,9,n121s9,0.22,,0,,,,15634.561,no response to rqi=bfd837edd13e within 10.0s (is the CSE running with 'json' ena
+58.058,173,9,n173s9,0.19,,0,,,,15614.39,no response to rqi=a1981bd070f5 within 10.0s (is the CSE running with 'json' ena
+58.106,149,9,n149s9,0.21,,0,,,,15610.047,no response to rqi=89ee8e798b8f within 10.0s (is the CSE running with 'json' ena
+58.16,37,9,n37s9,0.27,,0,,,,15629.8,no response to rqi=490851e01e2b within 10.0s (is the CSE running with 'json' ena
+58.235,62,9,n62s9,0.21,,0,,,,15601.724,no response to rqi=d2556686b219 within 10.0s (is the CSE running with 'json' ena
+58.237,80,9,n80s9,0.17,,0,,,,15643.761,no response to rqi=355c7b93e7ec within 10.0s (is the CSE running with 'json' ena
+58.322,87,9,n87s9,0.13,,0,,,,15606.044,no response to rqi=b1b3cb0f9a82 within 10.0s (is the CSE running with 'json' ena
+58.386,177,9,n177s9,0.13,,0,,,,15596.344,no response to rqi=4d5ff72209da within 10.0s (is the CSE running with 'json' ena
+58.435,163,9,n163s9,0.12,,0,,,,15604.882,no response to rqi=a938e2b634d6 within 10.0s (is the CSE running with 'json' ena
+58.511,38,9,n38s9,0.15,,0,,,,15611.495,no response to rqi=fdf30c8f9f13 within 10.0s (is the CSE running with 'json' ena
+58.513,125,9,n125s9,0.12,,0,,,,15659.349,no response to rqi=50185b9e53e6 within 10.0s (is the CSE running with 'json' ena
+58.568,123,9,n123s9,0.14,,0,,,,15672.904,no response to rqi=8a4ba70585a1 within 10.0s (is the CSE running with 'json' ena
+58.657,126,9,n126s9,0.18,,0,,,,15632.61,no response to rqi=597849f45798 within 10.0s (is the CSE running with 'json' ena
+58.699,135,9,n135s9,0.14,,0,,,,15647.238,no response to rqi=278abae480b3 within 10.0s (is the CSE running with 'json' ena
+58.742,48,9,n48s9,0.13,,0,,,,15661.14,no response to rqi=8571bfa6fde9 within 10.0s (is the CSE running with 'json' ena
+58.811,102,9,n102s9,0.13,,0,,,,15682.584,no response to rqi=512dd1f26bdd within 10.0s (is the CSE running with 'json' ena
+58.813,20,9,n20s9,0.15,,0,,,,15682.91,no response to rqi=fbe47c6e1543 within 10.0s (is the CSE running with 'json' ena
+58.899,59,9,n59s9,0.13,,0,,,,15678.098,no response to rqi=f7b2326949da within 10.0s (is the CSE running with 'json' ena
+58.949,78,9,n78s9,0.16,,0,,,,15717.223,no response to rqi=7e58ddd6b3d3 within 10.0s (is the CSE running with 'json' ena
+58.99,70,9,n70s9,0.11,,0,,,,15722.116,no response to rqi=47ce300f22de within 10.0s (is the CSE running with 'json' ena
+59.044,36,9,n36s9,0.17,,0,,,,15717.904,no response to rqi=e85bd1355567 within 10.0s (is the CSE running with 'json' ena
+59.096,142,9,n142s9,0.18,,0,,,,15756.945,no response to rqi=056601da5740 within 10.0s (is the CSE running with 'json' ena
+59.135,91,9,n91s9,0.13,,0,,,,15834.83,no response to rqi=10e3bf759990 within 10.0s (is the CSE running with 'json' ena
+59.179,60,9,n60s9,0.17,,0,,,,15846.153,no response to rqi=6c4d78887996 within 10.0s (is the CSE running with 'json' ena
+59.234,66,9,n66s9,0.14,,0,,,,15834.409,no response to rqi=25de9b45f06a within 10.0s (is the CSE running with 'json' ena
+59.305,180,9,n180s9,0.16,,0,,,,15911.344,no response to rqi=fbf66b447118 within 10.0s (is the CSE running with 'json' ena
+59.425,34,9,n34s9,0.12,,0,,,,15900.051,no response to rqi=8da8bffa62d0 within 10.0s (is the CSE running with 'json' ena
+59.471,179,9,n179s9,0.12,,0,,,,15947.869,no response to rqi=ce1710e365cd within 10.0s (is the CSE running with 'json' ena
+59.481,147,9,n147s9,0.13,,0,,,,15983.364,no response to rqi=7d0146e6bfb7 within 10.0s (is the CSE running with 'json' ena
+59.559,132,9,n132s9,0.16,,0,,,,16025.118,no response to rqi=ea280dcdb315 within 10.0s (is the CSE running with 'json' ena
+59.56,159,9,n159s9,0.13,,0,,,,16068.088,no response to rqi=5fc3d5dfce43 within 10.0s (is the CSE running with 'json' ena
+59.646,67,9,n67s9,0.14,,0,,,,16081.79,no response to rqi=ad30a252afa8 within 10.0s (is the CSE running with 'json' ena
+59.691,21,9,n21s9,0.15,,0,,,,16085.712,no response to rqi=b21ac34a66d5 within 10.0s (is the CSE running with 'json' ena
+59.746,157,9,n157s9,0.13,,0,,,,16133.058,no response to rqi=14df191a6e70 within 10.0s (is the CSE running with 'json' ena
+59.748,137,9,n137s9,0.14,,0,,,,16176.662,no response to rqi=8a2ae0fddcfb within 10.0s (is the CSE running with 'json' ena
+59.821,4,9,n4s9,0.15,,0,,,,16175.69,no response to rqi=cea93f288103 within 10.0s (is the CSE running with 'json' ena
+59.868,9,9,n9s9,0.15,,0,,,,16203.5,no response to rqi=503a3fc9f757 within 10.0s (is the CSE running with 'json' ena
+59.915,23,9,n23s9,0.13,,0,,,,16207.797,no response to rqi=a5debb2794b9 within 10.0s (is the CSE running with 'json' ena
+59.983,92,9,n92s9,0.15,,0,,,,16270.052,no response to rqi=b42929aa628c within 10.0s (is the CSE running with 'json' ena

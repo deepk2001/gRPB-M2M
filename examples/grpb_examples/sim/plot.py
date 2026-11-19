@@ -153,6 +153,8 @@ def main(args: argparse.Namespace) -> None:
         by_app[r["app"]].append(r)
 
     if rows := by_app.get("farmnet"):
+        # a run whose fleet never got past registration has no readings: its per-reading bytes are meaningless
+        rows = [r for r in rows if num(r.get("readings")) != 0]
         bars(plt, rows, "netem", "format", "device_link_B_per_reading",
              "Bytes on the device link per reading", "bytes (request + response)", out / "farmnet_bytes.png",
              ratio_to="json")

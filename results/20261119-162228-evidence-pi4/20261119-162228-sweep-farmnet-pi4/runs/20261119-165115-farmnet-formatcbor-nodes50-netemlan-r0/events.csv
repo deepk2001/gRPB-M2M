@@ -1,0 +1,5 @@
+t,wall_us,event,nodes,format,netem,checked,ok
+-9.992,1795124988665490,start,50,cbor,lan,,
+0.001,1795124998658479,measuring,,,,,
+67.71,1795125066367175,stopped,,,,,
+67.938,1795125066595121,interop,,,,10,10

@@ -1,0 +1,6 @@
+t,wall_us,event,transport,scenario,group,actuators
+-2.995,1795129990257833,start,json,freeze,,
+0.0,1795129993253278,measuring,,,,
+10.0,1795130003253352,freeze,,,0,5
+25.0,1795130018253400,restored,,,0,
+45.024,1795130038277281,stopped,,,,

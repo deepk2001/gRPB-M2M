@@ -1,0 +1,2 @@
+app,format,nodes,interval_s,content,netem,duration_s,offered_per_s,achieved_per_s,readings,errors,error_rate,req_payload_B,resp_payload_B,device_link_B_per_reading,notify_B,loopback_B_per_reading_all_hops,device_kB_per_day,fleet_MB_per_day,rtt_p50_ms,rtt_p95_ms,rtt_p99_ms,notify_p50_ms,notify_p95_ms,notifications_missing,sched_lag_p95_ms,interop_checked,interop_ok,system_cpu_mean,sim_cpu_mean,broker_cpu_mean,cse_cpu_mean
+farmnet,json,200,5.0,reading,4g,60.0,40.0,0.0,0,1199,1.0,,,581.9,582.3,2821.2,10054.6,2010.92,,,,,,0,0.21,10,0,31.0,13.5,1.0,105.8
